@@ -1,0 +1,253 @@
+/* =============================================================================
+   Emergency Alert Floating Toast Card — LIGHT THEME (SCADA HMI)
+   ============================================================================= */
+
+.emergency-toast-card {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: calc(100vw - 48px);
+  max-width: 460px;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 28px -4px rgba(15, 23, 42, 0.15), 
+              0 6px 14px -2px rgba(15, 23, 42, 0.08), 
+              0 0 0 1px rgba(0, 0, 0, 0.06);
+  animation: toast-slide-up 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: inherit;
+  color: #1e293b;
+}
+
+/* Light Theme Severity Variants */
+.toast--emergency {
+  background: #ffffff;
+  border: 1px solid #fecaca;
+  border-left: 5px solid #dc2626;
+  box-shadow: 0 14px 32px -4px rgba(220, 38, 38, 0.18),
+              0 6px 14px -2px rgba(220, 38, 38, 0.1),
+              0 0 0 1px rgba(220, 38, 38, 0.15);
+}
+
+.toast--critical {
+  background: #ffffff;
+  border: 1px solid #fed7aa;
+  border-left: 5px solid #ea580c;
+  box-shadow: 0 14px 32px -4px rgba(234, 88, 12, 0.15),
+              0 6px 14px -2px rgba(234, 88, 12, 0.08),
+              0 0 0 1px rgba(234, 88, 12, 0.12);
+}
+
+/* Header Row */
+.toast-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.toast-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.toast-pulsing-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.toast-severity-badge {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.badge--emergency {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.badge--critical {
+  background-color: #ffedd5;
+  color: #c2410c;
+  border: 1px solid #fdba74;
+}
+
+.toast-defect-name {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #0f172a;
+}
+
+.toast-confidence {
+  font-size: 11px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Controls */
+.toast-top-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.toast-icon-btn {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.toast-icon-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.btn--sound-on {
+  color: #2563eb;
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.btn--sound-off {
+  color: #94a3b8;
+}
+
+.toast-close-btn:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+/* Body */
+.toast-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+  line-height: 1.45;
+  background-color: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.toast-component-line {
+  color: #1e293b;
+}
+
+.toast-component-line strong,
+.toast-cause-line strong {
+  color: #475569;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.toast-cause-line {
+  color: #334155;
+}
+
+/* Footer Row */
+.toast-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+.toast-status-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #059669;
+}
+
+.toast-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+}
+
+.toast-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toast-secondary-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.toast-secondary-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+.toast-primary-btn {
+  background: #0f172a;
+  border: 1px solid #0f172a;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.toast-primary-btn:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+/* Animation */
+@keyframes toast-slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

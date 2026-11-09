@@ -1,0 +1,165 @@
+/* =============================================================================
+   Load Page CSS — Master SCADA HMI styling
+   ============================================================================= */
+
+.load-row-top {
+  display: grid;
+  grid-template-columns: 180px 1fr 220px;
+  gap: 10px;
+  min-height: 200px;
+  flex-shrink: 0;
+}
+
+.load-gauge-box {
+  width: 100%;
+  height: 100%;
+}
+
+.load-trend-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.load-time-filter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.load-filter-label {
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  color: #718298;
+}
+
+.load-trend-chart-wrap {
+  flex: 1;
+  min-height: 125px;
+}
+
+.load-legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 4px;
+  padding-left: 20px;
+}
+
+.load-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.load-legend-dot {
+  width: 8px;
+  height: 3px;
+  border-radius: 1px;
+}
+
+.load-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.load-readings-card,
+.load-alarms-card {
+  padding: 8px 12px;
+}
+
+/* ── Row Bottom: Load Distribution Bar + History ─────────────────────────── */
+.load-row-bottom {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 10px;
+  min-height: 140px;
+  flex-shrink: 0;
+}
+
+.load-dist-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.load-dist-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex: 1;
+  padding: 10px 4px;
+}
+
+.load-dist-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.load-dist-id {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.load-dist-weight {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.load-dist-bar-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.load-dist-bar {
+  display: flex;
+  height: 28px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #1e293b;
+  background: #090d13;
+}
+
+.load-dist-segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.load-dist-segment--lc1 {
+  background: #22c55e;
+}
+
+.load-dist-segment--lc2 {
+  background: #0284c7;
+}
+
+.load-dist-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  color: #64748b;
+  padding: 0 2px;
+}
+
+.load-history-card {
+  flex: 1;
+  overflow: hidden;
+}

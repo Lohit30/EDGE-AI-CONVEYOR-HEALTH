@@ -1,0 +1,226 @@
+/* Camera Inspection Page — SCADA styling matching reference */
+
+.camera-inspection-page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Top Grid: Camera Viewport (left) + Right Column */
+.camera-top-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 14px;
+}
+
+.camera-feed-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.camera-feed-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.camera-feed-source {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: #64748b;
+  background: #090e15;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid #1e293b;
+}
+
+.camera-feed-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.camera-res-pill {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: #94a3b8;
+}
+
+.camera-live-badge {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: #ef4444;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  animation: pulse-red 2s infinite ease-in-out;
+}
+
+@keyframes pulse-red {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.camera-viewport-container {
+  position: relative;
+  background: #06090e;
+  border: 1px solid #14202e;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.camera-viewport-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.camera-feed-overlay-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(34, 197, 94, 0.9);
+  color: #05140b;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 3px;
+  letter-spacing: 0.8px;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+}
+
+/* Right Column */
+.camera-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.camera-results-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.camera-classes-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.object-classes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.object-class-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 3px 0;
+}
+
+.object-class-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.class-color-sq {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.class-name {
+  color: #94a3b8;
+}
+
+.class-count {
+  font-family: var(--font-mono);
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+/* Bottom Strip: Recent Inspections */
+.camera-inspections-strip-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-inspections-sub {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: #64748b;
+}
+
+.thumbnails-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.thumbnail-card {
+  background: #090e15;
+  border: 1px solid #182434;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.thumbnail-card:hover,
+.thumbnail-card.active {
+  border-color: #38bdf8;
+  background: #0d1622;
+}
+
+.thumbnail-frame {
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #1a2738;
+}
+
+.thumb-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thumb-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: rgba(34, 197, 94, 0.85);
+  color: #031407;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+.thumb-time {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: #94a3b8;
+}
+
+@media (max-width: 1100px) {
+  .camera-top-grid {
+    grid-template-columns: 1fr;
+  }
+  .thumbnails-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

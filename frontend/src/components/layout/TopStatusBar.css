@@ -1,0 +1,144 @@
+.scada-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  background: #0c1017;
+  border-bottom: 1px solid #182230;
+  padding: 0 16px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  z-index: 20;
+}
+
+.scada-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.scada-topbar-menu-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.scada-topbar-menu-btn:hover {
+  background: #182230;
+}
+
+.scada-topbar-title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.scada-topbar-main-title {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f1f5f9;
+}
+
+.scada-topbar-sub-title {
+  font-family: var(--font-sans);
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #38bdf8;
+  margin-top: 1px;
+}
+
+.scada-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.scada-topbar-clock {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #94a3b8;
+  letter-spacing: 0.02em;
+}
+
+.scada-topbar-state {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border: 1px solid;
+}
+
+.scada-topbar-state--running {
+  background: #0a2916;
+  border-color: #166534;
+  color: #22c55e;
+}
+
+.scada-topbar-state--warning {
+  background: #2b1d06;
+  border-color: #92400e;
+  color: #fbbf24;
+}
+
+.scada-topbar-state--critical {
+  background: #2b0b0b;
+  border-color: #991b1b;
+  color: #ef4444;
+}
+
+.scada-topbar-dot {
+  width: 6.5px;
+  height: 6.5px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.scada-topbar-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+  border-left: 1px solid #1e293b;
+}
+
+.scada-topbar-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scada-topbar-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.scada-topbar-user-role {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  color: #64748b;
+  line-height: 1;
+}
+
+.scada-topbar-user-name {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  color: #f1f5f9;
+  line-height: 1.2;
+}

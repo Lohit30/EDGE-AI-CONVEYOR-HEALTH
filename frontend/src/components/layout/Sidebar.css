@@ -1,0 +1,82 @@
+.scada-sidebar {
+  width: 175px;
+  background: #080c12;
+  border-right: 1px solid #182230;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.scada-sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.scada-sidebar-item {
+  width: 100%;
+}
+
+.scada-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border-radius: 4px;
+  color: #8da0b5;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 500;
+  transition: background 0.12s ease, color 0.12s ease;
+  position: relative;
+}
+
+.scada-sidebar-link:hover {
+  background: #111827;
+  color: #cbd5e1;
+}
+
+.scada-sidebar-link--active {
+  background: #133a63 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.scada-sidebar-icon {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.scada-sidebar-link--active .scada-sidebar-icon {
+  opacity: 1;
+  fill: #38bdf8;
+}
+
+.scada-sidebar-label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scada-sidebar-badge {
+  background: #dc2626;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}

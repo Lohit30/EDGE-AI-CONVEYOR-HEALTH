@@ -1,0 +1,908 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-tint":"#3755c3","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","surface-container":"#e5eeff","inverse-primary":"#b8c4ff","surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#444653","on-tertiary":"#ffffff","on-primary-container":"#a8b8ff","on-error":"#ffffff","surface-dim":"#cbdbf5","error":"#ba1a1a","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#77c2ff","outline-variant":"#c4c5d5","secondary":"#565e74","secondary-container":"#dae2fd","on-primary-fixed":"#001453","on-primary":"#ffffff","primary":"#00288e","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-tertiary-fixed":"#001d31","on-background":"#0b1c30","on-secondary-fixed":"#131b2e","outline":"#757684","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","primary-fixed":"#dde1ff","tertiary-container":"#004f7a","background":"#f8f9ff","surface":"#f8f9ff","primary-container":"#1e40af","surface-bright":"#f8f9ff","on-surface":"#0b1c30","surface-container-lowest":"#ffffff","tertiary":"#003757","inverse-surface":"#213145","on-secondary":"#ffffff","primary-fixed-dim":"#b8c4ff","on-tertiary-fixed-variant":"#004b73","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#173bab"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","space-lg":"1rem","space-xl":"1.5rem","space-xs":"0.25rem","space-sm":"0.375rem","space-md":"0.75rem",gutter:"0.75rem"},fontFamily:{"headline-lg":["IBM Plex Mono"],"label-lg":["IBM Plex Mono"],"label-sm":["IBM Plex Mono"],"headline-md":["IBM Plex Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"label-md":["IBM Plex Mono"],"headline-sm":["IBM Plex Mono"],"metric-display":["IBM Plex Mono"]},fontSize:{"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["13px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-sm":["9px",{lineHeight:"12px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["11px",{lineHeight:"16px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"metric-display":["24px",{lineHeight:"28px",letterSpacing:"-0.03em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-50 px-margin flex items-center justify-between shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><div class="flex items-center gap-space-md"><img alt="Conveyor SCADA Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZBtUjcHjGVR0BdoBAzb9o9_lGqUtxZbkcPOimLv7Ftd8Y33Y4iU7YUYqWaskntqerEsyzIhxtvus3z_3oCimNJnNIjzGSXulm1lKBejFskEjKrvtXU6kJOXAwLv7L5L3ZmLqb05qfFSAb5IPc73DqIB4DdZORgRCgkeQdU2YSqm2tHWSp-T3BZprGzeyzUqzm5lwt3AZlczB7syGMJLSW-W4GqQFeHIVUf7U_ZcL9b7b1utGcGYYyET0"><div class="h-8 w-[1px] bg-outline-variant"></div><div><div class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs leading-none tracking-tight">CONVEYOR MONITORING SYSTEM</div><div class="font-label-sm text-label-sm text-secondary tracking-widest leading-none mt-1">PROTOTYPE CV-01 • SMART • SAFE • RELIABLE</div></div><div class="ml-space-xs flex items-center gap-1.5 px-2 py-0.5 bg-surface-container-low border border-outline-variant rounded"><span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span><span class="font-label-sm text-label-sm font-bold text-on-surface tracking-wider">RUNNING</span></div></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container-low px-space-md py-1 border border-outline-variant rounded"><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">BACKEND</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">OK</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">MQTT</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">CONN</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">ESP32</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">ONLINE</span></div><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-secondary">RPI4 EDGE</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">42°C</span></div></div><div class="flex items-center gap-space-md"><div class="text-right"><div class="font-label-md text-label-md text-on-surface font-semibold tracking-wider">14:23:56 UTC</div><div class="font-label-sm text-label-sm text-tertiary-container font-bold uppercase tracking-wider">[SIMULATION / DEV]</div></div><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block text-left"><div class="font-label-sm text-label-sm text-on-surface font-bold leading-tight">ENG. K. VANCE</div><div class="font-label-sm text-label-sm text-secondary leading-tight">ROLE: [ADMIN]</div></div><button class="p-1 text-secondary hover:text-error hover:bg-error-container/20 rounded transition-colors ml-1" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-sm"><div class="px-space-sm py-1.5 text-secondary font-label-sm text-label-sm font-bold tracking-widest uppercase border-b border-outline-variant mb-1">MAIN NAVIGATION</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-bold border border-primary"><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="overview" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">view_quilt</span><span class="font-label-md text-label-md">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="vibration" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">vibration</span><span class="font-label-md text-label-md">Vibration</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="load" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">weight</span><span class="font-label-md text-label-md">Load</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="belt-speed" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">speed</span><span class="font-label-md text-label-md">Belt Speed</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors bg-primary-container text-on-primary font-bold shadow-sm" data-path="electrical-voltage" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">bolt</span><span class="font-label-md text-label-md">Electrical / Voltage</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="camera-inspection" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">videocam</span><span class="font-label-md text-label-md">Camera Inspection</span></div><span class="px-1 py-0.2 bg-[#ef4444] text-white font-label-sm text-label-sm font-bold rounded">LIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="digital-twin" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">deployed_code</span><span class="font-label-md text-label-md">Digital Twin</span></div><span class="px-1 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">CAD</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="predictive-health" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-label-md text-label-md">Predictive Health</span></div><span class="px-1 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold rounded">ML</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="analytics" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-label-md text-label-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="maintenance" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">build</span><span class="font-label-md text-label-md">Maintenance</span></div><span class="px-1.5 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">1 OPEN</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="alerts" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">warning</span><span class="font-label-md text-label-md">Alerts</span></div><span class="px-1.5 py-0.2 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">3 ACTIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-path="settings" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-label-md text-label-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-low font-label-sm text-label-sm flex flex-col gap-1 text-secondary"><div class="flex items-center justify-between"><span class="font-mono">FIRMWARE</span><span class="font-mono font-bold text-on-surface">v2.4.1-rc3</span></div><div class="flex items-center justify-between"><span class="font-mono">PLC LINK</span><span class="font-mono font-bold text-on-surface">ISO/CEMA STD</span></div><div class="flex items-center justify-between"><span class="font-mono">SAFETY</span><span class="font-mono font-bold text-[#10b981]">E-STOP READY</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-surface-container-lowest min-h-screen p-space-md border-l border-outline-variant"><div class="flex flex-col w-full">
+<script>
+    (function highlightNav() {
+      const activeClasses = 'bg-primary-container text-on-primary font-bold shadow-sm';
+      const defaultClasses = 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface';
+      document.querySelectorAll('aside nav a').forEach(a => {
+        const p = a.getAttribute('data-path');
+        if (p === 'electrical-voltage') {
+          a.className = `flex items-center justify-between px-space-sm py-1.5 rounded transition-colors ${activeClasses}`;
+          const icon = a.querySelector('.material-symbols-outlined');
+          if (icon) icon.setAttribute('style', "font-variation-settings: 'FILL' 1;");
+        } else {
+          a.className = `flex items-center justify-between px-space-sm py-1.5 rounded transition-colors ${defaultClasses}`;
+        }
+      });
+    })();
+  </script>
+<!-- RACK HEADER / SUBSYSTEM BANNER -->
+<div class="w-full bg-surface-container-low p-space-md rounded-lg shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-md">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg shadow-inner">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm bg-primary text-on-primary px-2 py-0.5 rounded font-bold tracking-widest uppercase">NODE: DRV-01</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">DC Drive Power Telemetry • INA219 Bus Monitor</span>
+</div>
+<div class="font-label-md text-label-md text-secondary mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-0.5">
+<span class="">TARGET: MOT-01 (PG-3650500 Planetary 250 RPM)</span>
+<span class="">•</span>
+<span class="">DRIVER: L298N / MOSFET (GPIO 25 PWM)</span>
+<span class="">•</span>
+<span class="">I2C ADDR: 0x40 (FAST 400kHz)</span>
+</div>
+</div>
+</div>
+<!-- Live Annunciators -->
+<div class="flex flex-wrap items-center gap-2">
+<div class="bg-surface-container px-space-md py-1.5 rounded flex items-center gap-2 shadow-inner">
+<span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">RAIL STATUS</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">12.1 V DC • REGULATED</span>
+</div>
+</div>
+<div class="bg-surface-container px-space-md py-1.5 rounded flex items-center gap-2 shadow-inner">
+<span class="w-2 h-2 rounded-full bg-[#10b981]"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">H-BRIDGE TEMP</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">36.8°C NORMAL</span>
+</div>
+</div>
+<div class="bg-surface-container px-space-md py-1.5 rounded flex items-center gap-2 shadow-inner">
+<span class="material-symbols-outlined text-primary text-[16px]">tune</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">PWM DUTY</span>
+<span class="font-label-md text-label-md font-bold text-primary">74.0% (18.5 kHz)</span>
+</div>
+</div>
+<div class="bg-primary-container text-on-primary px-space-md py-1.5 rounded flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">electric_meter</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container">TOTAL DC DRAW</span>
+<span class="font-metric-display text-metric-display leading-none">26.0 <span class="text-label-md font-normal">W</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- MAIN GAUGES RACK: TRIPLE INDUSTRIAL DIALS -->
+<div class="mt-space-md grid grid-cols-1 md:grid-cols-3 gap-space-md"><!-- Gauge 1: Bus Voltage -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between items-center">
+  <div class="w-full flex items-center justify-between pb-1 border-b border-outline-variant/40 mb-1">
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-secondary text-[18px]">speed</span>
+      <span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wide">Bus Voltage (INA219 V_BUS)</span>
+    </div>
+    <span class="font-label-sm text-label-sm bg-surface-container text-secondary px-1.5 py-0.5 rounded font-mono font-bold">CAL: ±0.05%</span>
+  </div>
+
+  <!-- Circular Gauge Graphic Container -->
+  <div class="relative flex flex-col items-center justify-center my-1 w-full">
+    <svg viewBox="0 0 280 280" class="w-full max-w-[240px] aspect-square drop-shadow-sm select-none">
+      <defs>
+        <radialGradient id="bezelGrad1" cx="35%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="#ffffff"></stop>
+          <stop offset="40%" stop-color="#e2e8f0"></stop>
+          <stop offset="80%" stop-color="#94a3b8"></stop>
+          <stop offset="100%" stop-color="#64748b"></stop>
+        </radialGradient>
+        <radialGradient id="dialPlateGrad1" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ffffff"></stop>
+          <stop offset="75%" stop-color="#f8fafc"></stop>
+          <stop offset="100%" stop-color="#eef2f6"></stop>
+        </radialGradient>
+        <filter id="gaugeShadow1" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-opacity="0.15"></feDropShadow>
+        </filter>
+      </defs>
+
+      <!-- Outer Circular Steel Bezel -->
+      <circle cx="140" cy="140" r="136" fill="url(#bezelGrad1)" stroke="#94a3b8" stroke-width="1"></circle>
+      <circle cx="140" cy="140" r="126" fill="#334155" stroke="#1e293b" stroke-width="1"></circle>
+      <circle cx="140" cy="140" r="124" fill="#cbd5e1"></circle>
+      <circle cx="140" cy="140" r="121" fill="url(#dialPlateGrad1)" stroke="#cbd5e1" stroke-width="1"></circle>
+
+      <!-- Subtle Inset Bevel Ring -->
+      <circle cx="140" cy="140" r="112" fill="none" stroke="#e2e8f0" stroke-width="0.8"></circle>
+
+      <!-- Colored Circular Arc Zones (Center 140,140, r=102, 270 deg total span from 135 deg to 405 deg) -->
+      <!-- 0-10V: 0 to 180 deg offset from 135 -> angle 135 to 315 -->
+      <path d="M 67.88 212.12 A 102 102 0 0 1 67.88 67.88" fill="none" stroke="#ef4444" stroke-width="4" stroke-dasharray="4 2" opacity="0.7"></path>
+      <!-- 10-11V Warning: angle 315 to 333 deg -->
+      <path d="M 67.88 67.88 A 102 102 0 0 1 93.18 49.33" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"></path>
+      <!-- 11-13V Nominal Green: angle 333 to 369 deg (or 9 deg) -->
+      <path d="M 93.18 49.33 A 102 102 0 0 1 186.82 49.33" fill="none" stroke="#10b981" stroke-width="6" stroke-linecap="round"></path>
+      <!-- 13-14V Warning: angle 9 to 27 deg -->
+      <path d="M 186.82 49.33 A 102 102 0 0 1 212.12 67.88" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"></path>
+      <!-- 14-15V Red Overvoltage: angle 27 to 45 deg -->
+      <path d="M 212.12 67.88 A 102 102 0 0 1 212.12 212.12" fill="none" stroke="#ef4444" stroke-width="4" stroke-dasharray="4 2"></path>
+
+      <!-- Radial Tick Marks (Every 0.5V minor, every 3V major) -->
+      <!-- Center 140,140. For each value v in 0..15: angle = 135 + (v / 15) * 270 -->
+      <g stroke="#475569" stroke-linecap="round">
+        <!-- Major Ticks r=95 to r=107 -->
+        <!-- 0V (135 deg) -->
+        <line x1="72.82" y1="207.18" x2="64.33" y2="215.67" stroke-width="2" stroke="#ef4444"></line>
+        <!-- 3V (189 deg) -->
+        <line x1="46.17" y1="154.86" x2="34.32" y2="156.74" stroke-width="1.8"></line>
+        <!-- 6V (243 deg) -->
+        <line x1="63.14" y1="96.86" x2="53.42" y2="91.41" stroke-width="1.8"></line>
+        <!-- 9V (297 deg) -->
+        <line x1="112.76" y1="55.33" x2="109.31" y2="44.62" stroke-width="1.8"></line>
+        <!-- 12V (351 deg) -->
+        <line x1="170.82" y1="51.98" x2="174.72" y2="40.85" stroke-width="2.2" stroke="#10b981"></line>
+        <!-- 15V (405 / 45 deg) -->
+        <line x1="207.18" y1="207.18" x2="215.67" y2="215.67" stroke-width="2" stroke="#ef4444"></line>
+      </g>
+
+      <!-- Intermediate Minor Ticks (1, 2, 4, 5, 7, 8, 10, 11, 13, 14V) -->
+      <g stroke="#94a3b8" stroke-width="1">
+        <!-- 1V (153 deg) --> <line x1="55.35" y1="183.13" x2="48.27" y2="188.58"></line>
+        <!-- 2V (171 deg) --> <line x1="46.17" y1="154.86" x2="36.68" y2="156.36"></line>
+        <!-- 4V (207 deg) --> <line x1="55.35" y1="96.87" x2="48.27" y2="91.42"></line>
+        <!-- 5V (225 deg) --> <line x1="72.82" y1="72.82" x2="67.16" y2="67.16"></line>
+        <!-- 7V (261 deg) --> <line x1="109.31" y1="55.33" x2="105.47" y2="44.62"></line>
+        <!-- 8V (279 deg) --> <line x1="135.08" y1="45.03" x2="134.46" y2="33.05"></line>
+        <!-- 10V (315 deg) --> <line x1="170.82" y1="72.82" x2="176.48" y2="67.16"></line>
+        <!-- 11V (333 deg) --> <line x1="183.13" y1="96.87" x2="190.21" y2="91.42"></line>
+        <!-- 13V (369 deg = 9 deg) --> <line x1="193.83" y1="154.86" x2="203.32" y2="156.36"></line>
+        <!-- 14V (387 deg = 27 deg) --> <line x1="183.13" y1="183.13" x2="190.21" y2="188.58"></line>
+      </g>
+
+      <!-- Gauge Radial Numerals -->
+      <g font-family="IBM Plex Mono" font-size="9" font-weight="600" text-anchor="middle" dominant-baseline="central">
+        <text x="80" y="190" fill="#ef4444">0</text>
+        <text x="54" y="143" fill="#64748b">3</text>
+        <text x="73" y="92" fill="#64748b">6</text>
+        <text x="116" y="62" fill="#64748b">9</text>
+        <text x="168" y="58" fill="#10b981" font-weight="700">12</text>
+        <text x="198" y="190" fill="#ef4444">15V</text>
+      </g>
+
+      <!-- Gauge Center Labels -->
+      <text x="140" y="106" font-family="IBM Plex Mono" font-size="9" font-weight="700" fill="#00288e" letter-spacing="1.5" text-anchor="middle">VOLTS DC</text>
+      <text x="140" y="120" font-family="IBM Plex Mono" font-size="7.5" font-weight="500" fill="#64748b" text-anchor="middle">SHOCKLEY PROTECTED</text>
+
+      <!-- Precision Needle -->
+      <!-- Angle calculation: 135 + (12.12 / 15) * 270 = 135 + 218.16 = 353.16 deg -->
+      <g transform="rotate(353.16 140 140)">
+        <!-- Counterbalance tail -->
+        <path d="M 137.5 158 L 142.5 158 L 141.5 140 L 138.5 140 Z" fill="#1e293b"></path>
+        <!-- Needle Blade tapering to r=104 (x=140, y=36) -->
+        <polygon points="138.2,140 139.4,36 140.6,36 141.8,140" fill="#00288e"></polygon>
+        <!-- High-visibility red tip accent -->
+        <line x1="140" y1="36" x2="140" y2="54" stroke="#ef4444" stroke-width="2" stroke-linecap="round"></line>
+      </g>
+
+      <!-- Mechanical Pivot Hub (Centered 140,140) -->
+      <circle cx="140" cy="140" r="11" fill="#1e293b" stroke="#64748b" stroke-width="1.5"></circle>
+      <circle cx="140" cy="140" r="7" fill="#334155"></circle>
+      <circle cx="140" cy="140" r="3.5" fill="#f8fafc"></circle>
+      <circle cx="140" cy="138" r="1" fill="#ffffff" opacity="0.8"></circle>
+    </svg>
+
+    <!-- Digital Readout Badge -->
+    <div class="mt-1 bg-surface-container px-3 py-1 rounded shadow-inner flex items-baseline gap-1 border border-outline-variant/30">
+      <span class="font-metric-display text-metric-display text-primary">12.12</span>
+      <span class="font-label-sm text-label-sm font-bold text-secondary">V DC</span>
+    </div>
+  </div>
+
+  <!-- Footer specs -->
+  <div class="w-full bg-surface-container-low p-2 rounded flex items-center justify-between text-secondary mt-2 border border-outline-variant/30">
+    <span class="font-label-sm text-label-sm">WINDOW: 11.0V - 13.0V</span>
+    <span class="font-label-sm text-label-sm font-bold text-[#10b981] bg-surface-container px-1.5 py-0.2 rounded">• NOMINAL REGULATION</span>
+  </div>
+</div>
+
+<!-- Gauge 2: Motor Amperage -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between items-center">
+  <div class="w-full flex items-center justify-between pb-1 border-b border-outline-variant/40 mb-1">
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-secondary text-[18px]">electric_meter</span>
+      <span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wide">Motor Amperage (I_LOAD)</span>
+    </div>
+    <span class="font-label-sm text-label-sm bg-surface-container text-secondary px-1.5 py-0.5 rounded font-mono font-bold">I2C: 12-BIT</span>
+  </div>
+
+  <!-- Circular Gauge Graphic Container -->
+  <div class="relative flex flex-col items-center justify-center my-1 w-full">
+    <svg viewBox="0 0 280 280" class="w-full max-w-[240px] aspect-square drop-shadow-sm select-none">
+      <defs>
+        <radialGradient id="bezelGrad2" cx="35%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="#ffffff"></stop>
+          <stop offset="40%" stop-color="#e2e8f0"></stop>
+          <stop offset="80%" stop-color="#94a3b8"></stop>
+          <stop offset="100%" stop-color="#64748b"></stop>
+        </radialGradient>
+        <radialGradient id="dialPlateGrad2" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ffffff"></stop>
+          <stop offset="75%" stop-color="#f8fafc"></stop>
+          <stop offset="100%" stop-color="#eef2f6"></stop>
+        </radialGradient>
+      </defs>
+
+      <!-- Outer Circular Steel Bezel -->
+      <circle cx="140" cy="140" r="136" fill="url(#bezelGrad2)" stroke="#94a3b8" stroke-width="1"></circle>
+      <circle cx="140" cy="140" r="126" fill="#334155" stroke="#1e293b" stroke-width="1"></circle>
+      <circle cx="140" cy="140" r="124" fill="#cbd5e1"></circle>
+      <circle cx="140" cy="140" r="121" fill="url(#dialPlateGrad2)" stroke="#cbd5e1" stroke-width="1"></circle>
+      <circle cx="140" cy="140" r="112" fill="none" stroke="#e2e8f0" stroke-width="0.8"></circle>
+
+      <!-- Colored Circular Arc Zones: Scale 0 to 6.0A across 270 deg (135 to 405 deg) -->
+      <!-- 0 - 3.5A Green Nominal: 135 to 135 + (3.5/6)*270 = 135 + 157.5 = 292.5 deg -->
+      <!-- Start 135 deg: (67.88, 212.12); End 292.5 deg: (140 + 102*cos(292.5°), 140 + 102*sin(292.5°)) = (179.03, 45.77) -->
+      <path d="M 67.88 212.12 A 102 102 0 0 1 179.03 45.77" fill="none" stroke="#10b981" stroke-width="5" stroke-linecap="round"></path>
+      <!-- 3.5 - 4.8A Amber: 292.5 to 135 + (4.8/6)*270 = 135 + 216 = 351 deg -->
+      <!-- End 351 deg: (140 + 102*cos(351°), 140 + 102*sin(351°)) = (240.74, 124.05) -->
+      <path d="M 179.03 45.77 A 102 102 0 0 1 240.74 124.05" fill="none" stroke="#f59e0b" stroke-width="5"></path>
+      <!-- 4.8 - 6.0A Red Stall Zone: 351 to 405 deg (212.12, 212.12) -->
+      <path d="M 240.74 124.05 A 102 102 0 0 1 212.12 212.12" fill="none" stroke="#ef4444" stroke-width="5" stroke-dasharray="4 2"></path>
+
+      <!-- Major Radial Ticks (0, 1, 2, 3, 4, 5, 6 A) -> Angles: 135, 180, 225, 270, 315, 360(0), 45 deg -->
+      <g stroke="#475569" stroke-linecap="round">
+        <!-- 0A (135 deg) --> <line x1="72.82" y1="207.18" x2="64.33" y2="215.67" stroke-width="2"></line>
+        <!-- 1A (180 deg) --> <line x1="45.00" y1="140.00" x2="33.00" y2="140.00" stroke-width="1.8"></line>
+        <!-- 2A (225 deg) --> <line x1="72.82" y1="72.82" x2="64.33" y2="64.33" stroke-width="2" stroke="#10b981"></line>
+        <!-- 3A (270 deg) --> <line x1="140.00" y1="45.00" x2="140.00" y2="33.00" stroke-width="2" stroke="#10b981"></line>
+        <!-- 4A (315 deg) --> <line x1="207.18" y1="72.82" x2="215.67" y2="64.33" stroke-width="2" stroke="#f59e0b"></line>
+        <!-- 5A (360/0 deg) --> <line x1="235.00" y1="140.00" x2="247.00" y2="140.00" stroke-width="2" stroke="#ef4444"></line>
+        <!-- 6A (45 deg) --> <line x1="207.18" y1="207.18" x2="215.67" y2="215.67" stroke-width="2" stroke="#ef4444"></line>
+      </g>
+
+      <!-- Minor Ticks (0.5A increments) -> Angles: 157.5, 202.5, 247.5, 292.5, 337.5, 22.5 deg -->
+      <g stroke="#94a3b8" stroke-width="1">
+        <!-- 0.5A (157.5 deg) --> <line x1="52.22" y1="176.33" x2="43.91" y2="179.77"></line>
+        <!-- 1.5A (202.5 deg) --> <line x1="52.22" y1="103.67" x2="43.91" y2="100.23"></line>
+        <!-- 2.5A (247.5 deg) --> <line x1="103.67" y1="52.22" x2="100.23" y2="43.91"></line>
+        <!-- 3.5A (292.5 deg) --> <line x1="176.33" y1="52.22" x2="179.77" y2="43.91"></line>
+        <!-- 4.5A (337.5 deg) --> <line x1="227.78" y1="103.67" x2="236.09" y2="100.23"></line>
+        <!-- 5.5A (22.5 deg) --> <line x1="227.78" y1="176.33" x2="236.09" y2="179.77"></line>
+      </g>
+
+      <!-- Gauge Radial Numerals -->
+      <g font-family="IBM Plex Mono" font-size="9" font-weight="600" text-anchor="middle" dominant-baseline="central">
+        <text x="80" y="190" fill="#64748b">0</text>
+        <text x="54" y="140" fill="#64748b">1.0</text>
+        <text x="78" y="82" fill="#10b981" font-weight="700">2.0</text>
+        <text x="140" y="58" fill="#10b981" font-weight="700">3.0</text>
+        <text x="202" y="82" fill="#f59e0b">4.0</text>
+        <text x="226" y="140" fill="#ef4444" font-weight="700">5.0</text>
+        <text x="198" y="190" fill="#ef4444">6.0A</text>
+      </g>
+
+      <!-- Gauge Center Labels -->
+      <text x="140" y="106" font-family="IBM Plex Mono" font-size="9" font-weight="700" fill="#00288e" letter-spacing="1.5" text-anchor="middle">AMPERES DC</text>
+      <text x="140" y="120" font-family="IBM Plex Mono" font-size="7.5" font-weight="500" fill="#64748b" text-anchor="middle">0.01Ω PRECISION SHUNT</text>
+
+      <!-- Precision Needle -->
+      <!-- 2.15A on 0-6A scale: angle = 135 + (2.15 / 6.0) * 270 = 135 + 96.75 = 231.75 deg -->
+      <g transform="rotate(231.75 140 140)">
+        <path d="M 137.5 158 L 142.5 158 L 141.5 140 L 138.5 140 Z" fill="#1e293b"></path>
+        <polygon points="138.2,140 139.4,36 140.6,36 141.8,140" fill="#1e40af"></polygon>
+        <line x1="140" y1="36" x2="140" y2="54" stroke="#10b981" stroke-width="2" stroke-linecap="round"></line>
+      </g>
+
+      <!-- Mechanical Pivot Hub -->
+      <circle cx="140" cy="140" r="11" fill="#1e293b" stroke="#64748b" stroke-width="1.5"></circle>
+      <circle cx="140" cy="140" r="7" fill="#334155"></circle>
+      <circle cx="140" cy="140" r="3.5" fill="#f8fafc"></circle>
+      <circle cx="140" cy="138" r="1" fill="#ffffff" opacity="0.8"></circle>
+    </svg>
+
+    <!-- Digital Readout Badge -->
+    <div class="mt-1 bg-surface-container px-3 py-1 rounded shadow-inner flex items-baseline gap-1 border border-outline-variant/30">
+      <span class="font-metric-display text-metric-display text-primary">2.15</span>
+      <span class="font-label-sm text-label-sm font-bold text-secondary">A DC</span>
+    </div>
+  </div>
+
+  <!-- Footer specs -->
+  <div class="w-full bg-surface-container-low p-2 rounded flex items-center justify-between text-secondary mt-2 border border-outline-variant/30">
+    <span class="font-label-sm text-label-sm">STALL TRIP: 4.80 A</span>
+    <span class="font-label-sm text-label-sm font-bold text-on-surface bg-surface-container px-1.5 py-0.2 rounded">43.0% LOAD LIMIT</span>
+  </div>
+</div>
+
+<!-- Gauge 3: Motor Power -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between items-center">
+  <div class="w-full flex items-center justify-between pb-1 border-b border-outline-variant/40 mb-1">
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-secondary text-[18px]">offline_bolt</span>
+      <span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wide">Motor Power (P = V • I)</span>
+    </div>
+    <span class="font-label-sm text-label-sm bg-surface-container text-secondary px-1.5 py-0.5 rounded font-mono font-bold">REAL-TIME</span>
+  </div>
+
+  <!-- Circular Gauge Graphic Container -->
+  <div class="relative flex flex-col items-center justify-center my-1 w-full">
+    <svg viewBox="0 0 280 280" class="w-full max-w-[240px] aspect-square drop-shadow-sm select-none">
+      <defs>
+        <radialGradient id="bezelGrad3" cx="35%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="#ffffff"></stop>
+          <stop offset="40%" stop-color="#e2e8f0"></stop>
+          <stop offset="80%" stop-color="#94a3b8"></stop>
+          <stop offset="100%" stop-color="#64748b"></stop>
+        </radialGradient>
+        <radialGradient id="dialPlateGrad3" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ffffff"></stop>
+          <stop offset="75%" stop-color="#f8fafc"></stop>
+          <stop offset="100%" stop-color="#eef2f6"></stop>
+        </radialGradient>
+      </defs>
+
+      <!-- Outer Circular Steel Bezel -->
+      <circle cx="140" cy="140" r="136" fill="url(#bezelGrad3)" stroke="#94a3b8" stroke-width="1"></circle>
+      <circle cx="140" cy="140" r="126" fill="#334155" stroke="#1e293b" stroke-width="1"></circle>
+      <circle cx="140" cy="140" r="124" fill="#cbd5e1"></circle>
+      <circle cx="140" cy="140" r="121" fill="url(#dialPlateGrad3)" stroke="#cbd5e1" stroke-width="1"></circle>
+      <circle cx="140" cy="140" r="112" fill="none" stroke="#e2e8f0" stroke-width="0.8"></circle>
+
+      <!-- Colored Circular Arc Zones: Scale 0 to 60W across 270 deg (135 to 405 deg) -->
+      <!-- 0 - 35W Green: 135 to 135 + (35/60)*270 = 135 + 157.5 = 292.5 deg -->
+      <path d="M 67.88 212.12 A 102 102 0 0 1 179.03 45.77" fill="none" stroke="#10b981" stroke-width="5" stroke-linecap="round"></path>
+      <!-- 35 - 45W Amber: 292.5 to 135 + (45/60)*270 = 135 + 202.5 = 337.5 deg -->
+      <!-- End 337.5 deg: (140 + 102*cos(337.5°), 140 + 102*sin(337.5°)) = (234.23, 100.97) -->
+      <path d="M 179.03 45.77 A 102 102 0 0 1 234.23 100.97" fill="none" stroke="#f59e0b" stroke-width="5"></path>
+      <!-- 45 - 60W Red Overload: 337.5 to 405 deg (212.12, 212.12) -->
+      <path d="M 234.23 100.97 A 102 102 0 0 1 212.12 212.12" fill="none" stroke="#ef4444" stroke-width="5" stroke-dasharray="4 2"></path>
+
+      <!-- Major Radial Ticks (0, 10, 20, 30, 40, 50, 60 W) -> Angles: 135, 180, 225, 270, 315, 360(0), 45 deg -->
+      <g stroke="#475569" stroke-linecap="round">
+        <!-- 0W (135 deg) --> <line x1="72.82" y1="207.18" x2="64.33" y2="215.67" stroke-width="2"></line>
+        <!-- 10W (180 deg) --> <line x1="45.00" y1="140.00" x2="33.00" y2="140.00" stroke-width="1.8"></line>
+        <!-- 20W (225 deg) --> <line x1="72.82" y1="72.82" x2="64.33" y2="64.33" stroke-width="2" stroke="#10b981"></line>
+        <!-- 30W (270 deg) --> <line x1="140.00" y1="45.00" x2="140.00" y2="33.00" stroke-width="2" stroke="#10b981"></line>
+        <!-- 40W (315 deg) --> <line x1="207.18" y1="72.82" x2="215.67" y2="64.33" stroke-width="2" stroke="#f59e0b"></line>
+        <!-- 50W (360/0 deg) --> <line x1="235.00" y1="140.00" x2="247.00" y2="140.00" stroke-width="2" stroke="#ef4444"></line>
+        <!-- 60W (45 deg) --> <line x1="207.18" y1="207.18" x2="215.67" y2="215.67" stroke-width="2" stroke="#ef4444"></line>
+      </g>
+
+      <!-- Minor Ticks (5W increments) -> Angles: 157.5, 202.5, 247.5, 292.5, 337.5, 22.5 deg -->
+      <g stroke="#94a3b8" stroke-width="1">
+        <!-- 5W (157.5 deg) --> <line x1="52.22" y1="176.33" x2="43.91" y2="179.77"></line>
+        <!-- 15W (202.5 deg) --> <line x1="52.22" y1="103.67" x2="43.91" y2="100.23"></line>
+        <!-- 25W (247.5 deg) --> <line x1="103.67" y1="52.22" x2="100.23" y2="43.91"></line>
+        <!-- 35W (292.5 deg) --> <line x1="176.33" y1="52.22" x2="179.77" y2="43.91"></line>
+        <!-- 45W (337.5 deg) --> <line x1="227.78" y1="103.67" x2="236.09" y2="100.23"></line>
+        <!-- 55W (22.5 deg) --> <line x1="227.78" y1="176.33" x2="236.09" y2="179.77"></line>
+      </g>
+
+      <!-- Gauge Radial Numerals -->
+      <g font-family="IBM Plex Mono" font-size="9" font-weight="600" text-anchor="middle" dominant-baseline="central">
+        <text x="80" y="190" fill="#64748b">0</text>
+        <text x="54" y="140" fill="#64748b">10</text>
+        <text x="78" y="82" fill="#10b981" font-weight="700">20</text>
+        <text x="140" y="58" fill="#10b981" font-weight="700">30</text>
+        <text x="202" y="82" fill="#f59e0b">40</text>
+        <text x="226" y="140" fill="#ef4444" font-weight="700">50</text>
+        <text x="198" y="190" fill="#ef4444">60W</text>
+      </g>
+
+      <!-- Gauge Center Labels -->
+      <text x="140" y="106" font-family="IBM Plex Mono" font-size="9" font-weight="700" fill="#00288e" letter-spacing="1.5" text-anchor="middle">WATTS DRAW</text>
+      <text x="140" y="120" font-family="IBM Plex Mono" font-size="7.5" font-weight="500" fill="#64748b" text-anchor="middle">EST. SHAFT MECHANICAL</text>
+
+      <!-- Precision Needle -->
+      <!-- 26.0W on 0-60W scale: angle = 135 + (26.0 / 60.0) * 270 = 135 + 117 = 252.0 deg -->
+      <g transform="rotate(252 140 140)">
+        <path d="M 137.5 158 L 142.5 158 L 141.5 140 L 138.5 140 Z" fill="#1e293b"></path>
+        <polygon points="138.2,140 139.4,36 140.6,36 141.8,140" fill="#00288e"></polygon>
+        <line x1="140" y1="36" x2="140" y2="54" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"></line>
+      </g>
+
+      <!-- Mechanical Pivot Hub -->
+      <circle cx="140" cy="140" r="11" fill="#1e293b" stroke="#64748b" stroke-width="1.5"></circle>
+      <circle cx="140" cy="140" r="7" fill="#334155"></circle>
+      <circle cx="140" cy="140" r="3.5" fill="#f8fafc"></circle>
+      <circle cx="140" cy="138" r="1" fill="#ffffff" opacity="0.8"></circle>
+    </svg>
+
+    <!-- Digital Readout Badge -->
+    <div class="mt-1 bg-surface-container px-3 py-1 rounded shadow-inner flex items-baseline gap-1 border border-outline-variant/30">
+      <span class="font-metric-display text-metric-display text-primary">26.0</span>
+      <span class="font-label-sm text-label-sm font-bold text-secondary">WATTS</span>
+    </div>
+  </div>
+
+  <!-- Footer specs -->
+  <div class="w-full bg-surface-container-low p-2 rounded flex items-center justify-between text-secondary mt-2 border border-outline-variant/30">
+    <span class="font-label-sm text-label-sm">RATED MAX: 45.0 W</span>
+    <span class="font-label-sm text-label-sm font-bold text-[#10b981] bg-surface-container px-1.5 py-0.2 rounded">• CONTINUOUS DUTY</span>
+  </div>
+</div></div>
+<!-- SECTION 3 & PHOTO / SCHEMATIC MOSAIC: BUS QUALITY & HARDWARE BENCH -->
+<div class="mt-space-md grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Left 7 cols: Bus Quality & Shunt Metrics Telemetry Matrix -->
+<div class="xl:col-span-7 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low px-3 py-1.5 rounded">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">troubleshoot</span>
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase">INA219 Signal Quality &amp; Energy Accumulator</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">SAMPLING: 532µs / 12-BIT AVG</span>
+</div>
+<!-- 5-Metric Precision Cards Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm mt-space-sm">
+<!-- Metric 1: Shunt Voltage Drop -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">SHUNT DROP</span>
+<span class="material-symbols-outlined text-[14px]">cloud_download</span>
+</div>
+<div class="my-1">
+<span class="font-metric-display text-metric-display text-on-surface">21.5</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">mV</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">0.010 Ω manganin</span>
+</div>
+<!-- Metric 2: Ripple Vpp -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">RAIL RIPPLE</span>
+<span class="material-symbols-outlined text-[14px] text-[#10b981]">waves</span>
+</div>
+<div class="my-1">
+<span class="font-metric-display text-metric-display text-[#10b981]">42</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">mV Vpp</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">LIMIT: &lt;150 mV (SAFE)</span>
+</div>
+<!-- Metric 3: Electrical Efficiency -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">EFFICIENCY η</span>
+<span class="material-symbols-outlined text-[14px] text-primary">percent</span>
+</div>
+<div class="my-1">
+<span class="font-metric-display text-metric-display text-primary">81.2</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">%</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">CORE + COPPER LOSS: 4.8W</span>
+</div>
+<!-- Metric 4: Energy Consumed -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">SHIFT ENERGY</span>
+<span class="material-symbols-outlined text-[14px] text-primary">history_toggle_off</span>
+</div>
+<div class="my-1">
+<span class="font-metric-display text-metric-display text-on-surface">0.384</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">kWh</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">SINCE: 06:00:00 UTC</span>
+</div>
+<!-- Metric 5: Peak Inrush Current -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">INRUSH PEAK</span>
+<span class="material-symbols-outlined text-[14px] text-error">priority_high</span>
+</div>
+<div class="my-1">
+<span class="font-metric-display text-metric-display text-error">4.12</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">A DC</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">DUR: 84ms @ SOFT-START</span>
+</div>
+<!-- Metric 6: PWM Drive Frequency -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">PWM CARRIER</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">settings_input_component</span>
+</div>
+<div class="my-1">
+<span class="font-metric-display text-metric-display text-on-surface">18.5</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">kHz</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">ULTRASONIC SILENT</span>
+</div>
+</div>
+</div>
+<!-- Live Bus Power Health Assessment Bar -->
+<div class="mt-space-sm pt-space-sm bg-surface-container px-3 py-2 rounded flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#10b981] text-[20px]">verified_user</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">DRIVE POWER RAIL: OPTIMAL OPERATION</div>
+<div class="font-label-sm text-label-sm text-secondary">Bus margin: +18.4% above lower cutoff threshold (10.2V). MOSFET thermals nominal.</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-mono text-secondary">DIAGNOSTIC STATUS:</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-[#10b981] text-white font-bold rounded">CODE 0x00 OK</span>
+</div>
+</div>
+</div>
+<!-- Right 5 cols: Motor Hardware Testbench Inspection View -->
+<div class="xl:col-span-5 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">precision_manufacturing</span>
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase">Drive Head DC Motor Physical Cell</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded font-mono font-bold">BENCH CV-01</span>
+</div>
+<!-- Real Hardware Photo Visual with Callouts -->
+<div class="relative w-full h-44 my-2 rounded overflow-hidden shadow-inner bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High quality close up macro photograph of a heavy-duty industrial PG3650500 12V DC planetary geared electric motor mounted to the drive drum head of a stainless steel miniature iron ore conveyor belt rig. Visible black wiring harness leading to an L298N motor driver heat sink and a tiny INA219 current sensor PCB breakout board, with bright industrial workbench illumination and clean brushed aluminum mechanical frame." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6eKkgyd6HV2FQvj9sSjtSTqHb3Li2O39ka2rPIQbXo9XxW-Ck4kurwVg7qL2J8nt_XvLJTVfptRcHljxKe1r6Df6HaZ1gmAYNZ4J-PpUi2ww-HrAjZxPKNcm0-3cjW1BgrN86gnkg6vD0Tr7hfSaYo3Ee0E37Xvj_70Qz4JyrQqZF8fKO1Cc5dKLPXiKV132pRDBiuQ3UUYSrUHNiWs46I5r7PkvLALJoO2A79vLLCrAbjYvDNG0Ogg">
+<!-- Engineering HUD overlay pins on image -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#0b1c30]/80 via-transparent to-transparent pointer-events-none"></div>
+<!-- Annotation 1: Motor -->
+<div class="absolute top-3 left-3 bg-[#0b1c30]/90 text-white px-2 py-1 rounded backdrop-blur font-label-sm text-label-sm flex items-center gap-1.5 shadow">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981] animate-pulse"></span>
+<span class="">MOT-01 • 12V DC PG-36</span>
+</div>
+<!-- Annotation 2: Sensor -->
+<div class="absolute top-3 right-3 bg-[#0b1c30]/90 text-white px-2 py-1 rounded backdrop-blur font-label-sm text-label-sm flex items-center gap-1 shadow">
+<span class="material-symbols-outlined text-tertiary-fixed text-[12px]">memory</span>
+<span class="">INA219 HIGH-SIDE TELEMETRY</span>
+</div>
+<!-- Bottom Banner on Photo -->
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-white font-label-sm text-label-sm">
+<span class="tracking-wide">GEAR RATIO: 19.2:1 | TORQUE RATING: 2.8 Nm</span>
+<span class="text-tertiary-fixed font-bold font-mono">GPIO 25 • H-BRIDGE OK</span>
+</div>
+</div>
+<!-- Hardware Testbench Specs Footnote -->
+<div class="bg-surface-container-low p-2 rounded flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-mono">POWER SOURCE: 12.0V 10A SWITCHMODE PSU</span>
+<span class="font-label-sm text-label-sm font-mono text-primary font-bold">REVERSIBLE DPDT RELAY: ARMED</span>
+</div>
+</div>
+</div>
+<!-- SECTION 4: TECHNICAL STRIP CHARTS (ROLLING 60S TIME-SERIES) -->
+<div class="mt-space-md grid grid-cols-1 xl:grid-cols-2 gap-space-md">
+<!-- Strip Chart 1: Synchronized Dual-Axis Voltage & Current Trend -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">stacked_line_chart</span>
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase">Dual-Axis 60-Second Real-Time Telemetry Trend</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">Left Axis: Current (0 - 5.0 A DC) | Right Axis: Rail Voltage (10 - 14 V DC)</span>
+</div>
+<!-- Legend Chips -->
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-1 bg-[#1e40af] rounded-full"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface font-mono">I_LOAD (2.15 A)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-1 bg-[#10b981] rounded-full"></span>
+<span class="font-label-sm text-label-sm font-bold text-[#10b981] font-mono">V_BUS (12.1 V)</span>
+</div>
+</div>
+</div>
+<!-- Vector Strip Chart (60 Seconds rolling plot) -->
+<div class="w-full bg-surface-container-low p-space-sm rounded shadow-inner my-1">
+<svg class="w-full h-48" preserveAspectRatio="none" viewBox="0 0 540 180">
+<!-- Background Gridlines -->
+<g stroke="#c4c5d5" stroke-dasharray="2 4" stroke-width="0.8">
+<line x1="40" x2="500" y1="20" y2="20"></line>
+<line x1="40" x2="500" y1="55" y2="55"></line>
+<line x1="40" x2="500" y1="90" y2="90"></line>
+<line x1="40" x2="500" y1="125" y2="125"></line>
+<line x1="40" x2="500" y1="160" y2="160"></line>
+<!-- Vertical Time Ticks -->
+<line x1="100" x2="100" y1="20" y2="160"></line>
+<line x1="180" x2="180" y1="20" y2="160"></line>
+<line x1="260" x2="260" y1="20" y2="160"></line>
+<line x1="340" x2="340" y1="20" y2="160"></line>
+<line x1="420" x2="420" y1="20" y2="160"></line>
+<line x1="500" x2="500" y1="20" y2="160"></line>
+</g>
+<!-- Current Trip Limit line (4.8A) -->
+<line stroke="#ba1a1a" stroke-dasharray="4 2" stroke-width="1" x1="40" x2="500" y1="26" y2="26"></line>
+<text class="font-label-sm" fill="#ba1a1a" font-size="7" text-anchor="end" x="495" y="24">TRIP SETPOINT 4.80A</text>
+<!-- Left Axis Current Labels (0 - 5 A) -->
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="24">5.0A</text>
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="58">3.7A</text>
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="93">2.5A</text>
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="128">1.2A</text>
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="163">0.0A</text>
+<!-- Right Axis Voltage Labels (10 - 14 V) -->
+<text class="font-label-sm" fill="#10b981" font-size="8" text-anchor="start" x="505" y="24">14.0V</text>
+<text class="font-label-sm" fill="#10b981" font-size="8" text-anchor="start" x="505" y="58">13.0V</text>
+<text class="font-label-sm" fill="#10b981" font-size="8" text-anchor="start" x="505" y="93">12.0V</text>
+<text class="font-label-sm" fill="#10b981" font-size="8" text-anchor="start" x="505" y="128">11.0V</text>
+<text class="font-label-sm" fill="#10b981" font-size="8" text-anchor="start" x="505" y="163">10.0V</text>
+<!-- V_BUS Curve: Extremely rock steady around 12.1V (Y = 86 with small 42mV ripple) -->
+<path d="M 40 86.5 Q 60 86.2 80 86.5 T 120 86.8 T 160 86.4 T 200 87.0 T 240 86.3 T 280 86.5 T 320 86.7 T 360 86.4 T 400 86.6 T 440 86.3 T 480 86.5 T 500 86.5" fill="none" stroke="#10b981" stroke-width="2"></path>
+<!-- I_LOAD Curve: Demonstrates realistic ore dumping dynamic surge (ranges around 1.8A to 2.9A, currently 2.15A) -->
+<!-- 2.15A maps to: 160 - (2.15/5.0)*140 = 160 - 60.2 = 99.8 -->
+<path d="M 40 110 
+                   L 70 108 
+                   L 100 112 
+                   L 130 95 
+                   L 150 78 
+                   L 170 82 
+                   L 190 98 
+                   L 220 105 
+                   L 250 102 
+                   L 280 90 
+                   L 300 70 
+                   L 320 74 
+                   L 350 92 
+                   L 380 104 
+                   L 410 106 
+                   L 440 98 
+                   L 470 100 
+                   L 500 100" fill="none" stroke="#1e40af" stroke-linejoin="round" stroke-width="2.2"></path>
+<!-- Ore surge event marker -->
+<circle cx="300" cy="70" fill="#ba1a1a" r="3.5"></circle>
+<text class="font-label-sm" fill="#ba1a1a" font-size="7" font-weight="bold" text-anchor="middle" x="300" y="62">ORE SLUG 3.21A</text>
+<!-- Current real-time point marker -->
+<circle cx="500" cy="100" fill="#1e40af" r="4"></circle>
+<circle cx="500" cy="86.5" fill="#10b981" r="4"></circle>
+</svg>
+<!-- Strip Chart Time Axis Scale Bar -->
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm px-10 pt-1">
+<span class="">-60 sec</span>
+<span class="">-50s</span>
+<span class="">-40s</span>
+<span class="">-30s</span>
+<span class="">-20s</span>
+<span class="">-10s</span>
+<span class="font-bold text-on-surface">LIVE [0s]</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-secondary pt-1 font-label-sm text-label-sm">
+<span class="">STIFFNESS: ΔV / ΔI = 0.038 Ω PSU INTERNAL IMPEDANCE</span>
+<span class="text-primary font-bold">NO VOLTAGE SAG DETECTED UNDER BULK LOAD</span>
+</div>
+</div>
+<!-- Strip Chart 2: Instantaneous Power vs Mechanical Torque Correlation -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">show_chart</span>
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase">Electrical Power vs Estimated Torque Load</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">Real-time correlation: Iron ore mass flow resistance • P = ω • τ</span>
+</div>
+<div class="bg-surface-container px-2 py-1 rounded flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="font-bold text-secondary">EST. TORQUE:</span>
+<span class="font-mono font-bold text-primary">1.24 Nm</span>
+</div>
+</div>
+<!-- Vector Strip Chart 2 (Power curve + Torque estimation) -->
+<div class="w-full bg-surface-container-low p-space-sm rounded shadow-inner my-1">
+<svg class="w-full h-48" preserveAspectRatio="none" viewBox="0 0 540 180">
+<g stroke="#c4c5d5" stroke-dasharray="2 4" stroke-width="0.8">
+<line x1="40" x2="500" y1="20" y2="20"></line>
+<line x1="40" x2="500" y1="55" y2="55"></line>
+<line x1="40" x2="500" y1="90" y2="90"></line>
+<line x1="40" x2="500" y1="125" y2="125"></line>
+<line x1="40" x2="500" y1="160" y2="160"></line>
+<line x1="100" x2="100" y1="20" y2="160"></line>
+<line x1="180" x2="180" y1="20" y2="160"></line>
+<line x1="260" x2="260" y1="20" y2="160"></line>
+<line x1="340" x2="340" y1="20" y2="160"></line>
+<line x1="420" x2="420" y1="20" y2="160"></line>
+<line x1="500" x2="500" y1="20" y2="160"></line>
+</g>
+<!-- Left Axis: Power (0 - 60W) -->
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="24">60W</text>
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="58">45W</text>
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="93">30W</text>
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="128">15W</text>
+<text class="font-label-sm" fill="#565e74" font-size="8" text-anchor="end" x="35" y="163">0W</text>
+<!-- Right Axis: Torque (0 - 3.0 Nm) -->
+<text class="font-label-sm" fill="#004f7a" font-size="8" text-anchor="start" x="505" y="24">3.0Nm</text>
+<text class="font-label-sm" fill="#004f7a" font-size="8" text-anchor="start" x="505" y="58">2.2Nm</text>
+<text class="font-label-sm" fill="#004f7a" font-size="8" text-anchor="start" x="505" y="93">1.5Nm</text>
+<text class="font-label-sm" fill="#004f7a" font-size="8" text-anchor="start" x="505" y="128">0.7Nm</text>
+<text class="font-label-sm" fill="#004f7a" font-size="8" text-anchor="start" x="505" y="163">0.0Nm</text>
+<!-- Area fill under power curve -->
+<path d="M 40 160 
+                   L 40 115 
+                   L 80 114 
+                   L 120 118 
+                   L 150 92 
+                   L 170 96 
+                   L 200 110 
+                   L 240 116 
+                   L 280 102 
+                   L 300 80 
+                   L 320 84 
+                   L 360 105 
+                   L 400 116 
+                   L 440 110 
+                   L 470 108 
+                   L 500 108 
+                   L 500 160 Z" fill="#dae2fd" fill-opacity="0.35"></path>
+<!-- Instantaneous Power Watts curve -->
+<path d="M 40 115 
+                   L 80 114 
+                   L 120 118 
+                   L 150 92 
+                   L 170 96 
+                   L 200 110 
+                   L 240 116 
+                   L 280 102 
+                   L 300 80 
+                   L 320 84 
+                   L 360 105 
+                   L 400 116 
+                   L 440 110 
+                   L 470 108 
+                   L 500 108" fill="none" stroke="#004f7a" stroke-linejoin="round" stroke-width="2.2"></path>
+<!-- Mechanical Torque Estimation Dashed Overlay -->
+<path d="M 40 118 
+                   L 80 117 
+                   L 120 120 
+                   L 150 96 
+                   L 170 100 
+                   L 200 113 
+                   L 240 119 
+                   L 280 106 
+                   L 300 85 
+                   L 320 89 
+                   L 360 109 
+                   L 400 119 
+                   L 440 113 
+                   L 470 112 
+                   L 500 112" fill="none" stroke="#ba1a1a" stroke-dasharray="3 3" stroke-width="1.6"></path>
+<!-- Real-time node -->
+<circle cx="500" cy="108" fill="#004f7a" r="4"></circle>
+</svg>
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm px-10 pt-1">
+<span class="">-60 sec</span>
+<span class="">-50s</span>
+<span class="">-40s</span>
+<span class="">-30s</span>
+<span class="">-20s</span>
+<span class="">-10s</span>
+<span class="font-bold text-on-surface">LIVE [0s]</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-secondary pt-1 font-label-sm text-label-sm">
+<span class="">ORE BED RESISTANCE COEFF: 0.14 Nm / (kg/m)</span>
+<span class="font-mono text-tertiary-container font-bold">DRIVE SHAFT SPEED: 242 RPM NOMINAL</span>
+</div>
+</div>
+</div>
+<!-- SECTION 5: ELECTRICAL PROTECTION & TRIP MATRIX -->
+<div class="mt-space-md bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-sm gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">shield</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface uppercase">DC Motor Electrical Trip &amp; Interlock Configuration</div>
+<div class="font-label-sm text-label-sm text-secondary">Firmware hardware-level trip comparator registers • GPIO 25 emergency shutoff latch</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary font-mono">INTERLOCK LOOP:</span>
+<span class="px-2 py-0.5 bg-[#10b981] text-white font-label-sm text-label-sm font-bold rounded">ARMED &amp; CLOSED</span>
+</div>
+</div>
+<!-- 4 Interlock Threshold Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-sm my-space-sm">
+<!-- Card 1: Overcurrent Instantaneous -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-error">INSTANTANEOUS TRIP</span>
+<span class="w-2 h-2 rounded-full bg-[#10b981]"></span>
+</div>
+<div class="my-1">
+<div class="font-metric-display text-metric-display text-on-surface">4.80 <span class="text-label-md font-normal text-secondary">A DC</span></div>
+<div class="font-label-sm text-label-sm text-secondary">Response Time: &lt; 15 ms</div>
+</div>
+<div class="bg-surface-container px-2 py-0.5 rounded font-label-sm text-label-sm text-secondary flex items-center justify-between">
+<span class="">Stall Protection</span>
+<span class="text-[#10b981] font-bold">STANDBY</span>
+</div>
+</div>
+<!-- Card 2: Continuous Overload Warning -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-[#d97706]">CONTINUOUS OVERLOAD</span>
+<span class="w-2 h-2 rounded-full bg-[#10b981]"></span>
+</div>
+<div class="my-1">
+<div class="font-metric-display text-metric-display text-on-surface">3.50 <span class="text-label-md font-normal text-secondary">A DC</span></div>
+<div class="font-label-sm text-label-sm text-secondary">Hold Time Threshold: &gt; 5.0 s</div>
+</div>
+<div class="bg-surface-container px-2 py-0.5 rounded font-label-sm text-label-sm text-secondary flex items-center justify-between">
+<span class="">Thermal Over-Duty</span>
+<span class="text-[#10b981] font-bold">NORMAL (2.15A)</span>
+</div>
+</div>
+<!-- Card 3: Undervoltage Lockout -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary">UNDERVOLTAGE (UVLO)</span>
+<span class="w-2 h-2 rounded-full bg-[#10b981]"></span>
+</div>
+<div class="my-1">
+<div class="font-metric-display text-metric-display text-on-surface">10.20 <span class="text-label-md font-normal text-secondary">V DC</span></div>
+<div class="font-label-sm text-label-sm text-secondary">PSU Dropout Prevention</div>
+</div>
+<div class="bg-surface-container px-2 py-0.5 rounded font-label-sm text-label-sm text-secondary flex items-center justify-between">
+<span class="">Hysteresis: +0.40V</span>
+<span class="text-[#10b981] font-bold">HEALTHY</span>
+</div>
+</div>
+<!-- Card 4: Overvoltage Cutoff -->
+<div class="bg-surface-container-low p-space-sm rounded shadow-inner flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary">OVERVOLTAGE (OVCO)</span>
+<span class="w-2 h-2 rounded-full bg-[#10b981]"></span>
+</div>
+<div class="my-1">
+<div class="font-metric-display text-metric-display text-on-surface">14.50 <span class="text-label-md font-normal text-secondary">V DC</span></div>
+<div class="font-label-sm text-label-sm text-secondary">Back-EMF Clamp Protection</div>
+</div>
+<div class="bg-surface-container px-2 py-0.5 rounded font-label-sm text-label-sm text-secondary flex items-center justify-between">
+<span class="">Clamp TVS Diode</span>
+<span class="text-[#10b981] font-bold">ACTIVE</span>
+</div>
+</div>
+</div>
+<!-- Diagnostic Action & Command Strip -->
+<div class="mt-space-sm pt-space-sm bg-surface-container-low px-3 py-2 rounded flex flex-col sm:flex-row items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-[#10b981]">check_circle</span>
+<span class="">LAST FAULT LOGGED: NONE • REGISTERS ZEROED SINCE BOOT (UPTIME: 14h 23m)</span>
+</div>
+<!-- Industrial Physical Actuators -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3 py-1.5 bg-surface-container text-on-surface hover:bg-surface-container-high active:translate-y-0.5 rounded font-label-sm text-label-sm font-bold uppercase transition flex items-center gap-1.5 shadow-sm" id="btnAckTrip" onclick="ackOvercurrent()">
+<span class="material-symbols-outlined text-[15px] text-primary">restart_alt</span>
+<span class="">Acknowledge Overcurrent Trip</span>
+</button>
+<button class="px-3 py-1.5 bg-surface-container text-on-surface hover:bg-surface-container-high active:translate-y-0.5 rounded font-label-sm text-label-sm font-bold uppercase transition flex items-center gap-1.5 shadow-sm" id="btnClearInrush" onclick="clearInrushPeak()">
+<span class="material-symbols-outlined text-[15px] text-secondary">clear_all</span>
+<span class="">Clear Peak Inrush Register</span>
+</button>
+<button class="px-3 py-1.5 bg-primary-container text-on-primary hover:bg-primary active:translate-y-0.5 rounded font-label-sm text-label-sm font-bold uppercase transition flex items-center gap-1.5 shadow-sm" id="btnExportLog" onclick="exportElectricalLog()">
+<span class="material-symbols-outlined text-[15px]">download</span>
+<span class="">Export Electrical Log (.CSV)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro-Interactions Client Script -->
+<script>
+    function ackOvercurrent() {
+      const btn = document.getElementById('btnAckTrip');
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[15px] text-[#10b981]">done</span><span>LATCH CLEARED [0x00]</span>';
+      btn.classList.add('bg-surface-container-high');
+      setTimeout(() => {
+        btn.innerHTML = orig;
+        btn.classList.remove('bg-surface-container-high');
+      }, 1800);
+    }
+
+    function clearInrushPeak() {
+      const btn = document.getElementById('btnClearInrush');
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[15px] text-[#10b981]">check</span><span>RESET TO 2.15A</span>';
+      setTimeout(() => {
+        btn.innerHTML = orig;
+      }, 1800);
+    }
+
+    function exportElectricalLog() {
+      const btn = document.getElementById('btnExportLog');
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[15px]">sync</span><span>GENERATING CSV...</span>';
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[15px]">file_download_done</span><span>LOG DOWNLOADED</span>';
+        setTimeout(() => {
+          btn.innerHTML = orig;
+        }, 1500);
+      }, 800);
+    }
+  </script>
+</div></main></div>
+
+</body></html>

@@ -1,0 +1,28 @@
+# =============================================================================
+# Frontend .dockerignore
+# Excludes heavy local artefacts from the Docker build context.
+# =============================================================================
+
+# Node modules (installed fresh inside the container)
+node_modules/
+
+# Build output (not needed for the dev container)
+dist/
+build/
+
+# Vite cache
+.vite/
+
+# IDE / editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Local environment overrides
+.env.local
+.env.*.local

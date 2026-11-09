@@ -1,0 +1,27 @@
+{
+  "features": [
+    "vibration_left_g",
+    "vibration_right_g",
+    "vibration_left_mps2",
+    "vibration_right_mps2",
+    "load_left_kg",
+    "load_right_kg",
+    "load_imbalance_kg",
+    "total_load_kg",
+    "current_A",
+    "ir_left_blocked",
+    "ir_right_blocked",
+    "estop_active",
+    "fault_active",
+    "vib_ratio",
+    "vib_total",
+    "vib_diff",
+    "load_ratio",
+    "power_proxy"
+  ],
+  "classes": [
+    "BELT MISALIGNMENT",
+    "NORMAL",
+    "OBJECT/JAM DETECTED"
+  ]
+}

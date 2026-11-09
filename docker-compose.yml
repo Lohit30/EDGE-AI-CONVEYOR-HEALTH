@@ -1,0 +1,98 @@
+# =============================================================================
+# Conveyor Belt Health Monitoring System — Docker Compose
+# =============================================================================
+#
+# USAGE
+# -----
+#   Start (foreground):   docker compose up
+#   Start (background):   docker compose up -d
+#   Stop:                 docker compose down
+#   Stop + remove data:   docker compose down -v
+#   Rebuild images:       docker compose up --build
+#   View logs:            docker compose logs -f [service]
+#
+# SERVICES
+# --------
+#   frontend  → http://localhost:3000   (React + Vite — dev server)
+#   backend   → http://localhost:8000   (FastAPI)
+#   mqtt      → localhost:1883          (Eclipse Mosquitto)
+#
+# RASPBERRY PI
+# ------------
+#   This file is intentionally kept architecture-agnostic.
+#   On a Pi, run the same commands — Docker will pull/build ARM-compatible
+#   images automatically (eclipse-mosquitto is multi-arch; Python & Node
+#   official images are also multi-arch).
+# =============================================================================
+
+services:
+
+  # ---------------------------------------------------------------------------
+  # FRONTEND — React + Vite (development server)
+  # Placeholder service; app code will be added in a later phase.
+  # ---------------------------------------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: cbm-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount source code for hot-reload during development.
+      - ./frontend:/app
+      # Prevent the host node_modules from overriding the container's.
+      - /app/node_modules
+    environment:
+      - VITE_BACKEND_URL=http://localhost:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # BACKEND — FastAPI (Python)
+  # Exposes a health check endpoint and will host all API routes.
+  # ---------------------------------------------------------------------------
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: cbm-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount source code so Uvicorn's --reload picks up changes.
+      - ./backend:/app
+      - ./best.onnx:/app/best.onnx:ro
+      - ./ai:/app/ai:ro
+    environment:
+      - MQTT_HOST=mqtt
+      - MQTT_BROKER_HOST=mqtt
+      - MQTT_PORT=1883
+      - MQTT_BROKER_PORT=1883
+      - PYTHONPATH=/app
+    depends_on:
+      - mqtt
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # MQTT — Eclipse Mosquitto message broker
+  # Used for real-time sensor data from the conveyor belt firmware.
+  # ---------------------------------------------------------------------------
+  mqtt:
+    image: eclipse-mosquitto:2
+    container_name: cbm-mqtt
+    ports:
+      - "1883:1883"   # MQTT (unencrypted — local dev only)
+    volumes:
+      - ./mqtt/config:/mosquitto/config:ro
+      - mqtt-data:/mosquitto/data
+      - mqtt-logs:/mosquitto/log
+    restart: unless-stopped
+
+# ---------------------------------------------------------------------------
+# Named volumes for persistent MQTT broker data and logs
+# ---------------------------------------------------------------------------
+volumes:
+  mqtt-data:
+  mqtt-logs:

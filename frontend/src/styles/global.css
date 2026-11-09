@@ -1,0 +1,215 @@
+/* =============================================================================
+   GLOBAL STYLES — Conveyor Belt Monitoring System
+   ============================================================================= */
+
+@import './tokens.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-primary);
+  background-color: var(--bg-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/* ── Custom Scrollbars ─────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #0c1017; }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+/* ── Reusable SCADA Page & Card Architecture ──────────────────────────────── */
+.scada-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #080c14;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.scada-card {
+  background: #0d1219;
+  border: 1px solid #182230;
+  border-radius: 4px;
+  padding: 10px 14px;
+  box-sizing: border-box;
+}
+
+.scada-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.scada-card-title {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #e2e8f0;
+  text-transform: uppercase;
+}
+
+/* ── Form Controls & Selects ──────────────────────────────────────────────── */
+.scada-select {
+  background: #131a24;
+  border: 1px solid #1e293b;
+  color: #cbd5e1;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 2px 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.scada-select:hover {
+  border-color: #334155;
+}
+
+/* ── Key-Value List ───────────────────────────────────────────────────────── */
+.scada-kv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.scada-kv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 1px 0;
+}
+
+.scada-kv-label {
+  color: #718298;
+  font-family: var(--font-sans);
+}
+
+.scada-kv-val {
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.scada-status-pill-text {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/* ── Status Indicators ────────────────────────────────────────────────────── */
+.scada-dot-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #cbd5e1;
+}
+
+.scada-dot {
+  width: 6.5px;
+  height: 6.5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.scada-dot--green  { background: #22c55e; box-shadow: 0 0 6px #22c55e; }
+.scada-dot--yellow { background: #f59e0b; box-shadow: 0 0 6px #f59e0b; }
+.scada-dot--red    { background: #ef4444; box-shadow: 0 0 6px #ef4444; }
+.scada-dot--blue   { background: #38bdf8; box-shadow: 0 0 6px #38bdf8; }
+.scada-dot--dim    { background: #64748b; }
+
+/* ── Data Tables ──────────────────────────────────────────────────────────── */
+.scada-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  text-align: left;
+}
+
+.scada-table th {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-bottom: 1px solid #1c2635;
+}
+
+.scada-table td {
+  padding: 5px 8px;
+  border-bottom: 1px solid #141c28;
+  color: #cbd5e1;
+}
+
+.scada-mono-dim {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: #718298;
+}
+
+.scada-strong {
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* ── Severity Badges ──────────────────────────────────────────────────────── */
+.scada-sev-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  font-weight: 700;
+  border-radius: 2px;
+  letter-spacing: 0.05em;
+}
+
+.scada-sev-badge--info {
+  background: #0e2a4a;
+  border: 1px solid #1e40af;
+  color: #60a5fa;
+}
+
+.scada-sev-badge--warn {
+  background: #332008;
+  border: 1px solid #b45309;
+  color: #fbbf24;
+}
+
+.scada-sev-badge--crit {
+  background: #380d0d;
+  border: 1px solid #b91c1c;
+  color: #f87171;
+}
+
+.scada-sev-badge--ok {
+  background: #0a2916;
+  border: 1px solid #166534;
+  color: #4ade80;
+}

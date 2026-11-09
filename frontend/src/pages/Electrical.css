@@ -1,0 +1,55 @@
+/* Electrical Page — SCADA styling matching reference */
+
+.electrical-page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Top Row: 3 Gauges + Electrical Parameters Card */
+.electrical-top-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 260px;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.electrical-params-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mid Row: 3 Mini Trend Cards */
+.electrical-mid-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.mini-trend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-chart-wrap {
+  margin-top: 4px;
+}
+
+/* Bottom Row: Recent Events Table (left) + Alarm Limits (right) */
+.electrical-bottom-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 1200px) {
+  .electrical-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .electrical-mid-grid {
+    grid-template-columns: 1fr;
+  }
+  .electrical-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}

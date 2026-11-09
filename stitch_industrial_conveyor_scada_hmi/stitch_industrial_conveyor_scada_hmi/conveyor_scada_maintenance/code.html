@@ -1,0 +1,655 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-tint":"#3755c3","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","surface-container":"#e5eeff","inverse-primary":"#b8c4ff","surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#444653","on-tertiary":"#ffffff","on-primary-container":"#a8b8ff","on-error":"#ffffff","surface-dim":"#cbdbf5","error":"#ba1a1a","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#77c2ff","outline-variant":"#c4c5d5","secondary":"#565e74","secondary-container":"#dae2fd","on-primary-fixed":"#001453","on-primary":"#ffffff","primary":"#00288e","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-tertiary-fixed":"#001d31","on-background":"#0b1c30","on-secondary-fixed":"#131b2e","outline":"#757684","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","primary-fixed":"#dde1ff","tertiary-container":"#004f7a","background":"#f8f9ff","surface":"#f8f9ff","primary-container":"#1e40af","surface-bright":"#f8f9ff","on-surface":"#0b1c30","surface-container-lowest":"#ffffff","tertiary":"#003757","inverse-surface":"#213145","on-secondary":"#ffffff","primary-fixed-dim":"#b8c4ff","on-tertiary-fixed-variant":"#004b73","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#173bab"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","space-lg":"1rem","space-xl":"1.5rem","space-xs":"0.25rem","space-sm":"0.375rem","space-md":"0.75rem",gutter:"0.75rem"},fontFamily:{"headline-lg":["IBM Plex Mono"],"label-lg":["IBM Plex Mono"],"label-sm":["IBM Plex Mono"],"headline-md":["IBM Plex Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"label-md":["IBM Plex Mono"],"headline-sm":["IBM Plex Mono"],"metric-display":["IBM Plex Mono"]},fontSize:{"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["13px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-sm":["9px",{lineHeight:"12px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["11px",{lineHeight:"16px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"metric-display":["24px",{lineHeight:"28px",letterSpacing:"-0.03em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-50 px-margin flex items-center justify-between shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><div class="flex items-center gap-space-md"><img alt="Conveyor SCADA Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZBtUjcHjGVR0BdoBAzb9o9_lGqUtxZbkcPOimLv7Ftd8Y33Y4iU7YUYqWaskntqerEsyzIhxtvus3z_3oCimNJnNIjzGSXulm1lKBejFskEjKrvtXU6kJOXAwLv7L5L3ZmLqb05qfFSAb5IPc73DqIB4DdZORgRCgkeQdU2YSqm2tHWSp-T3BZprGzeyzUqzm5lwt3AZlczB7syGMJLSW-W4GqQFeHIVUf7U_ZcL9b7b1utGcGYYyET0"><div class="h-8 w-[1px] bg-outline-variant"></div><div><div class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs leading-none tracking-tight">CONVEYOR MONITORING SYSTEM</div><div class="font-label-sm text-label-sm text-secondary tracking-widest leading-none mt-1">PROTOTYPE CV-01 • SMART • SAFE • RELIABLE</div></div><div class="ml-space-xs flex items-center gap-1.5 px-2 py-0.5 bg-surface-container-low border border-outline-variant rounded"><span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span><span class="font-label-sm text-label-sm font-bold text-on-surface tracking-wider">RUNNING</span></div></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container-low px-space-md py-1 border border-outline-variant rounded"><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">BACKEND</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">OK</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">MQTT</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">CONN</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">ESP32</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">ONLINE</span></div><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-secondary">RPI4 EDGE</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">42°C</span></div></div><div class="flex items-center gap-space-md"><div class="text-right"><div class="font-label-md text-label-md text-on-surface font-semibold tracking-wider">14:23:56 UTC</div><div class="font-label-sm text-label-sm text-tertiary-container font-bold uppercase tracking-wider">[SIMULATION / DEV]</div></div><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block text-left"><div class="font-label-sm text-label-sm text-on-surface font-bold leading-tight">ENG. K. VANCE</div><div class="font-label-sm text-label-sm text-secondary leading-tight">ROLE: [ADMIN]</div></div><button class="p-1 text-secondary hover:text-error hover:bg-error-container/20 rounded transition-colors ml-1" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-sm"><div class="px-space-sm py-1.5 text-secondary font-label-sm text-label-sm font-bold tracking-widest uppercase border-b border-outline-variant mb-1">MAIN NAVIGATION</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-bold border border-primary"><a aria-current="page" class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors bg-primary-container text-on-primary font-bold border border-primary" data-path="overview" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">view_quilt</span><span class="font-label-md text-label-md">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vibration" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">vibration</span><span class="font-label-md text-label-md">Vibration</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="load" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">weight</span><span class="font-label-md text-label-md">Load</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="belt-speed" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">speed</span><span class="font-label-md text-label-md">Belt Speed</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="electrical-voltage" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">bolt</span><span class="font-label-md text-label-md">Electrical / Voltage</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera-inspection" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">videocam</span><span class="font-label-md text-label-md">Camera Inspection</span></div><span class="px-1 py-0.2 bg-[#ef4444] text-white font-label-sm text-label-sm font-bold rounded">LIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-twin" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">deployed_code</span><span class="font-label-md text-label-md">Digital Twin</span></div><span class="px-1 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">CAD</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="predictive-health" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-label-md text-label-md">Predictive Health</span></div><span class="px-1 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold rounded">ML</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-label-md text-label-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">build</span><span class="font-label-md text-label-md">Maintenance</span></div><span class="px-1.5 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">1 OPEN</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alerts" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">warning</span><span class="font-label-md text-label-md">Alerts</span></div><span class="px-1.5 py-0.2 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">3 ACTIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-label-md text-label-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-low font-label-sm text-label-sm flex flex-col gap-1 text-secondary"><div class="flex items-center justify-between"><span class="font-mono">FIRMWARE</span><span class="font-mono font-bold text-on-surface">v2.4.1-rc3</span></div><div class="flex items-center justify-between"><span class="font-mono">PLC LINK</span><span class="font-mono font-bold text-on-surface">ISO/CEMA STD</span></div><div class="flex items-center justify-between"><span class="font-mono">SAFETY</span><span class="font-mono font-bold text-[#10b981]">E-STOP READY</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-surface-container-lowest min-h-screen p-space-md border-l border-outline-variant"><div class="flex flex-col w-full gap-space-md">
+<!-- PAGE HEADER & BREADCRUMB TELEMETRY STRIP -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="p-1.5 bg-primary-container text-on-primary rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">build</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight flex items-center gap-2">
+          Subsystem Diagnostics &amp; Maintenance Ledger
+          <span class="font-label-sm text-label-sm px-1.5 py-0.5 bg-surface-container text-secondary rounded">PANEL 10 // ISO-10816-3</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary flex items-center gap-2">
+<span>MODULE: CV-01-MAINT</span>
+<span>•</span>
+<span>DISPATCH: PLC-DIRECT</span>
+<span>•</span>
+<span>TARGET LATENCY: &lt;100ms</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="hidden sm:flex items-center gap-2 bg-surface-container px-2.5 py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary uppercase">CALIBRATION LOCK:</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface font-mono">ENG-AUTH-LVL2</span>
+</div>
+<button class="flex items-center gap-1.5 bg-primary text-on-primary px-space-md py-1 rounded hover:bg-primary-container transition-colors shadow-sm cursor-pointer" onclick="document.getElementById('createWoModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span class="font-label-md text-label-md tracking-wider uppercase font-semibold">+ Create Work Order</span>
+</button>
+</div>
+</div>
+<!-- SECTION 1: TOP MAINTENANCE STATUS OVERVIEW MATRIX -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-sm">
+<!-- SYSTEM STATE CARD -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">MAINTENANCE STATE</span>
+<span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span>
+</div>
+<div class="my-1">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-surface-container-high rounded text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          OPERATIONAL
+        </div>
+<div class="font-label-sm text-label-sm text-secondary mt-1 tracking-tight uppercase">PREVENTATIVE MONITORING</div>
+</div>
+<div class="pt-1.5 bg-surface-container-low -mx-space-sm -mb-space-sm px-space-sm py-1 flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<span>INTERLOCK STATUS</span>
+<span class="font-bold text-on-surface">NOMINAL</span>
+</div>
+</div>
+<!-- RUNTIME CARD -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">CUMULATIVE RUNTIME</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+</div>
+<div class="my-1">
+<div class="font-metric-display text-metric-display text-on-surface font-bold tracking-tight">1,428.5 <span class="font-label-sm text-label-sm font-normal text-secondary uppercase">hrs</span></div>
+<div class="font-label-sm text-label-sm text-secondary">SINCE MAJOR OVERHAUL (T-0)</div>
+</div>
+<div class="pt-1.5 bg-surface-container-low -mx-space-sm -mb-space-sm px-space-sm py-1 flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<span>TOTAL LIFETIME</span>
+<span class="font-bold text-on-surface font-mono">14,892 hrs</span>
+</div>
+</div>
+<!-- NEXT INSPECTION COUNTDOWN -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">NEXT SCHEDULED SVC</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-bold px-1.5 py-0.2 bg-tertiary-fixed rounded">TARGET 1,500H</span>
+</div>
+<div class="my-1">
+<div class="flex items-baseline gap-1">
+<span class="font-metric-display text-metric-display text-[#d97706] font-bold tracking-tight">71.5</span>
+<span class="font-label-sm text-label-sm font-bold text-[#d97706] uppercase">hrs rem.</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface truncate">Drive Bearing Grease Replenishment</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-[#d97706] h-full rounded-full" style="width: 95.2%;"></div>
+</div>
+</div>
+<!-- WORK ORDERS COUNT -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">WORK ORDERS QUEUE</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-bold px-1.5 rounded">3 TOTAL</span>
+</div>
+<div class="my-1 flex items-center gap-space-xs">
+<div class="flex-1 bg-surface-container-low p-1 rounded text-center">
+<div class="font-label-sm text-label-sm text-[#dc2626] font-bold">1</div>
+<div class="font-label-sm text-label-sm text-secondary">HIGH</div>
+</div>
+<div class="flex-1 bg-surface-container-low p-1 rounded text-center">
+<div class="font-label-sm text-label-sm text-[#d97706] font-bold">1</div>
+<div class="font-label-sm text-label-sm text-secondary">MED</div>
+</div>
+<div class="flex-1 bg-surface-container-low p-1 rounded text-center">
+<div class="font-label-sm text-label-sm text-primary font-bold">1</div>
+<div class="font-label-sm text-label-sm text-secondary">ROUTINE</div>
+</div>
+</div>
+<div class="pt-1.5 bg-surface-container-low -mx-space-sm -mb-space-sm px-space-sm py-1 flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<span>ACTION STAGE</span>
+<span class="font-bold text-on-surface">1 IN PROGRESS</span>
+</div>
+</div>
+<!-- RELIABILITY METRICS (MTBF / MTTR) -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">RELIABILITY INDICES</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">query_stats</span>
+</div>
+<div class="my-1 grid grid-cols-2 gap-2">
+<div>
+<div class="font-label-sm text-label-sm text-secondary">MTBF</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">680 <span class="font-label-sm text-label-sm font-normal text-secondary">h</span></div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-secondary">MTTR</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">1.4 <span class="font-label-sm text-label-sm font-normal text-secondary">h</span></div>
+</div>
+</div>
+<div class="pt-1.5 bg-surface-container-low -mx-space-sm -mb-space-sm px-space-sm py-1 flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<span>AVAILABILITY</span>
+<span class="font-bold text-[#10b981] font-mono">99.79%</span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: ACTIVE MAINTENANCE WORK ORDERS & RECOMMENDATION PIPELINE -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">assignment_turned_in</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider">ACTIVE WORK ORDERS &amp; TELEMETRY RECOMMENDATIONS</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">ISO-55000 ASSET LIFECYCLE DISPATCH</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-sm">
+<!-- WORK ORDER 1: HIGH PRIORITY (IN PROGRESS) -->
+<div class="bg-surface-container-lowest rounded shadow-sm flex flex-col justify-between overflow-hidden">
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 bg-[#fee2e2] text-[#dc2626] font-label-sm text-label-sm font-bold rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#dc2626]"></span> HIGH PRIORITY
+            </span>
+<span class="font-label-md text-label-md font-mono font-bold text-on-surface">#WO-2025-084</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">2025-02-28 09:15 UTC</span>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Drive End Bearing Inspection &amp; Re-greasing</div>
+<div class="font-label-sm text-label-sm text-secondary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-[#d97706]">sensors</span>
+              Triggered by: <span class="font-semibold text-on-surface">MPU6050 Z-axis harmonic elevation</span>
+</div>
+</div>
+<!-- TELEMETRY EVIDENCE WELL -->
+<div class="bg-surface-container-low p-2 rounded flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary uppercase">SENSOR EVIDENCE:</span>
+<span class="font-mono text-[#dc2626] font-bold">3.42 mm/s RMS (TH: 4.50)</span>
+</div>
+<!-- Sparkline visualization SVG -->
+<div class="h-8 w-full">
+<svg class="w-full h-full text-secondary" preserveAspectRatio="none" viewBox="0 0 200 30">
+<path d="M0,20 L20,19 L40,22 L60,18 L80,17 L100,10 L120,6 L140,8 L160,5 L180,7 L200,4" fill="none" stroke="#d97706" stroke-width="1.5"></path>
+<line stroke="#ba1a1a" stroke-dasharray="3,3" stroke-width="1" x1="0" x2="200" y1="5" y2="5"></line>
+</svg>
+</div>
+<div class="font-label-sm text-label-sm text-secondary flex justify-between">
+<span>Dominant Freq: 1X (29.4 Hz)</span>
+<span>Sub-harmonic: 0.5X clean</span>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-bold text-on-surface">Recommended Action:</span> Acoustic grease replenishment on drive roller pillow block bearing; inspect shaft coupling alignment and bolt torque (24 Nm).
+          </div>
+<div class="flex items-center justify-between pt-1 bg-surface-container-high px-2 py-1 rounded font-label-sm text-label-sm">
+<span class="text-secondary">ASSIGNED TECH:</span>
+<span class="font-mono font-bold text-on-surface">M. Alvarez (Shift A)</span>
+</div>
+</div>
+<!-- STAGE CONTROLS WORKFLOW -->
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between gap-1.5">
+<button class="flex-1 py-1 px-1.5 bg-surface-container text-secondary font-label-sm text-label-sm rounded flex items-center justify-center gap-1 opacity-75 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[13px] text-[#10b981]">check_circle</span> Ack'd
+          </button>
+<button class="flex-1 py-1 px-1.5 bg-primary text-on-primary font-label-sm text-label-sm font-bold rounded flex items-center justify-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest animate-ping"></span> In Progress
+          </button>
+<button class="flex-1 py-1 px-1.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold rounded flex items-center justify-center gap-1 transition-colors cursor-pointer" onclick="markOrderComplete('WO-2025-084', this)">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Complete
+          </button>
+</div>
+</div>
+<!-- WORK ORDER 2: MEDIUM PRIORITY (ACKNOWLEDGED) -->
+<div class="bg-surface-container-lowest rounded shadow-sm flex flex-col justify-between overflow-hidden">
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 bg-[#fef3c7] text-[#b45309] font-label-sm text-label-sm font-bold rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#b45309]"></span> MEDIUM
+            </span>
+<span class="font-label-md text-label-md font-mono font-bold text-on-surface">#WO-2025-082</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">2025-02-27 16:40 UTC</span>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Optical Speed Encoder Disk Cleaning</div>
+<div class="font-label-sm text-label-sm text-secondary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-primary">speed</span>
+              Triggered by: <span class="font-semibold text-on-surface">Pulse interval jitter drift</span>
+</div>
+</div>
+<!-- TELEMETRY EVIDENCE WELL -->
+<div class="bg-surface-container-low p-2 rounded flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary uppercase">SENSOR EVIDENCE:</span>
+<span class="font-mono text-on-surface font-bold">GPIO 04 (370.2 ± 2.8 Hz)</span>
+</div>
+<!-- Pulse train jitter representation -->
+<div class="h-8 w-full flex items-center px-1">
+<svg class="w-full h-full text-secondary" preserveAspectRatio="none" viewBox="0 0 200 24">
+<path d="M0,20 L15,20 L15,4 L30,4 L30,20 L45,20 L45,4 L62,4 L62,20 L80,20 L80,4 L96,4 L96,20 L115,20 L115,4 L138,4 L138,20 L160,20 L160,4 L178,4 L178,20 L200,20" fill="none" stroke="#00288e" stroke-width="1.5"></path>
+</svg>
+</div>
+<div class="font-label-sm text-label-sm text-secondary flex justify-between">
+<span>Slotted disc: 20 PPR</span>
+<span>Deviation: ±0.75% limit breach</span>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-bold text-on-surface">Recommended Action:</span> Inspect optical slotted disk for iron ore dust accumulation; wipe optocoupler slot lens with dry microfiber and isopropyl alcohol.
+          </div>
+<div class="flex items-center justify-between pt-1 bg-surface-container-high px-2 py-1 rounded font-label-sm text-label-sm">
+<span class="text-secondary">ASSIGNED TECH:</span>
+<span class="font-mono font-bold text-on-surface">C. Vance (Lead)</span>
+</div>
+</div>
+<!-- STAGE CONTROLS WORKFLOW -->
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between gap-1.5">
+<button class="flex-1 py-1 px-1.5 bg-surface-container text-secondary font-label-sm text-label-sm rounded flex items-center justify-center gap-1 opacity-75 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[13px] text-[#10b981]">check_circle</span> Ack'd
+          </button>
+<button class="flex-1 py-1 px-1.5 bg-surface-container-lowest text-primary hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm font-bold rounded flex items-center justify-center gap-1 transition-colors cursor-pointer" onclick="startWorkOrder('WO-2025-082', this)">
+<span class="material-symbols-outlined text-[13px]">play_arrow</span> Start Work
+          </button>
+<button class="flex-1 py-1 px-1.5 bg-surface-container text-secondary font-label-sm text-label-sm rounded flex items-center justify-center gap-1 opacity-50 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Complete
+          </button>
+</div>
+</div>
+<!-- WORK ORDER 3: ROUTINE (SCHEDULED) -->
+<div class="bg-surface-container-lowest rounded shadow-sm flex flex-col justify-between overflow-hidden">
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 bg-[#d1fae5] text-[#065f46] font-label-sm text-label-sm font-bold rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span> ROUTINE
+            </span>
+<span class="font-label-md text-label-md font-mono font-bold text-on-surface">#WO-2025-079</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">2025-02-26 00:00 UTC</span>
+</div>
+<div class="p-space-sm flex flex-col gap-2">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Load Cell LC-01 Zero Tare Recalibration</div>
+<div class="font-label-sm text-label-sm text-secondary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-secondary">calendar_clock</span>
+              Triggered by: <span class="font-semibold text-on-surface">Scheduled 30-day calibration cycle</span>
+</div>
+</div>
+<!-- TELEMETRY EVIDENCE WELL -->
+<div class="bg-surface-container-low p-2 rounded flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary uppercase">SENSOR EVIDENCE:</span>
+<span class="font-mono text-on-surface font-bold">HX711 Drift: +0.14 kg (Static)</span>
+</div>
+<!-- Cal graph SVG -->
+<div class="h-8 w-full flex items-center px-1">
+<svg class="w-full h-full text-secondary" preserveAspectRatio="none" viewBox="0 0 200 24">
+<line stroke="#757684" stroke-dasharray="2,2" stroke-width="1" x1="0" x2="200" y1="12" y2="12"></line>
+<path d="M0,12 L50,12 L70,11 L120,13 L160,10 L200,9" fill="none" stroke="#10b981" stroke-width="1.5"></path>
+</svg>
+</div>
+<div class="font-label-sm text-label-sm text-secondary flex justify-between">
+<span>Tare Delta: 0.14% FS</span>
+<span>ADC Gain: 128 (Channel A)</span>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-bold text-on-surface">Recommended Action:</span> Empty belt 2-point tare verification with standard 10.00 kg calibrated test mass; update EEPROM calibration factor `CAL_K_01`.
+          </div>
+<div class="flex items-center justify-between pt-1 bg-surface-container-high px-2 py-1 rounded font-label-sm text-label-sm">
+<span class="text-secondary">ASSIGNED TECH:</span>
+<span class="font-mono font-bold text-on-surface">Pending Dispatch (Shift B)</span>
+</div>
+</div>
+<!-- STAGE CONTROLS WORKFLOW -->
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between gap-1.5">
+<button class="flex-1 py-1 px-1.5 bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm font-bold rounded flex items-center justify-center gap-1 transition-colors cursor-pointer" onclick="acknowledgeOrder('WO-2025-079', this)">
+<span class="material-symbols-outlined text-[13px]">done</span> Acknowledge
+          </button>
+<button class="flex-1 py-1 px-1.5 bg-surface-container text-secondary font-label-sm text-label-sm rounded flex items-center justify-center gap-1 opacity-50 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[13px]">play_arrow</span> Start
+          </button>
+<button class="flex-1 py-1 px-1.5 bg-surface-container text-secondary font-label-sm text-label-sm rounded flex items-center justify-center gap-1 opacity-50 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[13px]">done_all</span> Complete
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: DETAILED COMPONENT MAINTENANCE SCHEDULE TABLE -->
+<div class="bg-surface-container-lowest rounded shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">table_chart</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface uppercase tracking-wider">CONVEYOR SUBSYSTEM PREVENTIVE SCHEDULE MATRIX</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary">VIEW MODE:</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high font-mono px-2 py-0.5 rounded text-on-surface font-semibold">INTERVALS // CEMA STD</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2 px-3 font-semibold">COMPONENT</th>
+<th class="py-2 px-3 font-semibold">SUB-ASSEMBLY</th>
+<th class="py-2 px-3 font-semibold">LAST SERVICED</th>
+<th class="py-2 px-3 font-semibold text-right">RUNTIME SINCE</th>
+<th class="py-2 px-3 font-semibold text-right">SERVICE INTERVAL</th>
+<th class="py-2 px-3 font-semibold text-right">NEXT DUE</th>
+<th class="py-2 px-3 font-semibold text-center">HEALTH STATUS</th>
+<th class="py-2 px-3 font-semibold text-center">ACTION</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-mono">
+<!-- ROW 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 font-bold text-on-surface font-mono">Conveyor Belt Fabric (EP-200)</td>
+<td class="py-2 px-3 text-secondary font-body-sm">Full Loop Carrier</td>
+<td class="py-2 px-3 text-secondary">42 days ago</td>
+<td class="py-2 px-3 text-right text-on-surface">428 hrs</td>
+<td class="py-2 px-3 text-right text-secondary">1,000 hrs</td>
+<td class="py-2 px-3 text-right font-bold text-[#10b981]">572 hrs</td>
+<td class="py-2 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#d1fae5] text-[#065f46] font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span> NORMAL
+              </span>
+</td>
+<td class="py-2 px-3 text-center">
+<button class="px-2 py-0.5 bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-sm text-label-sm font-semibold transition-colors cursor-pointer">LOG VULC</button>
+</td>
+</tr>
+<!-- ROW 2 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 font-bold text-on-surface font-mono">Drive Roller &amp; Bearing</td>
+<td class="py-2 px-3 text-secondary font-body-sm">Drive End Pillow Block (UCP205)</td>
+<td class="py-2 px-3 text-secondary">18 days ago</td>
+<td class="py-2 px-3 text-right text-on-surface">180 hrs</td>
+<td class="py-2 px-3 text-right text-secondary">250 hrs</td>
+<td class="py-2 px-3 text-right font-bold text-[#d97706]">70 hrs</td>
+<td class="py-2 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#fef3c7] text-[#b45309] font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#d97706]"></span> ATTENTION
+              </span>
+</td>
+<td class="py-2 px-3 text-center">
+<button class="px-2 py-0.5 bg-[#fef3c7] hover:bg-[#fde68a] rounded text-[#92400e] font-label-sm text-label-sm font-semibold transition-colors cursor-pointer">DISPATCH</button>
+</td>
+</tr>
+<!-- ROW 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 font-bold text-on-surface font-mono">Tail Idler Roller</td>
+<td class="py-2 px-3 text-secondary font-body-sm">Tension Take-up Assembly</td>
+<td class="py-2 px-3 text-secondary">42 days ago</td>
+<td class="py-2 px-3 text-right text-on-surface">428 hrs</td>
+<td class="py-2 px-3 text-right text-secondary">500 hrs</td>
+<td class="py-2 px-3 text-right font-bold text-[#10b981]">72 hrs</td>
+<td class="py-2 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#d1fae5] text-[#065f46] font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span> NORMAL
+              </span>
+</td>
+<td class="py-2 px-3 text-center">
+<button class="px-2 py-0.5 bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-sm text-label-sm font-semibold transition-colors cursor-pointer">CHECK BOLT</button>
+</td>
+</tr>
+<!-- ROW 4 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 font-bold text-on-surface font-mono">Dual Load Cells (HX711)</td>
+<td class="py-2 px-3 text-secondary font-body-sm">Weigh Frame Bed Bedplate</td>
+<td class="py-2 px-3 text-secondary">28 days ago</td>
+<td class="py-2 px-3 text-right text-on-surface">280 hrs</td>
+<td class="py-2 px-3 text-right text-secondary">720 hrs</td>
+<td class="py-2 px-3 text-right font-bold text-[#10b981]">440 hrs</td>
+<td class="py-2 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#d1fae5] text-[#065f46] font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span> NORMAL
+              </span>
+</td>
+<td class="py-2 px-3 text-center">
+<button class="px-2 py-0.5 bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-sm text-label-sm font-semibold transition-colors cursor-pointer">CALIBRATE</button>
+</td>
+</tr>
+<!-- ROW 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 font-bold text-on-surface font-mono">12V DC Geared Motor</td>
+<td class="py-2 px-3 text-secondary font-body-sm">Drive Coupling &amp; Planetary Brushes</td>
+<td class="py-2 px-3 text-secondary">90 days ago</td>
+<td class="py-2 px-3 text-right text-on-surface">900 hrs</td>
+<td class="py-2 px-3 text-right text-secondary">1,500 hrs</td>
+<td class="py-2 px-3 text-right font-bold text-[#10b981]">600 hrs</td>
+<td class="py-2 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#d1fae5] text-[#065f46] font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span> NORMAL
+              </span>
+</td>
+<td class="py-2 px-3 text-center">
+<button class="px-2 py-0.5 bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-sm text-label-sm font-semibold transition-colors cursor-pointer">BRUSH CK</button>
+</td>
+</tr>
+<!-- ROW 6 -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 font-bold text-on-surface font-mono">MPU6050 Sensor Node</td>
+<td class="py-2 px-3 text-secondary font-body-sm">Drive Housing Tri-Axial Mount</td>
+<td class="py-2 px-3 text-secondary">60 days ago</td>
+<td class="py-2 px-3 text-right text-on-surface">600 hrs</td>
+<td class="py-2 px-3 text-right text-secondary">2,000 hrs</td>
+<td class="py-2 px-3 text-right font-bold text-[#10b981]">1,400 hrs</td>
+<td class="py-2 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#d1fae5] text-[#065f46] font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span> NORMAL
+              </span>
+</td>
+<td class="py-2 px-3 text-center">
+<button class="px-2 py-0.5 bg-surface-container hover:bg-surface-container-high rounded text-primary font-label-sm text-label-sm font-semibold transition-colors cursor-pointer">SELF-TEST</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-xs bg-surface-container-low border-t border-surface-container flex items-center justify-between text-secondary font-label-sm text-label-sm px-3">
+<span>6 / 6 MONITORED ASSETS COMPLIANT WITH DIN 22101</span>
+<span class="font-mono">NEXT SYSTEM AUDIT: 2025-03-15</span>
+</div>
+</div>
+<!-- SECTION 4: HISTORICAL SERVICE RECORDS & AUDIT TRAIL LOG -->
+<div class="bg-surface-container-lowest rounded shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">history</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface uppercase tracking-wider">HISTORICAL SERVICE LEDGER &amp; PART REPLACEMENTS</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative">
+<input class="pl-7 pr-2 py-1 bg-surface-container-lowest rounded font-mono text-label-sm text-on-surface w-48 shadow-inner outline-none focus:bg-surface-container-high" placeholder="Filter component or tech..." type="text">
+<span class="material-symbols-outlined text-[14px] text-secondary absolute left-2 top-1.5">search</span>
+</div>
+<button class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded text-secondary hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors">
+<span class="material-symbols-outlined text-[14px]">file_download</span> CSV Export
+        </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2 px-3 font-semibold">DATE &amp; TIME (UTC)</th>
+<th class="py-2 px-3 font-semibold">ORDER ID</th>
+<th class="py-2 px-3 font-semibold">SUBSYSTEM</th>
+<th class="py-2 px-3 font-semibold">INTERVENTION DETAILS</th>
+<th class="py-2 px-3 font-semibold">PARTS REPLACED</th>
+<th class="py-2 px-3 font-semibold">TECHNICIAN</th>
+<th class="py-2 px-3 font-semibold text-right">DOWNTIME</th>
+<th class="py-2 px-3 font-semibold text-center">VERIFICATION</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-mono text-label-md">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 text-secondary">2025-02-10 13:40</td>
+<td class="py-2 px-3 font-bold text-primary">#WO-2025-071</td>
+<td class="py-2 px-3 text-on-surface font-semibold font-body-sm">Drive Tensioner</td>
+<td class="py-2 px-3 text-on-surface-variant font-body-sm">Take-up screw tension retorqued to 350 N; belt tracking realigned.</td>
+<td class="py-2 px-3 text-secondary">M12 Locknut (x2)</td>
+<td class="py-2 px-3 text-on-surface font-bold">C. Vance</td>
+<td class="py-2 px-3 text-right font-bold text-[#10b981]">0.0 h <span class="font-label-sm text-label-sm text-secondary font-normal">(Shift Break)</span></td>
+<td class="py-2 px-3 text-center">
+<span class="font-label-sm text-label-sm text-[#065f46] bg-[#d1fae5] px-1.5 py-0.2 rounded font-bold">SIGNED [QA]</span>
+</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 text-secondary">2025-01-28 08:15</td>
+<td class="py-2 px-3 font-bold text-primary">#WO-2025-064</td>
+<td class="py-2 px-3 text-on-surface font-semibold font-body-sm">Dual Load Cells</td>
+<td class="py-2 px-3 text-on-surface-variant font-body-sm">Routine monthly span and zero recalibration using 10.0kg ISO test mass.</td>
+<td class="py-2 px-3 text-secondary">None (Cal only)</td>
+<td class="py-2 px-3 text-on-surface font-bold">M. Alvarez</td>
+<td class="py-2 px-3 text-right font-bold text-[#10b981]">0.0 h <span class="font-label-sm text-label-sm text-secondary font-normal">(Online)</span></td>
+<td class="py-2 px-3 text-center">
+<span class="font-label-sm text-label-sm text-[#065f46] bg-[#d1fae5] px-1.5 py-0.2 rounded font-bold">SIGNED [QA]</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 text-secondary">2025-01-12 11:20</td>
+<td class="py-2 px-3 font-bold text-primary">#WO-2025-055</td>
+<td class="py-2 px-3 text-on-surface font-semibold font-body-sm">12V DC Motor</td>
+<td class="py-2 px-3 text-on-surface-variant font-body-sm">Drive commutator brush carbon inspection and housing blowout.</td>
+<td class="py-2 px-3 text-secondary">Carbon Brushes (Pair)</td>
+<td class="py-2 px-3 text-on-surface font-bold">E. Thorne</td>
+<td class="py-2 px-3 text-right font-bold text-[#d97706]">0.4 h <span class="font-label-sm text-label-sm text-secondary font-normal">(Maintenance Lock)</span></td>
+<td class="py-2 px-3 text-center">
+<span class="font-label-sm text-label-sm text-[#065f46] bg-[#d1fae5] px-1.5 py-0.2 rounded font-bold">SIGNED [QA]</span>
+</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-2 px-3 text-secondary">2024-12-19 16:05</td>
+<td class="py-2 px-3 font-bold text-primary">#WO-2024-198</td>
+<td class="py-2 px-3 text-on-surface font-semibold font-body-sm">CV Belt Fabric</td>
+<td class="py-2 px-3 text-on-surface-variant font-body-sm">Cold vulcanization repair of 14mm edge gouge near splice joint.</td>
+<td class="py-2 px-3 text-secondary">EP Rubber Patch Kit</td>
+<td class="py-2 px-3 text-on-surface font-bold">C. Vance</td>
+<td class="py-2 px-3 text-right font-bold text-[#10b981]">0.0 h <span class="font-label-sm text-label-sm text-secondary font-normal">(Shift Break)</span></td>
+<td class="py-2 px-3 text-center">
+<span class="font-label-sm text-label-sm text-[#065f46] bg-[#d1fae5] px-1.5 py-0.2 rounded font-bold">SIGNED [QA]</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- CREATE WORK ORDER MODAL / OVERLAY PANEL -->
+<div class="hidden fixed inset-0 bg-inverse-surface/40 backdrop-blur-[2px] z-50 flex items-center justify-center p-4" id="createWoModal">
+<div class="bg-surface-container-lowest rounded shadow-xl w-full max-w-xl overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-150">
+<div class="p-space-md bg-surface-container flex items-center justify-between border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment_add</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Create New Work Order</span>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded transition-colors" onclick="document.getElementById('createWoModal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="p-space-md flex flex-col gap-space-sm" onsubmit="handleCreateWo(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase font-bold mb-1">Target Component</label>
+<select class="w-full bg-surface-container-low px-2.5 py-1.5 rounded font-mono text-label-md text-on-surface focus:outline-none focus:bg-surface-container" required="">
+<option value="DRIVE_BEARING">Drive Roller Pillow Block Bearing</option>
+<option value="TAIL_IDLER">Tail Idler Roller / Take-Up</option>
+<option value="MOTOR_12V">12V DC Planetary Geared Motor</option>
+<option value="BELT_FABRIC">EP-200 Carrier Belt Fabric</option>
+<option value="LOAD_CELL">Dual Load Cell (HX711) Assembly</option>
+<option value="ENCODER">Optical Speed Encoder Disk</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase font-bold mb-1">Priority Level</label>
+<select class="w-full bg-surface-container-low px-2.5 py-1.5 rounded font-mono text-label-md text-on-surface focus:outline-none focus:bg-surface-container" required="">
+<option value="HIGH">HIGH (Immediate Attention)</option>
+<option selected="" value="MEDIUM">MEDIUM (Next Shift Interlock)</option>
+<option value="ROUTINE">ROUTINE (Scheduled Interval)</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase font-bold mb-1">Issue Classification</label>
+<select class="w-full bg-surface-container-low px-2.5 py-1.5 rounded font-mono text-label-md text-on-surface focus:outline-none focus:bg-surface-container" required="">
+<option value="VIB_ANOMALY">Vibration / Harmonic Breach</option>
+<option value="OPTICAL_JITTER">Optical / Pulse Speed Jitter</option>
+<option value="WEIGH_DRIFT">Tare Drift / Calibration Zero</option>
+<option value="THERMAL_OVERTEMP">Thermal / Bearing Friction</option>
+<option value="MECHANICAL_WEAR">Belt Mechanical Lacing / Gouge</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase font-bold mb-1">Telemetry Sensor Link</label>
+<input class="w-full bg-surface-container-low px-2.5 py-1.5 rounded font-mono text-label-md text-on-surface focus:outline-none focus:bg-surface-container" placeholder="e.g. MPU6050_AXIS_Z or GPIO_04" type="text" value="MPU6050_AXIS_Z">
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase font-bold mb-1">Work Description &amp; Scope</label>
+<textarea class="w-full bg-surface-container-low p-2 rounded font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container" placeholder="Provide step-by-step diagnostic or lubrication requirement..." required="" rows="3">Acoustic grease replenishment and alignment inspection on drive bearing pillow block.</textarea>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-mono">AUDIT TRAIL: USER #ENG-4820</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 bg-surface-container rounded text-secondary hover:text-on-surface font-label-sm text-label-sm uppercase font-bold" onclick="document.getElementById('createWoModal').classList.add('hidden')" type="button">
+              Cancel
+            </button>
+<button class="px-4 py-1.5 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase font-bold hover:bg-primary-container shadow-sm transition-colors" type="submit">
+              Dispatch Work Order
+            </button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- INTERACTION LOGIC -->
+<script>
+    function acknowledgeOrder(woId, btn) {
+      btn.disabled = true;
+      btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'hover:bg-primary', 'cursor-pointer');
+      btn.classList.add('bg-surface-container', 'text-secondary', 'opacity-75', 'cursor-not-allowed');
+      btn.innerHTML = '<span class="material-symbols-outlined text-[13px] text-[#10b981]">check_circle</span> Ack\'d';
+      
+      const parent = btn.parentElement;
+      const startBtn = parent.children[1];
+      if (startBtn) {
+        startBtn.disabled = false;
+        startBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        startBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'hover:bg-primary', 'hover:text-on-primary', 'cursor-pointer');
+        startBtn.setAttribute('onclick', `startWorkOrder('${woId}', this)`);
+      }
+    }
+
+    function startWorkOrder(woId, btn) {
+      btn.disabled = true;
+      btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'cursor-pointer');
+      btn.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+      btn.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest animate-ping"></span> In Progress';
+      
+      const parent = btn.parentElement;
+      const completeBtn = parent.children[2];
+      if (completeBtn) {
+        completeBtn.disabled = false;
+        completeBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        completeBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'hover:bg-surface-container', 'cursor-pointer');
+        completeBtn.setAttribute('onclick', `markOrderComplete('${woId}', this)`);
+      }
+    }
+
+    function markOrderComplete(woId, btn) {
+      const card = btn.closest('.bg-surface-container-lowest');
+      if (card) {
+        card.style.opacity = '0.5';
+        card.style.pointerEvents = 'none';
+        btn.innerHTML = '<span class="material-symbols-outlined text-[13px] text-[#10b981]">task_alt</span> Resolved';
+      }
+    }
+
+    function handleCreateWo(e) {
+      e.preventDefault();
+      document.getElementById('createWoModal').classList.add('hidden');
+    }
+  </script>
+</div></main></div></body></html>

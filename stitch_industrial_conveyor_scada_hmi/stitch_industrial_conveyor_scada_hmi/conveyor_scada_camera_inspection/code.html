@@ -1,0 +1,493 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-tint":"#3755c3","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","surface-container":"#e5eeff","inverse-primary":"#b8c4ff","surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#444653","on-tertiary":"#ffffff","on-primary-container":"#a8b8ff","on-error":"#ffffff","surface-dim":"#cbdbf5","error":"#ba1a1a","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#77c2ff","outline-variant":"#c4c5d5","secondary":"#565e74","secondary-container":"#dae2fd","on-primary-fixed":"#001453","on-primary":"#ffffff","primary":"#00288e","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-tertiary-fixed":"#001d31","on-background":"#0b1c30","on-secondary-fixed":"#131b2e","outline":"#757684","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","primary-fixed":"#dde1ff","tertiary-container":"#004f7a","background":"#f8f9ff","surface":"#f8f9ff","primary-container":"#1e40af","surface-bright":"#f8f9ff","on-surface":"#0b1c30","surface-container-lowest":"#ffffff","tertiary":"#003757","inverse-surface":"#213145","on-secondary":"#ffffff","primary-fixed-dim":"#b8c4ff","on-tertiary-fixed-variant":"#004b73","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#173bab"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","space-lg":"1rem","space-xl":"1.5rem","space-xs":"0.25rem","space-sm":"0.375rem","space-md":"0.75rem",gutter:"0.75rem"},fontFamily:{"headline-lg":["IBM Plex Mono"],"label-lg":["IBM Plex Mono"],"label-sm":["IBM Plex Mono"],"headline-md":["IBM Plex Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"label-md":["IBM Plex Mono"],"headline-sm":["IBM Plex Mono"],"metric-display":["IBM Plex Mono"]},fontSize:{"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["13px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-sm":["9px",{lineHeight:"12px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["11px",{lineHeight:"16px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"metric-display":["24px",{lineHeight:"28px",letterSpacing:"-0.03em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-50 px-margin flex items-center justify-between shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><div class="flex items-center gap-space-md"><img alt="Conveyor SCADA Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZBtUjcHjGVR0BdoBAzb9o9_lGqUtxZbkcPOimLv7Ftd8Y33Y4iU7YUYqWaskntqerEsyzIhxtvus3z_3oCimNJnNIjzGSXulm1lKBejFskEjKrvtXU6kJOXAwLv7L5L3ZmLqb05qfFSAb5IPc73DqIB4DdZORgRCgkeQdU2YSqm2tHWSp-T3BZprGzeyzUqzm5lwt3AZlczB7syGMJLSW-W4GqQFeHIVUf7U_ZcL9b7b1utGcGYYyET0"><div class="h-8 w-[1px] bg-outline-variant"></div><div><div class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs leading-none tracking-tight">CONVEYOR MONITORING SYSTEM</div><div class="font-label-sm text-label-sm text-secondary tracking-widest leading-none mt-1">PROTOTYPE CV-01 • SMART • SAFE • RELIABLE</div></div><div class="ml-space-xs flex items-center gap-1.5 px-2 py-0.5 bg-surface-container-low border border-outline-variant rounded"><span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span><span class="font-label-sm text-label-sm font-bold text-on-surface tracking-wider">RUNNING</span></div></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container-low px-space-md py-1 border border-outline-variant rounded"><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">BACKEND</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">OK</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">MQTT</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">CONN</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">ESP32</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">ONLINE</span></div><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-secondary">RPI4 EDGE</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">42°C</span></div></div><div class="flex items-center gap-space-md"><div class="text-right"><div class="font-label-md text-label-md text-on-surface font-semibold tracking-wider">14:23:56 UTC</div><div class="font-label-sm text-label-sm text-tertiary-container font-bold uppercase tracking-wider">[SIMULATION / DEV]</div></div><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block text-left"><div class="font-label-sm text-label-sm text-on-surface font-bold leading-tight">ENG. K. VANCE</div><div class="font-label-sm text-label-sm text-secondary leading-tight">ROLE: [ADMIN]</div></div><button class="p-1 text-secondary hover:text-error hover:bg-error-container/20 rounded transition-colors ml-1" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-sm"><div class="px-space-sm py-1.5 text-secondary font-label-sm text-label-sm font-bold tracking-widest uppercase border-b border-outline-variant mb-1">MAIN NAVIGATION</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-bold border border-primary"><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">view_quilt</span><span class="font-label-md text-label-md">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vibration" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">vibration</span><span class="font-label-md text-label-md">Vibration</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="load" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">weight</span><span class="font-label-md text-label-md">Load</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="belt-speed" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">speed</span><span class="font-label-md text-label-md">Belt Speed</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="electrical-voltage" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">bolt</span><span class="font-label-md text-label-md">Electrical / Voltage</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors bg-primary-container text-on-primary font-bold border border-primary" data-path="camera-inspection" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">videocam</span><span class="font-label-md text-label-md">Camera Inspection</span></div><span class="px-1 py-0.2 bg-[#ef4444] text-white font-label-sm text-label-sm font-bold rounded">LIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-twin" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">deployed_code</span><span class="font-label-md text-label-md">Digital Twin</span></div><span class="px-1 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">CAD</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="predictive-health" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-label-md text-label-md">Predictive Health</span></div><span class="px-1 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold rounded">ML</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-label-md text-label-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">build</span><span class="font-label-md text-label-md">Maintenance</span></div><span class="px-1.5 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">1 OPEN</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alerts" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">warning</span><span class="font-label-md text-label-md">Alerts</span></div><span class="px-1.5 py-0.2 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">3 ACTIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-label-md text-label-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-low font-label-sm text-label-sm flex flex-col gap-1 text-secondary"><div class="flex items-center justify-between"><span class="font-mono">FIRMWARE</span><span class="font-mono font-bold text-on-surface">v2.4.1-rc3</span></div><div class="flex items-center justify-between"><span class="font-mono">PLC LINK</span><span class="font-mono font-bold text-on-surface">ISO/CEMA STD</span></div><div class="flex items-center justify-between"><span class="font-mono">SAFETY</span><span class="font-mono font-bold text-[#10b981]">E-STOP READY</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-surface-container-lowest min-h-screen p-space-md border-l border-outline-variant"><div class="flex flex-col w-full gap-space-md">
+<!-- 1. TOP CONTROL & CAMERA STATUS HEADER -->
+<header class="bg-surface-container-low rounded-lg p-space-md shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-primary -ml-[14px]"></div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span>USB HD WEBCAM</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded">/dev/video0</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary tracking-wide">
+            1080p @ 30 FPS • V4L2 DRIVER • CAM-ID #01-A
+          </div>
+</div>
+</div>
+<div class="hidden sm:block h-8 w-px bg-outline-variant"></div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">ENGINE:</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.2 rounded font-bold">YOLOv8n-seg</span>
+<span class="font-label-sm text-label-sm text-secondary">[TFLite/ONNX Edge runtime]</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary flex items-center gap-2">
+<span>HOST: Raspberry Pi 4 Model B (4GB)</span>
+<span>•</span>
+<span class="text-primary font-bold">INFERENCE ACTIVE (41ms latency)</span>
+</div>
+</div>
+</div>
+<!-- Actions & Sliders -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="bg-surface-container-lowest px-space-md py-1 rounded flex items-center gap-space-sm shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">CONF THRESHOLD:</span>
+<input class="w-24 h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" id="confSlider" max="0.95" min="0.1" oninput="document.getElementById('confVal').innerText = this.value" step="0.05" type="range" value="0.65">
+<span class="font-label-sm text-label-sm font-bold text-primary w-8 text-right" id="confVal">0.65</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm px-3 py-2 rounded flex items-center gap-1.5 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>START INSPECTION</span>
+</button>
+<button class="bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm px-3 py-2 rounded flex items-center gap-1.5 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">stop</span>
+<span>STOP</span>
+</button>
+<button class="bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm px-3 py-2 rounded flex items-center gap-1.5 shadow-sm transition-colors" title="Save raw frame snapshot">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span>CAPTURE</span>
+</button>
+<button class="bg-surface-container hover:bg-error-container hover:text-on-error-container text-on-surface font-label-sm text-label-sm px-3 py-2 rounded flex items-center gap-1.5 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px] text-error">fiber_manual_record</span>
+<span>RECORD</span>
+</button>
+</div>
+</div>
+</header>
+<!-- 2. MAIN SPLIT: VIEWPORT + RIGHT SIDEBAR -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Optical Central Viewport (8 Cols on XL) -->
+<div class="xl:col-span-8 flex flex-col gap-space-sm">
+<!-- 16:9 Screen Enclosure -->
+<div class="relative w-full aspect-video bg-inverse-surface rounded-lg overflow-hidden shadow-md group select-none flex flex-col justify-between p-3">
+<!-- Synthetic Visual Surface Background / Conveyor Belt Texture -->
+<div class="absolute inset-0 bg-gradient-to-b from-[#111927] via-[#1a2333] to-[#0f172a] opacity-95"></div>
+<!-- Subtle Moving Grid Lines / Belt Grain Pattern -->
+<div class="absolute inset-0 bg-[radial-gradient(#3755c3_1px,transparent_1px)] [background-size:24px_24px] opacity-15"></div>
+<!-- Conveyor Belt Center Lines & Edge Guides SVG -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" preserveAspectRatio="none" viewBox="0 0 1000 562">
+<!-- Belt Rails / Structural Edge Guides -->
+<line stroke="#334155" stroke-dasharray="8 4" stroke-width="2" x1="0" x2="1000" y1="60" y2="60"></line>
+<line stroke="#334155" stroke-dasharray="8 4" stroke-width="2" x1="0" x2="1000" y1="500" y2="500"></line>
+<!-- Belt Center Tension Axis -->
+<line stroke="#1e293b" stroke-width="1.5" x1="0" x2="1000" y1="280" y2="280"></line>
+<!-- Crosshair Centering -->
+<circle cx="500" cy="281" fill="none" opacity="0.4" r="28" stroke="#3755c3" stroke-dasharray="3 3" stroke-width="1"></circle>
+<line opacity="0.6" stroke="#3755c3" stroke-width="1" x1="480" x2="520" y1="281" y2="281"></line>
+<line opacity="0.6" stroke="#3755c3" stroke-width="1" x1="500" x2="500" y1="261" y2="301"></line>
+<!-- DEFECT 1: Segmentation Polygon & Bounding Box - PUNCTURE [0.89] -->
+<g class="transition-transform duration-300">
+<!-- Polygon segmentation mask -->
+<polygon fill="#ef4444" fill-opacity="0.35" points="412,184 456,176 470,208 442,230 405,212" stroke="#ef4444" stroke-width="2"></polygon>
+<!-- Bounding Box -->
+<rect fill="none" height="66" stroke="#ef4444" stroke-dasharray="4 2" stroke-width="1.5" width="76" x="400" y="170"></rect>
+<!-- Label tag plate -->
+<rect fill="#dc2626" height="18" rx="2" width="112" x="400" y="152"></rect>
+<text fill="#ffffff" font-family="IBM Plex Mono" font-size="11" font-weight="600" x="406" y="165">Puncture [0.89]</text>
+<!-- Coordinate pointer -->
+<circle cx="438" cy="200" fill="#ffffff" r="3" stroke="#dc2626" stroke-width="1.5"></circle>
+</g>
+<!-- DEFECT 2: Segmentation Polygon & Bounding Box - IMPACT DAMAGE [0.78] -->
+<g class="transition-transform duration-300">
+<!-- Polygon segmentation mask -->
+<polygon fill="#f59e0b" fill-opacity="0.3" points="620,290 690,284 722,320 684,352 610,332 605,305" stroke="#f59e0b" stroke-width="2"></polygon>
+<!-- Bounding Box -->
+<rect fill="none" height="80" stroke="#f59e0b" stroke-dasharray="4 2" stroke-width="1.5" width="130" x="598" y="278"></rect>
+<!-- Label tag plate -->
+<rect fill="#d97706" height="18" rx="2" width="144" x="598" y="260"></rect>
+<text fill="#ffffff" font-family="IBM Plex Mono" font-size="11" font-weight="600" x="604" y="273">impact damage [0.78]</text>
+<!-- Area metrics -->
+<circle cx="660" cy="318" fill="#ffffff" r="3" stroke="#d97706" stroke-width="1.5"></circle>
+</g>
+<!-- Measurement Scale / Ruler along the top belt line -->
+<g opacity="0.7">
+<line stroke="#64748b" stroke-width="1" x1="200" x2="800" y1="72" y2="72"></line>
+<line stroke="#94a3b8" stroke-width="1.5" x1="200" x2="200" y1="68" y2="76"></line>
+<line stroke="#94a3b8" stroke-width="1" x1="350" x2="350" y1="70" y2="74"></line>
+<line stroke="#94a3b8" stroke-width="1.5" x1="500" x2="500" y1="68" y2="76"></line>
+<line stroke="#94a3b8" stroke-width="1" x1="650" x2="650" y1="70" y2="74"></line>
+<line stroke="#94a3b8" stroke-width="1.5" x1="800" x2="800" y1="68" y2="76"></line>
+<text fill="#94a3b8" font-family="IBM Plex Mono" font-size="9" text-anchor="middle" x="500" y="86">SPAN: 1,200 mm CARRIER WIDTH</text>
+</g>
+</svg>
+<!-- Top HUD Overlay Metadata -->
+<div class="relative z-10 flex items-center justify-between pointer-events-none">
+<div class="bg-inverse-surface/80 backdrop-blur px-2.5 py-1 rounded border-0 text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-bold tracking-wider">CAM-01: CV-BELT-TOP</span>
+<span class="text-secondary-fixed-dim">|</span>
+<span class="text-inverse-primary font-mono">2024-11-04 14:23:58.412</span>
+</div>
+<div class="bg-inverse-surface/80 backdrop-blur px-2.5 py-1 rounded text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-3">
+<div>TARGET: <span class="text-[#10b981] font-bold font-mono">TRACKING</span></div>
+<div class="text-secondary-fixed-dim">|</div>
+<div>TRAVEL: <span class="text-on-tertiary-container font-mono">L → R (1.85 m/s)</span></div>
+</div>
+</div>
+<!-- Center Alert Watermark Badge for Active Segment Alert -->
+<div class="relative z-10 self-center pointer-events-none my-auto">
+<div class="bg-inverse-surface/40 px-3 py-1.5 rounded-full flex items-center gap-2 text-inverse-on-surface text-label-sm font-label-sm backdrop-blur">
+<span class="material-symbols-outlined text-[16px] text-error">warning</span>
+<span>SEGMENT FAULT DETECTED: REGION D-04</span>
+</div>
+</div>
+<!-- Bottom Telemetry HUD Bar -->
+<div class="relative z-10 bg-inverse-surface/90 backdrop-blur-md rounded px-3 py-2 text-inverse-on-surface flex flex-wrap items-center justify-between text-label-sm font-label-sm gap-2 pointer-events-auto">
+<div class="flex items-center gap-4">
+<div>
+<span class="text-secondary-fixed-dim">FEED:</span>
+<span class="font-bold font-mono text-[#10b981] ml-1">24.2 FPS</span>
+</div>
+<div>
+<span class="text-secondary-fixed-dim">YOLO INFER:</span>
+<span class="font-bold font-mono text-inverse-primary ml-1">38.6 ms</span>
+</div>
+<div>
+<span class="text-secondary-fixed-dim">STREAM RES:</span>
+<span class="font-mono text-inverse-on-surface ml-1">1920 × 1080</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div>
+<span class="text-secondary-fixed-dim">COLOR SPACE:</span>
+<span class="font-mono text-inverse-on-surface ml-1">YUYV 4:2:2</span>
+</div>
+<div>
+<span class="text-secondary-fixed-dim">LIGHT LEVEL:</span>
+<span class="font-bold font-mono text-[#f59e0b] ml-1">420 LUX</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
+<span class="font-bold uppercase tracking-wider text-[#10b981]">MASKS ON</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Feed Controls Toolbar -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-wrap items-center justify-between text-label-sm font-label-sm gap-2">
+<div class="flex items-center gap-2">
+<span class="text-secondary font-semibold">VIEWPORT OVERLAYS:</span>
+<label class="flex items-center gap-1 cursor-pointer bg-surface-container-lowest px-2 py-1 rounded">
+<input checked="" class="accent-primary" type="checkbox">
+<span>Segmentation Masks</span>
+</label>
+<label class="flex items-center gap-1 cursor-pointer bg-surface-container-lowest px-2 py-1 rounded">
+<input checked="" class="accent-primary" type="checkbox">
+<span>Bounding Boxes</span>
+</label>
+<label class="flex items-center gap-1 cursor-pointer bg-surface-container-lowest px-2 py-1 rounded">
+<input checked="" class="accent-primary" type="checkbox">
+<span>Metric Grid Scale</span>
+</label>
+<label class="flex items-center gap-1 cursor-pointer bg-surface-container-lowest px-2 py-1 rounded">
+<input checked="" class="accent-primary" type="checkbox">
+<span>Velocity Vector</span>
+</label>
+</div>
+<div class="flex items-center gap-2">
+<button class="bg-surface-container-lowest hover:bg-surface-container px-2 py-1 rounded text-primary font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Calibrate Cam</span>
+</button>
+<button class="bg-surface-container-lowest hover:bg-surface-container px-2 py-1 rounded text-primary font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">fullscreen</span>
+<span>Fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Sidebar: YOLOv8n-seg Detection Classes & Telemetry (4 Cols on XL) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Surface Integrity Condition Box -->
+<div class="bg-surface-container-low p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-wider">DEFECT SEVERITY ASSESSMENT</span>
+<span class="font-label-sm text-label-sm font-bold bg-[#fef3c7] text-[#92400e] px-2 py-0.5 rounded">MODERATE RISK</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<div>
+<div class="font-label-sm text-label-sm text-secondary">SURFACE INTEGRITY</div>
+<div class="font-metric-display text-metric-display text-primary font-bold tracking-tight">92.4%</div>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-secondary">DAMAGE DENSITY</div>
+<div class="font-headline-sm text-headline-sm text-[#b45309]">14.8 mm² / m</div>
+</div>
+</div>
+<!-- Horizontal Progress Bar -->
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 92.4%"></div>
+<div class="bg-[#f59e0b] h-full" style="width: 5%"></div>
+<div class="bg-error h-full" style="width: 2.6%"></div>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded text-label-sm font-label-sm text-on-surface flex items-start gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-[#f59e0b] shrink-0 mt-0.5">info</span>
+<div>
+<span class="font-bold">STATUS:</span> Minor Puncture &amp; Impact Detected. Conveyor can safely operate; schedule visual inspection during next shift transition at 18:00 UTC.
+          </div>
+</div>
+</div>
+<!-- 8 Official YOLO Classes Live Matrix -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex-1 flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between pb-1">
+<div class="font-headline-sm text-headline-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">category</span>
+<span>YOLOv8n-seg CLASSES</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">8 REGISTERED</span>
+</div>
+<!-- Class List Items Grid -->
+<div class="flex flex-col gap-1.5">
+<!-- 1. Hole -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#ef4444]"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Hole</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">[cls 0]</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="text-secondary">0 active</span>
+<span class="w-2 h-2 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+<!-- 2. Human -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#f97316]"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Human</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">[cls 1]</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="text-secondary">0 active</span>
+<span class="w-2 h-2 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+<!-- 3. Other Objects -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#a855f7]"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Other Objects</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">[cls 2]</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="text-secondary">0 active</span>
+<span class="w-2 h-2 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+<!-- 4. Puncture (ACTIVE) -->
+<div class="flex items-center justify-between p-2 rounded bg-[#fee2e2] text-[#991b1b] shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#dc2626] animate-pulse"></span>
+<span class="font-label-md text-label-md font-bold">Puncture</span>
+<span class="font-label-sm text-label-sm font-mono">[cls 3]</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="bg-[#fca5a5] text-[#7f1d1d] font-bold px-1.5 py-0.5 rounded">1 ACTIVE</span>
+<span class="font-mono font-bold">89% CONF</span>
+</div>
+</div>
+<!-- 5. Roller -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#64748b]"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Roller</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">[cls 4]</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="text-primary font-bold">2 tracked</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+</div>
+<!-- 6. Tear -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#be123c]"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Tear</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">[cls 5]</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="text-secondary">0 active</span>
+<span class="w-2 h-2 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+<!-- 7. impact damage (ACTIVE) -->
+<div class="flex items-center justify-between p-2 rounded bg-[#fef3c7] text-[#92400e] shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#f59e0b] animate-pulse"></span>
+<span class="font-label-md text-label-md font-bold">impact damage</span>
+<span class="font-label-sm text-label-sm font-mono">[cls 6]</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="bg-[#fde68a] text-[#78350f] font-bold px-1.5 py-0.5 rounded">1 ACTIVE</span>
+<span class="font-mono font-bold">78% CONF</span>
+</div>
+</div>
+<!-- 8. patch work -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#0284c7]"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">patch work</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">[cls 7]</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="text-secondary">0 active</span>
+<span class="w-2 h-2 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+</div>
+<!-- Telemetry Model Spec Footer -->
+<div class="pt-2 flex items-center justify-between text-label-sm font-label-sm text-secondary bg-surface-container-low p-2 rounded">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">memory</span>
+<span>MODEL: yolov8n-seg.onnx</span>
+</div>
+<div class="font-mono font-bold text-on-surface">INPUT: 640x640 FP16</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. BOTTOM SECTION - RECENT INSPECTION RUNS & SNAPSHOT STRIP -->
+<section class="bg-surface-container-low p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-1">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">collections</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">RECENT INSPECTION RUNS &amp; SNAPSHOT STRIP</h3>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-secondary font-bold">BUFFER: 48 CAPTURED TODAY</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm px-3 py-1.5 rounded flex items-center gap-1.5 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>FILTER: DEFECTS ONLY</span>
+</button>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm px-3 py-1.5 rounded flex items-center gap-1.5 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>EXPORT AUDIT REPORT</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Thumbnail Gallery -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-space-md">
+<!-- Snapshot 1 (Critical Puncture) -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-32 bg-inverse-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High angle industrial closeup macro of a textured black rubber heavy conveyor belt surface showing a jagged circular puncture hole with synthetic fibers exposed under harsh control room lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjlo47DT3_5Vw7S75IHDGvLUXiDaPxWkWoOCnMw34FgF_6oNEobtADvhvhpDD6BaNjwS6kKsHjp2Jqu098A1a3R2vRgzsPRuyDvcp-nBGaliu_pzTBZaxgkyM-hk1DVpu6iycmPeY6S5RJRXaTSxzxtLf8IKcW7gEXN8U612NHADEfZNEVfK3CmoD_SHsUzdT1L8uKcgfQxk5vFEtogY_tqI4h0X4YM2JnTTWX0r_SrqfbEj3hYYhjlQ">
+<!-- Mask Polygon Badge Overlay -->
+<div class="absolute top-2 left-2 bg-[#dc2626] text-white font-label-sm text-label-sm font-bold px-1.5 py-0.5 rounded shadow">
+            Puncture [0.89]
+          </div>
+<div class="absolute bottom-1 right-2 font-label-sm text-label-sm font-mono text-white/90 bg-black/60 px-1 rounded">
+            LOC: 14,280 mm
+          </div>
+</div>
+<div class="p-2.5 flex flex-col gap-1 text-label-sm font-label-sm">
+<div class="flex items-center justify-between font-bold">
+<span class="text-on-surface">RUN #4102-A</span>
+<span class="text-[#dc2626]">SEVERITY: CRITICAL</span>
+</div>
+<div class="text-secondary font-mono flex items-center justify-between">
+<span>14:23:58 UTC</span>
+<span>AREA: 28.4 mm²</span>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<span class="text-primary font-bold cursor-pointer hover:underline">Inspect Mask →</span>
+<button class="text-secondary hover:text-primary"><span class="material-symbols-outlined text-[16px]">file_download</span></button>
+</div>
+</div>
+</div>
+<!-- Snapshot 2 (Impact Damage) -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-32 bg-inverse-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up industrial camera view of bulk material steel cable conveyor belt showing gouge abrasion and surface impact scuff mark from sharp ore rock impact" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3vBEbcDUTVPDoyMCkBLcabe0gsJMXSZBWrcz8SUjPbobrDyp-XMqOz1HeVqUlWKpO_j3eHmWtDOeZTDp1Fo8MHQjHIUs75V8kOFiTZDAlMEKCoEv-JV_vCyXTHFBNmu5fSMEs8UHL1zmZlaLfpEVgrFD3bsmxN4M80rcLtH8eYGccmeuF1jZa3HFmv7zaeK3ER5kYTPrGV0EvXdYInQD-BPPgdZK1wuOBhXA230Rr6OoFQVz6UrTclw">
+<div class="absolute top-2 left-2 bg-[#d97706] text-white font-label-sm text-label-sm font-bold px-1.5 py-0.5 rounded shadow">
+            impact damage [0.78]
+          </div>
+<div class="absolute bottom-1 right-2 font-label-sm text-label-sm font-mono text-white/90 bg-black/60 px-1 rounded">
+            LOC: 11,840 mm
+          </div>
+</div>
+<div class="p-2.5 flex flex-col gap-1 text-label-sm font-label-sm">
+<div class="flex items-center justify-between font-bold">
+<span class="text-on-surface">RUN #4099-C</span>
+<span class="text-[#d97706]">SEVERITY: MEDIUM</span>
+</div>
+<div class="text-secondary font-mono flex items-center justify-between">
+<span>14:18:12 UTC</span>
+<span>AREA: 62.1 mm²</span>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<span class="text-primary font-bold cursor-pointer hover:underline">Inspect Mask →</span>
+<button class="text-secondary hover:text-primary"><span class="material-symbols-outlined text-[16px]">file_download</span></button>
+</div>
+</div>
+</div>
+<!-- Snapshot 3 (Nominal Roller Alignment) -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-32 bg-inverse-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Wide engineering industrial view showing idler roller trough bracket supporting bulk material black conveyor belt in factory plant environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSqERIAMcZi3Ef4Cn74Hf65-tfbeAF8U_MZ-6QHjH-caaiB3F5xmhyIQeuRKCwnNVMGX2U1qrhZ_tvUBfbvLBEE7Iz7KR2vlXGc9jHVCAWPkUm2EywpCgyi9ZYeGXSOHpYsNP9b6_P6pXcCAuu27QWOIwaXVrgFmJOJ6CdHXkBItMChg3JKhn2wi1JCr_APtam4w59-4T0Drb1nN9xrgc3lURx8uwKViqpc1LVvWRkpge_N5Yka78NwQ">
+<div class="absolute top-2 left-2 bg-[#64748b] text-white font-label-sm text-label-sm font-bold px-1.5 py-0.5 rounded shadow">
+            Roller [0.94]
+          </div>
+<div class="absolute bottom-1 right-2 font-label-sm text-label-sm font-mono text-white/90 bg-black/60 px-1 rounded">
+            LOC: 08,450 mm
+          </div>
+</div>
+<div class="p-2.5 flex flex-col gap-1 text-label-sm font-label-sm">
+<div class="flex items-center justify-between font-bold">
+<span class="text-on-surface">RUN #4085-B</span>
+<span class="text-[#10b981]">SEVERITY: NOMINAL</span>
+</div>
+<div class="text-secondary font-mono flex items-center justify-between">
+<span>13:54:02 UTC</span>
+<span>ROTATION: OK</span>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<span class="text-primary font-bold cursor-pointer hover:underline">Inspect Mask →</span>
+<button class="text-secondary hover:text-primary"><span class="material-symbols-outlined text-[16px]">file_download</span></button>
+</div>
+</div>
+</div>
+<!-- Snapshot 4 (Nominal Clean Surface) -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="relative w-full h-32 bg-inverse-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Top down overhead perspective of perfectly flat dark rubber conveyor belt running at speed with uniform surface texture under LED illumination lamps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsnJK3j0KLhnkpt7x5Fch8BmQjKpsHpxO4iAJR3YGSOMKuEdWOY7mcphoK4Q3odhOamQUl1G2HosTxsleQwcsdZowmhB8Ua9eLJNCybmrPU9s1Ol9bhdooGttK-ithNqhkyCiMFuxdRpa8DqFrTWhnYnclfnK2waKHRaFF9NyVtIK9xilqrHSm7TziaGglQFevN5qVXPkZyy5Y9FPXLeE3WEj3oktYD1AlPFJwubkUam3oUHPYZQFjVg">
+<div class="absolute top-2 left-2 bg-[#10b981] text-white font-label-sm text-label-sm font-bold px-1.5 py-0.5 rounded shadow">
+            Surface Clear [1.00]
+          </div>
+<div class="absolute bottom-1 right-2 font-label-sm text-label-sm font-mono text-white/90 bg-black/60 px-1 rounded">
+            LOC: 04,110 mm
+          </div>
+</div>
+<div class="p-2.5 flex flex-col gap-1 text-label-sm font-label-sm">
+<div class="flex items-center justify-between font-bold">
+<span class="text-on-surface">RUN #4071-E</span>
+<span class="text-[#10b981]">SEVERITY: NOMINAL</span>
+</div>
+<div class="text-secondary font-mono flex items-center justify-between">
+<span>13:30:19 UTC</span>
+<span>NO ANOMALIES</span>
+</div>
+<div class="pt-1 flex items-center justify-between">
+<span class="text-primary font-bold cursor-pointer hover:underline">Inspect Mask →</span>
+<button class="text-secondary hover:text-primary"><span class="material-symbols-outlined text-[16px]">file_download</span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for camera stream HUD values
+  (function() {
+    const confSlider = document.getElementById('confSlider');
+    if (confSlider) {
+      confSlider.addEventListener('input', function(e) {
+        const valElem = document.getElementById('confVal');
+        if (valElem) valElem.innerText = parseFloat(e.target.value).toFixed(2);
+      });
+    }
+  })();
+</script></main></div></body></html>

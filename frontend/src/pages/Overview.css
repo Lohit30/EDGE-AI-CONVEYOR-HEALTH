@@ -1,0 +1,115 @@
+/* =============================================================================
+   SCADA OVERVIEW CSS — Master Layout matching reference screenshot
+   ============================================================================= */
+
+.scada-overview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #080c14;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* ── ROW 1: 6 Gauges across top ──────────────────────────────────────────── */
+.scada-overview-gauges-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* ── ROW 2: Conveyor Visualizer + Right Column ───────────────────────────── */
+.scada-overview-mid-row {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 10px;
+  min-height: 190px;
+  flex-shrink: 0;
+}
+
+.scada-overview-conveyor-wrap {
+  min-width: 0;
+}
+
+.scada-overview-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── ROW 3: 3 Trend Charts ───────────────────────────────────────────────── */
+.scada-overview-trends-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.scada-trend-card {
+  background: #0d1219;
+  border: 1px solid #182230;
+  border-radius: 4px;
+  padding: 8px 10px 4px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scada-trend-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.scada-trend-title {
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #e2e8f0;
+}
+
+.scada-trend-select {
+  background: #131a24;
+  border: 1px solid #1e293b;
+  color: #94a3b8;
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  border-radius: 2px;
+  padding: 1px 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ── ROW 4: Bottom 3 Cards ───────────────────────────────────────────────── */
+.scada-overview-bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 230px 200px;
+  gap: 10px;
+  min-height: 155px;
+  flex-shrink: 0;
+}
+
+.scada-bottom-card {
+  min-width: 0;
+}
+
+/* Responsive adjustments if viewport shrinks */
+@media (max-width: 1300px) {
+  .scada-overview-gauges-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .scada-overview-mid-row {
+    grid-template-columns: 1fr;
+  }
+  .scada-overview-right-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .scada-overview-bottom-row {
+    grid-template-columns: 1fr;
+  }
+}

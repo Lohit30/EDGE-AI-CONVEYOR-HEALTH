@@ -1,0 +1,37 @@
+# =============================================================================
+# Backend .dockerignore
+# Keeps the Docker build context lean and avoids leaking secrets.
+# =============================================================================
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Test artefacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Local secrets / environment overrides
+.env.local
+.env.*.local
+secrets/

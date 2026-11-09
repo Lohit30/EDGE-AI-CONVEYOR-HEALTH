@@ -1,0 +1,162 @@
+/* Belt Speed Page — SCADA styling matching reference */
+
+.belt-speed-page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Top Row: Dial Gauge (left), Speed Trend Chart (center), Speed Details (right) */
+.belt-speed-top-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr 240px;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.belt-speed-gauge-wrap {
+  display: flex;
+  align-items: stretch;
+}
+
+.belt-speed-trend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.belt-speed-chart-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.belt-speed-legend {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 6px;
+  font-size: 11px;
+  color: #94a3b8;
+  font-family: var(--font-mono);
+}
+
+.belt-speed-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.belt-speed-details-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bottom Row: Encoder Signal Oscilloscope (left), Speed Statistics (center), Alarm Limits (right) */
+.belt-speed-bottom-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 14px;
+}
+
+/* Encoder Signal Oscilloscope */
+.encoder-signal-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.encoder-signal-badge {
+  font-size: 9px;
+  font-family: var(--font-mono);
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.encoder-pulse-rate {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: #64748b;
+}
+
+.encoder-scope-viewport {
+  background: #070b10;
+  border: 1px solid #14202e;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.encoder-scope-svg {
+  width: 100%;
+  height: 90px;
+  display: block;
+}
+
+.encoder-scope-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: #090e15;
+  border-top: 1px solid #14202e;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: #64748b;
+}
+
+.scope-param {
+  color: #94a3b8;
+}
+
+.scope-status {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/* Limits List styling */
+.scada-limits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 4px 0;
+}
+
+.scada-limit-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.scada-limit-label {
+  color: #94a3b8;
+  flex: 1;
+}
+
+.scada-limit-val {
+  font-family: var(--font-mono);
+  color: #f1f5f9;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .belt-speed-top-grid {
+    grid-template-columns: 1fr;
+  }
+  .belt-speed-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}

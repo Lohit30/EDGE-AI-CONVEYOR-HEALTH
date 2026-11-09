@@ -1,0 +1,813 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-tint":"#3755c3","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","surface-container":"#e5eeff","inverse-primary":"#b8c4ff","surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#444653","on-tertiary":"#ffffff","on-primary-container":"#a8b8ff","on-error":"#ffffff","surface-dim":"#cbdbf5","error":"#ba1a1a","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#77c2ff","outline-variant":"#c4c5d5","secondary":"#565e74","secondary-container":"#dae2fd","on-primary-fixed":"#001453","on-primary":"#ffffff","primary":"#00288e","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-tertiary-fixed":"#001d31","on-background":"#0b1c30","on-secondary-fixed":"#131b2e","outline":"#757684","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","primary-fixed":"#dde1ff","tertiary-container":"#004f7a","background":"#f8f9ff","surface":"#f8f9ff","primary-container":"#1e40af","surface-bright":"#f8f9ff","on-surface":"#0b1c30","surface-container-lowest":"#ffffff","tertiary":"#003757","inverse-surface":"#213145","on-secondary":"#ffffff","primary-fixed-dim":"#b8c4ff","on-tertiary-fixed-variant":"#004b73","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#173bab"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","space-lg":"1rem","space-xl":"1.5rem","space-xs":"0.25rem","space-sm":"0.375rem","space-md":"0.75rem",gutter:"0.75rem"},fontFamily:{"headline-lg":["IBM Plex Mono"],"label-lg":["IBM Plex Mono"],"label-sm":["IBM Plex Mono"],"headline-md":["IBM Plex Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"label-md":["IBM Plex Mono"],"headline-sm":["IBM Plex Mono"],"metric-display":["IBM Plex Mono"]},fontSize:{"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["13px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-sm":["9px",{lineHeight:"12px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["11px",{lineHeight:"16px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"metric-display":["24px",{lineHeight:"28px",letterSpacing:"-0.03em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-50 px-margin flex items-center justify-between shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><div class="flex items-center gap-space-md"><img alt="Conveyor SCADA Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZBtUjcHjGVR0BdoBAzb9o9_lGqUtxZbkcPOimLv7Ftd8Y33Y4iU7YUYqWaskntqerEsyzIhxtvus3z_3oCimNJnNIjzGSXulm1lKBejFskEjKrvtXU6kJOXAwLv7L5L3ZmLqb05qfFSAb5IPc73DqIB4DdZORgRCgkeQdU2YSqm2tHWSp-T3BZprGzeyzUqzm5lwt3AZlczB7syGMJLSW-W4GqQFeHIVUf7U_ZcL9b7b1utGcGYYyET0"><div class="h-8 w-[1px] bg-outline-variant"></div><div><div class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs leading-none tracking-tight">CONVEYOR MONITORING SYSTEM</div><div class="font-label-sm text-label-sm text-secondary tracking-widest leading-none mt-1">PROTOTYPE CV-01 • SMART • SAFE • RELIABLE</div></div><div class="ml-space-xs flex items-center gap-1.5 px-2 py-0.5 bg-surface-container-low border border-outline-variant rounded"><span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span><span class="font-label-sm text-label-sm font-bold text-on-surface tracking-wider">RUNNING</span></div></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container-low px-space-md py-1 border border-outline-variant rounded"><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">BACKEND</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">OK</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">MQTT</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">CONN</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">ESP32</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">ONLINE</span></div><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-secondary">RPI4 EDGE</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">42°C</span></div></div><div class="flex items-center gap-space-md"><div class="text-right"><div class="font-label-md text-label-md text-on-surface font-semibold tracking-wider">14:23:56 UTC</div><div class="font-label-sm text-label-sm text-tertiary-container font-bold uppercase tracking-wider">[SIMULATION / DEV]</div></div><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block text-left"><div class="font-label-sm text-label-sm text-on-surface font-bold leading-tight">ENG. K. VANCE</div><div class="font-label-sm text-label-sm text-secondary leading-tight">ROLE: [ADMIN]</div></div><button class="p-1 text-secondary hover:text-error hover:bg-error-container/20 rounded transition-colors ml-1" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-sm"><div class="px-space-sm py-1.5 text-secondary font-label-sm text-label-sm font-bold tracking-widest uppercase border-b border-outline-variant mb-1">MAIN NAVIGATION</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-bold border border-primary"><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">view_quilt</span><span class="font-label-md text-label-md">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vibration" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">vibration</span><span class="font-label-md text-label-md">Vibration</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="load" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">weight</span><span class="font-label-md text-label-md">Load</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="belt-speed" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">speed</span><span class="font-label-md text-label-md">Belt Speed</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="electrical-voltage" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">bolt</span><span class="font-label-md text-label-md">Electrical / Voltage</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera-inspection" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">videocam</span><span class="font-label-md text-label-md">Camera Inspection</span></div><span class="px-1 py-0.2 bg-[#ef4444] text-white font-label-sm text-label-sm font-bold rounded">LIVE</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors bg-primary-container text-on-primary font-bold border border-primary" data-path="digital-twin" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">deployed_code</span><span class="font-label-md text-label-md">Digital Twin</span></div><span class="px-1 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">CAD</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="predictive-health" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-label-md text-label-md">Predictive Health</span></div><span class="px-1 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold rounded">ML</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-label-md text-label-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">build</span><span class="font-label-md text-label-md">Maintenance</span></div><span class="px-1.5 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">1 OPEN</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alerts" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">warning</span><span class="font-label-md text-label-md">Alerts</span></div><span class="px-1.5 py-0.2 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">3 ACTIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-label-md text-label-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-low font-label-sm text-label-sm flex flex-col gap-1 text-secondary"><div class="flex items-center justify-between"><span class="font-mono">FIRMWARE</span><span class="font-mono font-bold text-on-surface">v2.4.1-rc3</span></div><div class="flex items-center justify-between"><span class="font-mono">PLC LINK</span><span class="font-mono font-bold text-on-surface">ISO/CEMA STD</span></div><div class="flex items-center justify-between"><span class="font-mono">SAFETY</span><span class="font-mono font-bold text-[#10b981]">E-STOP READY</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-surface-container-lowest min-h-screen p-space-md border-l border-outline-variant"><div class="flex flex-col w-full">
+<!-- TOP HEADER & CAD QUICK BAR (SURFACE CHASSIS LEVEL 1) -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm rounded mb-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pb-space-sm mb-space-sm">
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider rounded">CAD SPEC</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">DIGITAL TWIN: PROTOTYPE CONVEYOR CV-01 CAD SCHEMATIC &amp; COMPONENT DIRECTORY</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Interactive physical assembly map • Click any component to inspect mechanical &amp; electrical specifications</p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 font-label-sm text-label-sm">
+<span class="px-2 py-1 bg-surface-container text-on-surface font-semibold rounded flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">layers</span>
+<span>ASSEMBLY: 8 ASSETS REGISTERED</span>
+</span>
+<span class="px-2 py-1 bg-surface-container-low text-secondary rounded">SCALE: 1:10 (PARAMETRIC)</span>
+</div>
+</div>
+<!-- Quick Component Selection Selector Bar -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none" id="component-quick-bar">
+<button class="quick-nav-btn px-2.5 py-1.5 bg-primary text-on-primary font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 shadow-sm transition-colors" data-target="lc-01" onclick="selectComponent('lc-01')">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-bright animate-ping"></span>
+<span>[LC-01] Load Cell 1 (Selected)</span>
+</button>
+<button class="quick-nav-btn px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 transition-colors" data-target="lc-02" onclick="selectComponent('lc-02')">
+<span>[LC-02] Load Cell 2</span>
+</button>
+<button class="quick-nav-btn px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 transition-colors" data-target="mpu-01" onclick="selectComponent('mpu-01')">
+<span>[MPU-01] MPU6050 Sensor</span>
+</button>
+<button class="quick-nav-btn px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 transition-colors" data-target="enc-01" onclick="selectComponent('enc-01')">
+<span>[ENC-01] Speed Encoder</span>
+</button>
+<button class="quick-nav-btn px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 transition-colors" data-target="mot-01" onclick="selectComponent('mot-01')">
+<span>[MOT-01] 12V DC Motor</span>
+</button>
+<button class="quick-nav-btn px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 transition-colors" data-target="rol-drv" onclick="selectComponent('rol-drv')">
+<span>[ROL-01] Drive Roller</span>
+</button>
+<button class="quick-nav-btn px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 transition-colors" data-target="rol-tail" onclick="selectComponent('rol-tail')">
+<span>[ROL-02] Tail Roller</span>
+</button>
+<button class="quick-nav-btn px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 transition-colors" data-target="belt-01" onclick="selectComponent('belt-01')">
+<span>[BLT-01] Conveyor Belt</span>
+</button>
+</div>
+</div>
+<!-- MAIN WORKSPACE: CAD SCHEMATIC (LEFT) & COMPONENT INSPECTION PANEL (RIGHT) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md mb-space-md">
+<!-- LEFT: INTERACTIVE CAD SCHEMATIC VIEWPORT (7 COLS) -->
+<div class="xl:col-span-7 flex flex-col bg-surface-container-lowest rounded shadow-sm overflow-hidden">
+<!-- Blueprint Viewport Header -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">view_in_ar</span>
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wide">ISOMETRIC TECHNICAL BLUEPRINT • STATION GRID X-0 TO X-1200</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 bg-surface-container rounded text-primary font-bold">CLICK COMPONENT NODE</span>
+</div>
+</div>
+<!-- Recessed CAD Blueprint Canvas Box -->
+<div class="relative w-full aspect-[16/10] bg-[#0c1829] p-2 flex items-center justify-center select-none overflow-hidden group">
+<!-- Technical Precision Grid Pattern -->
+<svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="16" id="cadGridSmall" patternUnits="userSpaceOnUse" width="16">
+<path d="M 16 0 L 0 0 0 16" fill="none" stroke="#77c2ff" stroke-width="0.5"></path>
+</pattern>
+<pattern height="80" id="cadGridLarge" patternUnits="userSpaceOnUse" width="80">
+<rect fill="url(#cadGridSmall)" height="80" width="80"></rect>
+<path d="M 80 0 L 0 0 0 80" fill="none" stroke="#93ccff" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#cadGridLarge)" height="100%" width="100%"></rect>
+</svg>
+<!-- Coordinate Ruler Marks -->
+<div class="absolute top-2 left-4 text-[#77c2ff] font-label-sm text-label-sm opacity-60 pointer-events-none">
+          +Z [ELEVATION: 180mm] • ISO VIEW PROJECTION • DATUM 0,0,0
+        </div>
+<div class="absolute bottom-2 left-4 text-[#77c2ff] font-label-sm text-label-sm opacity-60 pointer-events-none flex items-center gap-4">
+<span>X: 0mm (TAIL PULLEY)</span>
+<span>X: 280mm (LC-01 HOPPER)</span>
+<span>X: 740mm (LC-02 DISCHARGE)</span>
+<span>X: 1200mm (DRIVE HEAD)</span>
+</div>
+<div class="absolute top-2 right-4 text-[#77c2ff] font-label-sm text-label-sm opacity-70 pointer-events-none text-right">
+<div>AL-PROFILE: 40x40 T-SLOT</div>
+<div>CEMA CLASS: LIGHT-DUTY TESTBED</div>
+</div>
+<!-- Interactive SVG CAD Model of CV-01 -->
+<svg class="w-full h-full relative z-10 max-w-full" viewBox="0 0 880 440" xmlns="http://www.w3.org/2000/svg">
+<!-- Definitions for CAD styling -->
+<defs>
+<linearGradient id="frameGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#334155"></stop>
+<stop offset="100%" stop-color="#1e293b"></stop>
+</linearGradient>
+<linearGradient id="beltGrad" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#475569"></stop>
+<stop offset="50%" stop-color="#64748b"></stop>
+<stop offset="100%" stop-color="#475569"></stop>
+</linearGradient>
+<linearGradient id="pulleyGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#94a3b8"></stop>
+<stop offset="50%" stop-color="#cbd5e1"></stop>
+<stop offset="100%" stop-color="#64748b"></stop>
+</linearGradient>
+<linearGradient id="motorGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1e3a8a"></stop>
+<stop offset="100%" stop-color="#0f172a"></stop>
+</linearGradient>
+<filter height="140%" id="activeGlow" width="140%" x="-20%" y="-20%">
+<feDropShadow dx="0" dy="0" flood-color="#38bdf8" flood-opacity="0.9" stdDeviation="6"></feDropShadow>
+</filter>
+</defs>
+<!-- 1. BASE STAND / T-SLOT ALUMINUM EXTRUSION FRAME & LEVELING FEET -->
+<!-- Leveling Feet -->
+<ellipse cx="140" cy="370" fill="#0f172a" rx="20" ry="6" stroke="#64748b" stroke-width="1.5"></ellipse>
+<ellipse cx="380" cy="378" fill="#0f172a" rx="18" ry="5" stroke="#64748b" stroke-width="1.5"></ellipse>
+<ellipse cx="620" cy="374" fill="#0f172a" rx="18" ry="5" stroke="#64748b" stroke-width="1.5"></ellipse>
+<ellipse cx="780" cy="365" fill="#0f172a" rx="20" ry="6" stroke="#64748b" stroke-width="1.5"></ellipse>
+<!-- Vertical Frame Posts -->
+<rect fill="url(#frameGrad)" height="98" stroke="#64748b" stroke-width="1" width="12" x="135" y="270"></rect>
+<rect fill="url(#frameGrad)" height="100" stroke="#64748b" stroke-width="1" width="10" x="375" y="275"></rect>
+<rect fill="url(#frameGrad)" height="96" stroke="#64748b" stroke-width="1" width="10" x="615" y="275"></rect>
+<rect fill="url(#frameGrad)" height="102" stroke="#64748b" stroke-width="1" width="12" x="775" y="260"></rect>
+<!-- Lower Rigidity Tie-Bars -->
+<path d="M 140 330 L 780 325" stroke="#334155" stroke-linecap="round" stroke-width="6"></path>
+<path d="M 140 330 L 780 325" stroke="#64748b" stroke-dasharray="8 4" stroke-width="1.5"></path>
+<!-- Main Structural Bed Rail (40x40 Alum extrusion dual beams) -->
+<path d="M 110 262 L 770 248 L 810 266 L 150 280 Z" fill="#1e293b" stroke="#64748b" stroke-width="1.5"></path>
+<path d="M 110 262 L 150 280 L 150 295 L 110 277 Z" fill="#0f172a" stroke="#475569" stroke-width="1"></path>
+<path d="M 150 280 L 810 266 L 810 281 L 150 295 Z" fill="#1e293b" stroke="#475569" stroke-width="1"></path>
+<!-- Cross-braces (Bed Deck Plate Supporting Weighing Zone) -->
+<path d="M 230 264 L 390 260 L 410 273 L 250 277 Z" fill="#334155" stroke="#64748b" stroke-width="1"></path>
+<path d="M 500 258 L 660 254 L 680 267 L 520 271 Z" fill="#334155" stroke="#64748b" stroke-width="1"></path>
+<!-- 2. TAIL ROLLER ASSEMBLY (LEFT IDLER - X:0 to X:80) -->
+<g class="cursor-pointer transition-all duration-200" id="cad-node-rol-tail" onclick="selectComponent('rol-tail')">
+<!-- Shaft / Pillow Block Bearing -->
+<rect fill="#475569" height="34" rx="2" stroke="#94a3b8" stroke-width="1.5" width="18" x="100" y="215"></rect>
+<!-- Roller Drum -->
+<ellipse cx="118" cy="230" fill="url(#pulleyGrad)" rx="14" ry="32" stroke="#cbd5e1" stroke-width="1.5"></ellipse>
+<!-- Shaft pin -->
+<circle cx="109" cy="232" fill="#0f172a" r="4" stroke="#94a3b8" stroke-width="1.5"></circle>
+</g>
+<!-- 3. DRIVE ROLLER ASSEMBLY (RIGHT DRIVE HEAD - X:1120 to X:1200) -->
+<g class="cursor-pointer transition-all duration-200" id="cad-node-rol-drv" onclick="selectComponent('rol-drv')">
+<!-- Drive drum face -->
+<ellipse cx="765" cy="216" fill="url(#pulleyGrad)" rx="15" ry="33" stroke="#38bdf8" stroke-width="1.5"></ellipse>
+<!-- Polyurethane Lagging Grip Ribs -->
+<path d="M 765 186 Q 775 216 765 246" fill="none" stroke="#0284c7" stroke-width="2"></path>
+<path d="M 760 188 Q 770 216 760 244" fill="none" stroke="#0284c7" stroke-width="2"></path>
+<!-- Pillow block -->
+<rect fill="#334155" height="36" rx="2" stroke="#94a3b8" stroke-width="1.5" width="16" x="772" y="200"></rect>
+</g>
+<!-- 4. CONTINUOUS CONVEYOR BELT (TOP RUN & BOTTOM RETURN) -->
+<g class="cursor-pointer transition-all duration-200" id="cad-node-belt-01" onclick="selectComponent('belt-01')">
+<!-- Top Carrying Strand (Upper Deck) -->
+<path d="M 118 198 L 765 183 L 795 204 L 148 219 Z" fill="url(#beltGrad)" stroke="#94a3b8" stroke-width="1.5"></path>
+<!-- Belt Longitudinal Guide Ridge -->
+<path d="M 133 208 L 780 194" stroke="#334155" stroke-dasharray="12 6" stroke-width="1"></path>
+<!-- Bottom Return Strand -->
+<path d="M 118 262 L 765 247 L 788 262 L 140 277 Z" fill="#334155" opacity="0.6" stroke="#475569" stroke-width="1"></path>
+</g>
+<!-- 5. LOAD CELL 1 (BED STATION 1 - X:280) [DEFAULT ACTIVE SELECTION] -->
+<g class="cursor-pointer transition-all duration-300" id="cad-node-lc-01" onclick="selectComponent('lc-01')">
+<!-- Outer focus ring glow for default selection -->
+<rect class="animate-pulse" fill="none" filter="url(#activeGlow)" height="32" id="lc01-ring" rx="4" stroke="#38bdf8" stroke-dasharray="4 2" stroke-width="2" width="80" x="270" y="240"></rect>
+<!-- Parallel beam aluminum block body -->
+<rect fill="#60a5fa" height="24" rx="2" stroke="#ffffff" stroke-width="2" width="72" x="274" y="244"></rect>
+<!-- Strain Gauge flexure aperture cutouts -->
+<circle cx="296" cy="256" fill="#0c1829" r="4.5" stroke="#93c5fd" stroke-width="1"></circle>
+<circle cx="324" cy="256" fill="#0c1829" r="4.5" stroke="#93c5fd" stroke-width="1"></circle>
+<rect fill="#0c1829" height="4" width="28" x="296" y="254"></rect>
+<!-- Floating tare weighing bed plate above cell -->
+<path d="M 264 235 L 360 233 L 374 242 L 278 244 Z" fill="#93c5fd" stroke="#ffffff" stroke-width="1.5"></path>
+<!-- Sensor cable gland -->
+<circle cx="342" cy="256" fill="#1e3a8a" r="2.5"></circle>
+<path d="M 345 256 Q 365 260 375 295" fill="none" stroke="#38bdf8" stroke-dasharray="2 2" stroke-width="1.5"></path>
+</g>
+<!-- 6. LOAD CELL 2 (BED STATION 2 - X:740) -->
+<g class="cursor-pointer transition-all duration-200" id="cad-node-lc-02" onclick="selectComponent('lc-02')">
+<rect fill="none" height="32" id="lc02-ring" rx="4" stroke="transparent" stroke-dasharray="4 2" stroke-width="2" width="80" x="550" y="234"></rect>
+<!-- Parallel beam aluminum block body -->
+<rect fill="#64748b" height="24" rx="2" stroke="#cbd5e1" stroke-width="1.5" width="72" x="554" y="238"></rect>
+<circle cx="576" cy="250" fill="#0c1829" r="4.5" stroke="#94a3b8" stroke-width="1"></circle>
+<circle cx="604" cy="250" fill="#0c1829" r="4.5" stroke="#94a3b8" stroke-width="1"></circle>
+<rect fill="#0c1829" height="4" width="28" x="576" y="248"></rect>
+<!-- Weigh plate -->
+<path d="M 544 229 L 640 227 L 654 236 L 558 238 Z" fill="#475569" stroke="#94a3b8" stroke-width="1"></path>
+<path d="M 625 250 Q 640 258 645 290" fill="none" stroke="#64748b" stroke-dasharray="2 2" stroke-width="1.5"></path>
+</g>
+<!-- 7. SPEED ENCODER (OPTICAL SLOTTED WHEEL ON IDLER SHAFT) -->
+<g class="cursor-pointer transition-all duration-200" id="cad-node-enc-01" onclick="selectComponent('enc-01')">
+<rect fill="none" height="40" id="enc01-ring" rx="3" stroke="transparent" stroke-width="2" width="38" x="65" y="215"></rect>
+<!-- Slotted disc -->
+<circle cx="84" cy="235" fill="#0f172a" r="14" stroke="#cbd5e1" stroke-width="1.5"></circle>
+<!-- Radial encoder slots -->
+<circle cx="84" cy="235" fill="none" r="10" stroke="#94a3b8" stroke-dasharray="2 2" stroke-width="2"></circle>
+<!-- Optical Photo-Interrupter Sensor Fork (U-bracket) -->
+<path d="M 72 225 L 88 225 L 88 231 L 76 231 L 76 242 L 88 242 L 88 248 L 72 248 Z" fill="#e2e8f0" stroke="#334155" stroke-width="1"></path>
+</g>
+<!-- 8. MPU6050 6-AXIS IMU SENSOR (DRIVE END BEARING HOUSING) -->
+<g class="cursor-pointer transition-all duration-200" id="cad-node-mpu-01" onclick="selectComponent('mpu-01')">
+<rect fill="none" height="32" id="mpu01-ring" rx="3" stroke="transparent" stroke-width="2" width="32" x="770" y="160"></rect>
+<!-- Blue breakout board mounted on pillow bracket -->
+<rect fill="#0284c7" height="24" rx="2" stroke="#ffffff" stroke-width="1.5" width="24" x="774" y="164"></rect>
+<!-- IC Package -->
+<rect fill="#0f172a" height="10" width="10" x="781" y="171"></rect>
+<!-- Pin Header Dots -->
+<circle cx="778" cy="184" fill="#f8fafc" r="1"></circle>
+<circle cx="782" cy="184" fill="#f8fafc" r="1"></circle>
+<circle cx="786" cy="184" fill="#f8fafc" r="1"></circle>
+<circle cx="790" cy="184" fill="#f8fafc" r="1"></circle>
+</g>
+<!-- 9. 12V GEARED DC MOTOR WITH PLANETARY GEARBOX -->
+<g class="cursor-pointer transition-all duration-200" id="cad-node-mot-01" onclick="selectComponent('mot-01')">
+<rect fill="none" height="52" id="mot01-ring" rx="3" stroke="transparent" stroke-width="2" width="76" x="792" y="210"></rect>
+<!-- Motor cylindrical body -->
+<rect fill="url(#motorGrad)" height="34" rx="4" stroke="#cbd5e1" stroke-width="1.5" width="56" x="804" y="218"></rect>
+<!-- Planetary Gearbox Stage -->
+<rect fill="#475569" height="26" rx="2" stroke="#94a3b8" stroke-width="1.5" width="12" x="794" y="222"></rect>
+<!-- Output Drive Coupling to Roller Shaft -->
+<rect fill="#64748b" height="16" stroke="#cbd5e1" stroke-width="1" width="12" x="784" y="227"></rect>
+<!-- Motor Terminal Cap & Leads -->
+<path d="M 860 228 L 866 228" stroke="#ef4444" stroke-width="2"></path>
+<path d="M 860 242 L 866 242" stroke="#0f172a" stroke-width="2"></path>
+<ellipse cx="860" cy="235" fill="#334155" rx="3" ry="17" stroke="#64748b" stroke-width="1"></ellipse>
+</g>
+<!-- LEADER LINES & HOTSPOT CALLOUT TAGS -->
+<!-- Callout 1: LOAD CELL 1 [ACTIVE CALLOUT BOX] -->
+<g id="callout-lc-01">
+<path d="M 310 240 L 310 110 L 260 110" fill="none" stroke="#38bdf8" stroke-width="2"></path>
+<circle cx="310" cy="240" fill="#38bdf8" r="4"></circle>
+<g class="cursor-pointer" onclick="selectComponent('lc-01')" transform="translate(40, 75)">
+<rect fill="#0f172a" height="50" rx="3" stroke="#38bdf8" stroke-width="2" width="215"></rect>
+<rect fill="#38bdf8" height="50" rx="1" width="6" x="0" y="0"></rect>
+<text fill="#38bdf8" font-family="IBM Plex Mono" font-size="11" font-weight="700" letter-spacing="0.04em" x="14" y="20">LOAD CELL 1 (LC-01)</text>
+<text fill="#ffffff" font-family="IBM Plex Mono" font-size="9" font-weight="600" x="14" y="38">[ACTIVE SELECTION • 50KG]</text>
+<circle class="animate-ping" cx="198" cy="25" fill="#38bdf8" r="5"></circle>
+</g>
+</g>
+<!-- Callout 2: SPEED ENCODER -->
+<g class="cursor-pointer" id="callout-enc-01" onclick="selectComponent('enc-01')">
+<path d="M 84 218 L 84 150 L 50 150" fill="none" stroke="#64748b" stroke-dasharray="3 3" stroke-width="1.2"></path>
+<circle cx="84" cy="218" fill="#94a3b8" r="3"></circle>
+<g transform="translate(10, 158)">
+<rect fill="#0f172a" height="28" rx="2" stroke="#475569" stroke-width="1" width="105"></rect>
+<text fill="#cbd5e1" font-family="IBM Plex Mono" font-size="9" font-weight="600" x="8" y="18">ENC-01: 20 PPR</text>
+</g>
+</g>
+<!-- Callout 3: MPU6050 SENSOR -->
+<g class="cursor-pointer" id="callout-mpu-01" onclick="selectComponent('mpu-01')">
+<path d="M 786 160 L 786 95 L 720 95" fill="none" stroke="#64748b" stroke-dasharray="3 3" stroke-width="1.2"></path>
+<circle cx="786" cy="160" fill="#94a3b8" r="3"></circle>
+<g transform="translate(605, 75)">
+<rect fill="#0f172a" height="28" rx="2" stroke="#475569" stroke-width="1" width="110"></rect>
+<text fill="#cbd5e1" font-family="IBM Plex Mono" font-size="9" font-weight="600" x="8" y="18">MPU-01: 6-AXIS</text>
+</g>
+</g>
+<!-- Callout 4: 12V DC MOTOR -->
+<g class="cursor-pointer" id="callout-mot-01" onclick="selectComponent('mot-01')">
+<path d="M 830 255 L 830 330 L 770 330" fill="none" stroke="#64748b" stroke-dasharray="3 3" stroke-width="1.2"></path>
+<circle cx="830" cy="255" fill="#94a3b8" r="3"></circle>
+<g transform="translate(660, 315)">
+<rect fill="#0f172a" height="28" rx="2" stroke="#475569" stroke-width="1" width="105"></rect>
+<text fill="#cbd5e1" font-family="IBM Plex Mono" font-size="9" font-weight="600" x="8" y="18">MOT-01: 12V 250RPM</text>
+</g>
+</g>
+<!-- Callout 5: LOAD CELL 2 -->
+<g class="cursor-pointer" id="callout-lc-02" onclick="selectComponent('lc-02')">
+<path d="M 590 262 L 590 335 L 520 335" fill="none" stroke="#64748b" stroke-dasharray="3 3" stroke-width="1.2"></path>
+<circle cx="590" cy="262" fill="#94a3b8" r="3"></circle>
+<g transform="translate(415, 320)">
+<rect fill="#0f172a" height="28" rx="2" stroke="#475569" stroke-width="1" width="100"></rect>
+<text fill="#cbd5e1" font-family="IBM Plex Mono" font-size="9" font-weight="600" x="8" y="18">LC-02: 50KG DISCH</text>
+</g>
+</g>
+</svg>
+<!-- Viewport Controls & Legend Watermark -->
+<div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-[#0f172a]/90 backdrop-blur px-2.5 py-1.5 rounded border-0 text-[#93ccff]">
+<span class="material-symbols-outlined text-[15px]">touch_app</span>
+<span class="font-label-sm text-label-sm font-semibold">CLICK ANY HOTSPOT NODE TO INSPECT SPECS</span>
+</div>
+</div>
+<!-- Quick Assembly Dimension Metadata strip -->
+<div class="p-space-sm bg-surface-container-low grid grid-cols-2 md:grid-cols-4 gap-space-xs text-secondary font-label-sm text-label-sm">
+<div class="flex flex-col">
+<span class="font-mono text-secondary">OVERALL LENGTH</span>
+<span class="font-mono font-bold text-on-surface">1,360 mm</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-secondary">CENTER DISTANCE</span>
+<span class="font-mono font-bold text-on-surface">1,200 mm (C-to-C)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-secondary">BELT DECK WIDTH</span>
+<span class="font-mono font-bold text-on-surface">120 mm (Useful)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-secondary">DESIGN PAYLOAD</span>
+<span class="font-mono font-bold text-primary">25.0 kg Nominal</span>
+</div>
+</div>
+</div>
+<!-- RIGHT: COMPONENT DETAILS INSPECTION PANEL (5 COLS - DEFAULT LOAD CELL 1) -->
+<div class="xl:col-span-5 flex flex-col bg-surface-container-lowest rounded shadow-sm overflow-hidden" id="component-inspection-card">
+<!-- Card Header -->
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary" id="spec-icon">scale</span>
+<div>
+<div class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">HARDWARE SPECIFICATION SHEET</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight" id="spec-title">COMPONENT: LOAD CELL 1 (LC-01)</h2>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm font-bold rounded" id="spec-badge">TARE / FEED ZONE</span>
+</div>
+<!-- Primary Identification Banner -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm text-secondary uppercase">TAG ID • SUBSYSTEM</div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface font-mono" id="spec-tag">LC-01 • MASS &amp; TENSION WEIGHING</div>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-secondary uppercase">CAD STATUS</div>
+<div class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1 justify-end">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>VERIFIED INSTALLED</span>
+</div>
+</div>
+</div>
+<!-- Technical Specification Key-Value Data Matrix -->
+<div class="p-space-md flex-1 overflow-y-auto" id="spec-container">
+<!-- The content will be dynamically updated by JS if clicked, but initially hardcoded to Load Cell 1 per mandatory requirement -->
+<dl class="flex flex-col gap-2.5 font-body-sm text-body-sm" id="spec-list">
+<div class="flex flex-col pb-2 bg-surface-container-lowest">
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Component Type</dt>
+<dd class="font-label-md text-label-md text-on-surface font-bold mt-0.5" id="val-type">Strain Gauge Single-Point Parallel Beam Load Cell</dd>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pb-2">
+<div>
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Model / Part No.</dt>
+<dd class="font-label-md text-label-md text-primary font-mono font-bold mt-0.5" id="val-model">TAL220-M6 / Micro-50KG</dd>
+</div>
+<div>
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Rated Capacity</dt>
+<dd class="font-label-md text-label-md text-on-surface font-mono font-bold mt-0.5" id="val-capacity">50.0 kg (490 N) Full Scale</dd>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pb-2">
+<div>
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Operating Voltage / Excitation</dt>
+<dd class="font-label-md text-label-md text-on-surface font-mono font-bold mt-0.5" id="val-voltage">5V - 10V DC (HX711 @ 5.0V)</dd>
+</div>
+<div>
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Output Sensitivity</dt>
+<dd class="font-label-md text-label-md text-on-surface font-mono font-bold mt-0.5" id="val-sens">2.0 ± 0.1 mV/V</dd>
+</div>
+</div>
+<div class="flex flex-col pb-2">
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Physical Coordinate / Mounting Location</dt>
+<dd class="font-label-md text-label-md text-on-surface font-mono font-semibold mt-0.5" id="val-location">Conveyor Bed Station 1 (X=280mm from tail roller, center-mounted under deck plate)</dd>
+</div>
+<div class="flex flex-col pb-2">
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Purpose &amp; Functional Role</dt>
+<dd class="font-body-sm text-body-sm text-on-surface mt-0.5 leading-relaxed" id="val-purpose">Measures dynamic material load and impact mass at the hopper drop zone; enables instantaneous bulk feed rate computation and overload protection interlock.</dd>
+</div>
+<div class="flex flex-col pb-2">
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Wiring &amp; Connection Bus</dt>
+<dd class="font-label-sm text-label-sm font-mono text-on-surface bg-surface-container-low p-2 rounded leading-relaxed mt-0.5" id="val-wiring">
+<span class="text-error font-bold">Red: E+</span> • 
+              <span class="text-on-surface font-bold">Black: E-</span> • 
+              <span class="text-secondary font-bold">White: A-</span> • 
+              <span class="text-[#10b981] font-bold">Green: A+</span>
+<div class="text-secondary mt-1">Routed to Channel A of HX711 24-bit Delta-Sigma ADC on ESP32 Sensor Bus (GPIO 18 / SCK 19).</div>
+</dd>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pb-2">
+<div>
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Non-Linearity</dt>
+<dd class="font-label-md text-label-md text-on-surface font-mono font-bold mt-0.5" id="val-nonlin">0.05% F.S.</dd>
+</div>
+<div>
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Repeatability</dt>
+<dd class="font-label-md text-label-md text-on-surface font-mono font-bold mt-0.5" id="val-repeat">0.03% F.S.</dd>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pb-2">
+<div>
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Operating Temperature Range</dt>
+<dd class="font-label-md text-label-md text-on-surface font-mono font-bold mt-0.5" id="val-temp">-20°C to +65°C</dd>
+</div>
+<div>
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Calibration Factor</dt>
+<dd class="font-label-md text-label-md text-primary font-mono font-bold mt-0.5" id="val-calib">419.2 counts/gram (Cal: 2024-10-12)</dd>
+</div>
+</div>
+<div class="flex flex-col">
+<dt class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Mechanical Fastening</dt>
+<dd class="font-body-sm text-body-sm text-on-surface mt-0.5" id="val-mount">Two M6 high-tensile socket-head cap bolts torqued to 9.2 Nm on chassis mount; two M5 countersunk bolts fastened to free-floating aluminum deck tray.</dd>
+</div>
+</dl>
+</div>
+<!-- Action Footer for Component Inspection -->
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>STEP CAD REF: CV01-REV-C.STEP</span>
+</div>
+<button class="px-2.5 py-1 bg-surface-container text-primary font-bold hover:bg-surface-container-highest rounded transition-colors flex items-center gap-1" onclick="downloadCadSheet()">
+<span class="material-symbols-outlined text-[14px]">download</span>
+<span>EXPORT DATASHEET</span>
+</button>
+</div>
+</div>
+</div>
+<!-- COMPONENT REGISTRY TABLE (SURFACE CHASSIS LEVEL 1) -->
+<div class="bg-surface-container-lowest rounded shadow-sm overflow-hidden mb-space-md">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">table_chart</span>
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">COMPONENT REGISTRY: PROTOTYPE HARDWARE DIRECTORY</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary font-mono">
+        FILTER: ALL PHYSICAL ASSETS (8/8 ONLINE)
+      </div>
+</div>
+<!-- Data Matrix Grid Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2 px-space-md">TAG ID</th>
+<th class="py-2 px-space-md">COMPONENT NAME</th>
+<th class="py-2 px-space-md">SUBSYSTEM</th>
+<th class="py-2 px-space-md">MANUFACTURER / MODEL</th>
+<th class="py-2 px-space-md">BUS / PORT</th>
+<th class="py-2 px-space-md">COORDINATE</th>
+<th class="py-2 px-space-md text-right">ACTION</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="component-table-body">
+<!-- Row 1: Load Cell 1 (Selected by default) -->
+<tr class="cursor-pointer bg-surface-container-high transition-colors hover:bg-surface-container" id="row-lc-01" onclick="selectComponent('lc-01')">
+<td class="py-2 px-space-md font-label-md text-label-md font-bold text-primary font-mono">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                LC-01
+              </span>
+</td>
+<td class="py-2 px-space-md font-bold text-on-surface">Load Cell 1 (Tare/Feed Zone)</td>
+<td class="py-2 px-space-md text-secondary">Mass &amp; Weighing</td>
+<td class="py-2 px-space-md font-mono text-on-surface">TAL220-M6 (50kg)</td>
+<td class="py-2 px-space-md font-mono text-secondary">HX711-CH_A • GPIO 18/19</td>
+<td class="py-2 px-space-md font-mono text-secondary">X=280mm (Center)</td>
+<td class="py-2 px-space-md text-right">
+<span class="px-2 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm font-bold rounded">INSPECTING</span>
+</td>
+</tr>
+<!-- Row 2: Load Cell 2 -->
+<tr class="cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low transition-colors" id="row-lc-02" onclick="selectComponent('lc-02')">
+<td class="py-2 px-space-md font-label-md text-label-md font-bold text-on-surface font-mono">LC-02</td>
+<td class="py-2 px-space-md font-bold text-on-surface">Load Cell 2 (Discharge Zone)</td>
+<td class="py-2 px-space-md text-secondary">Mass &amp; Weighing</td>
+<td class="py-2 px-space-md font-mono text-on-surface">TAL220-M6 (50kg)</td>
+<td class="py-2 px-space-md font-mono text-secondary">HX711-CH_B • GPIO 21/22</td>
+<td class="py-2 px-space-md font-mono text-secondary">X=740mm (Center)</td>
+<td class="py-2 px-space-md text-right">
+<button class="px-2 py-0.5 bg-surface-container-low text-primary font-label-sm text-label-sm font-bold rounded hover:bg-surface-container">SELECT</button>
+</td>
+</tr>
+<!-- Row 3: MPU6050 -->
+<tr class="cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors" id="row-mpu-01" onclick="selectComponent('mpu-01')">
+<td class="py-2 px-space-md font-label-md text-label-md font-bold text-on-surface font-mono">MPU-01</td>
+<td class="py-2 px-space-md font-bold text-on-surface">MPU6050 6-Axis IMU Sensor</td>
+<td class="py-2 px-space-md text-secondary">Vibration Diagnostics</td>
+<td class="py-2 px-space-md font-mono text-on-surface">TDK InvenSense MPU-6050</td>
+<td class="py-2 px-space-md font-mono text-secondary">I2C (0x68) • SDA 21 / SCL 22</td>
+<td class="py-2 px-space-md font-mono text-secondary">X=1180mm (Drive Brg)</td>
+<td class="py-2 px-space-md text-right">
+<button class="px-2 py-0.5 bg-surface-container-low text-primary font-label-sm text-label-sm font-bold rounded hover:bg-surface-container">SELECT</button>
+</td>
+</tr>
+<!-- Row 4: Speed Encoder -->
+<tr class="cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low transition-colors" id="row-enc-01" onclick="selectComponent('enc-01')">
+<td class="py-2 px-space-md font-label-md text-label-md font-bold text-on-surface font-mono">ENC-01</td>
+<td class="py-2 px-space-md font-bold text-on-surface">Optical Speed Encoder</td>
+<td class="py-2 px-space-md text-secondary">Tachometry &amp; Speed</td>
+<td class="py-2 px-space-md font-mono text-on-surface">ITR9608 Photo-Slot (20 PPR)</td>
+<td class="py-2 px-space-md font-mono text-secondary">ESP32 GPIO 04 (Ext Interrupt)</td>
+<td class="py-2 px-space-md font-mono text-secondary">X=40mm (Tail Pulley)</td>
+<td class="py-2 px-space-md text-right">
+<button class="px-2 py-0.5 bg-surface-container-low text-primary font-label-sm text-label-sm font-bold rounded hover:bg-surface-container">SELECT</button>
+</td>
+</tr>
+<!-- Row 5: 12V DC Motor -->
+<tr class="cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors" id="row-mot-01" onclick="selectComponent('mot-01')">
+<td class="py-2 px-space-md font-label-md text-label-md font-bold text-on-surface font-mono">MOT-01</td>
+<td class="py-2 px-space-md font-bold text-on-surface">12V Geared DC Drive Motor</td>
+<td class="py-2 px-space-md text-secondary">Prime Mover &amp; Powertrain</td>
+<td class="py-2 px-space-md font-mono text-on-surface">PG-3650500 Planetary 12V 250RPM</td>
+<td class="py-2 px-space-md font-mono text-secondary">L298N H-Bridge • PWM GPIO 25</td>
+<td class="py-2 px-space-md font-mono text-secondary">X=1260mm (Drive Head)</td>
+<td class="py-2 px-space-md text-right">
+<button class="px-2 py-0.5 bg-surface-container-low text-primary font-label-sm text-label-sm font-bold rounded hover:bg-surface-container">SELECT</button>
+</td>
+</tr>
+<!-- Row 6: Drive Roller -->
+<tr class="cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low transition-colors" id="row-rol-drv" onclick="selectComponent('rol-drv')">
+<td class="py-2 px-space-md font-label-md text-label-md font-bold text-on-surface font-mono">ROL-01</td>
+<td class="py-2 px-space-md font-bold text-on-surface">Drive Head Pulley Roller</td>
+<td class="py-2 px-space-md text-secondary">Mechanical Power Transfer</td>
+<td class="py-2 px-space-md font-mono text-on-surface">∅80mm Polyurethane Lagged</td>
+<td class="py-2 px-space-md font-mono text-secondary">Direct Shaft Keyed 8mm</td>
+<td class="py-2 px-space-md font-mono text-secondary">X=1200mm (Head End)</td>
+<td class="py-2 px-space-md text-right">
+<button class="px-2 py-0.5 bg-surface-container-low text-primary font-label-sm text-label-sm font-bold rounded hover:bg-surface-container">SELECT</button>
+</td>
+</tr>
+<!-- Row 7: Tail Roller -->
+<tr class="cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors" id="row-rol-tail" onclick="selectComponent('rol-tail')">
+<td class="py-2 px-space-md font-label-md text-label-md font-bold text-on-surface font-mono">ROL-02</td>
+<td class="py-2 px-space-md font-bold text-on-surface">Tail Return Pulley Roller</td>
+<td class="py-2 px-space-md text-secondary">Mechanical Belt Guidance</td>
+<td class="py-2 px-space-md font-mono text-on-surface">∅80mm Machined Steel + 608ZZ</td>
+<td class="py-2 px-space-md font-mono text-secondary">Dual Screw Take-Up Unit</td>
+<td class="py-2 px-space-md font-mono text-secondary">X=0mm (Take-up Datum)</td>
+<td class="py-2 px-space-md text-right">
+<button class="px-2 py-0.5 bg-surface-container-low text-primary font-label-sm text-label-sm font-bold rounded hover:bg-surface-container">SELECT</button>
+</td>
+</tr>
+<!-- Row 8: Conveyor Belt -->
+<tr class="cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low transition-colors" id="row-belt-01" onclick="selectComponent('belt-01')">
+<td class="py-2 px-space-md font-label-md text-label-md font-bold text-on-surface font-mono">BLT-01</td>
+<td class="py-2 px-space-md font-bold text-on-surface">Endless Conveyor Belt</td>
+<td class="py-2 px-space-md text-secondary">Material Conveyance</td>
+<td class="py-2 px-space-md font-mono text-on-surface">2-Ply PVC-120 Low-Friction</td>
+<td class="py-2 px-space-md font-mono text-secondary">Continuous Friction Loop</td>
+<td class="py-2 px-space-md font-mono text-secondary">X=0 to X=1200mm Span</td>
+<td class="py-2 px-space-md text-right">
+<button class="px-2 py-0.5 bg-surface-container-low text-primary font-label-sm text-label-sm font-bold rounded hover:bg-surface-container">SELECT</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- CLIENT INTERACTION SCRIPT FOR COMPONENT SWITCHING -->
+<script>
+  const COMPONENT_DATA = {
+    'lc-01': {
+      title: 'COMPONENT: LOAD CELL 1 (LC-01)',
+      badge: 'TARE / FEED ZONE',
+      tag: 'LC-01 • MASS & TENSION WEIGHING',
+      icon: 'scale',
+      ringId: 'lc01-ring',
+      specs: {
+        type: 'Strain Gauge Single-Point Parallel Beam Load Cell',
+        model: 'TAL220-M6 / Micro-50KG',
+        capacity: '50.0 kg (490 N) Full Scale',
+        voltage: '5V - 10V DC (HX711 @ 5.0V)',
+        sens: '2.0 ± 0.1 mV/V',
+        location: 'Conveyor Bed Station 1 (X=280mm from tail roller, center-mounted under deck plate)',
+        purpose: 'Measures dynamic material load and impact mass at the hopper drop zone; enables instantaneous bulk feed rate computation and overload protection interlock.',
+        wiring: '<span class="text-error font-bold">Red: E+</span> • <span class="text-on-surface font-bold">Black: E-</span> • <span class="text-secondary font-bold">White: A-</span> • <span class="text-[#10b981] font-bold">Green: A+</span><div class="text-secondary mt-1">Routed to Channel A of HX711 24-bit Delta-Sigma ADC on ESP32 Sensor Bus (GPIO 18 / SCK 19).</div>',
+        nonlin: '0.05% F.S.',
+        repeat: '0.03% F.S.',
+        temp: '-20°C to +65°C',
+        calib: '419.2 counts/gram (Cal: 2024-10-12)',
+        mount: 'Two M6 high-tensile socket-head cap bolts torqued to 9.2 Nm on chassis mount; two M5 countersunk bolts fastened to free-floating aluminum deck tray.'
+      }
+    },
+    'lc-02': {
+      title: 'COMPONENT: LOAD CELL 2 (LC-02)',
+      badge: 'DISCHARGE / TAIL WEIGHING',
+      tag: 'LC-02 • MASS & FLOW VERIFICATION',
+      icon: 'scale',
+      ringId: 'lc02-ring',
+      specs: {
+        type: 'Strain Gauge Single-Point Parallel Beam Load Cell',
+        model: 'TAL220-M6 / Micro-50KG',
+        capacity: '50.0 kg (490 N) Full Scale',
+        voltage: '5V - 10V DC (HX711 @ 5.0V)',
+        sens: '2.0 ± 0.1 mV/V',
+        location: 'Conveyor Bed Station 2 (X=740mm from tail roller, intermediate weigh deck)',
+        purpose: 'Measures aggregate downstream material distribution prior to discharge; verifies continuous mass balance and material slippage alongside LC-01.',
+        wiring: '<span class="text-error font-bold">Red: E+</span> • <span class="text-on-surface font-bold">Black: E-</span> • <span class="text-secondary font-bold">White: B-</span> • <span class="text-[#10b981] font-bold">Green: B+</span><div class="text-secondary mt-1">Routed to Channel B of secondary HX711 bridge module on ESP32 bus (GPIO 21 / SCK 22).</div>',
+        nonlin: '0.05% F.S.',
+        repeat: '0.03% F.S.',
+        temp: '-20°C to +65°C',
+        calib: '421.8 counts/gram (Cal: 2024-10-12)',
+        mount: 'Two M6 grade 8.8 bolts secured into cross-tie rail; two M5 metric fasteners into downstream floating conveyor tray.'
+      }
+    },
+    'mpu-01': {
+      title: 'COMPONENT: MPU6050 SENSOR (MPU-01)',
+      badge: 'VIBRATION / BEARING DIAGNOSTICS',
+      tag: 'MPU-01 • MEMS 6-DOF IMU',
+      icon: 'vibration',
+      ringId: 'mpu01-ring',
+      specs: {
+        type: 'Digital 6-Axis MEMS Inertial Measurement Unit (Triaxial Accelerometer + Gyroscope)',
+        model: 'InvenSense MPU-6050 Breakout Board',
+        capacity: '±2g / ±4g / ±8g / ±16g User Selectable (Active: ±2g for micro-vibration)',
+        voltage: '3.3V - 5.0V DC (On-board LDO RT9161 @ 3.3V logic level)',
+        sens: '16,384 LSB/g (at ±2g range)',
+        location: 'Drive-end Pillow Block Bearing Pedestal (X=1180mm, Z=+160mm rigidly stud mounted)',
+        purpose: 'Monitors real-time drive-shaft imbalance, bearing race wear patterns, high-frequency motor harmonics, and sudden mechanical jamming events.',
+        wiring: '<span class="text-error font-bold">VCC: +3.3V</span> • <span class="text-on-surface font-bold">GND: 0V</span> • <span class="text-primary font-bold">SDA: GPIO 21</span> • <span class="text-secondary font-bold">SCL: GPIO 22</span><div class="text-secondary mt-1">Direct I2C hardware bus connection (Device address: 0x68 via AD0 tied LOW). 400kHz Fast Mode.</div>',
+        nonlin: '0.1% Full Scale Gyro / Accel',
+        repeat: 'Zero-g initial output tolerance: ±50mg',
+        temp: '-40°C to +85°C Industrial',
+        calib: 'Factory calibrated with custom offsets: [X: -142, Y: +88, Z: +1630]',
+        mount: 'Rigid M2.5 brass standoffs fastened to the anodized aluminum bearing housing block with thermal conductive epoxy pad.'
+      }
+    },
+    'enc-01': {
+      title: 'COMPONENT: SPEED ENCODER (ENC-01)',
+      badge: 'TACHOMETRY / IDLER SPEED',
+      tag: 'ENC-01 • OPTICAL ROTARY ENCODER',
+      icon: 'speed',
+      ringId: 'enc01-ring',
+      specs: {
+        type: 'Photoelectric Slotted Optical Interrupter with Stamped Stainless Rotary Disc',
+        model: 'Everlight ITR9608 Optical Slot Sensor / 20 PPR Code Wheel',
+        capacity: '0 - 1,200 RPM (Belt speed 0.0 - 1.25 m/s)',
+        voltage: '3.3V - 5.0V DC (Infrared LED Vf = 1.2V with 220Ω series current limiter)',
+        sens: '20 Pulses Per Single Revolution (0.105 rad resolution)',
+        location: 'Tail Idler Roller Non-Drive Stub Shaft (X=40mm, outboard left pedestal)',
+        purpose: 'Provides direct true belt speed measurement at the tail idler; detects drive-drum belt slippage by comparing rotational velocity against motor demand RPM.',
+        wiring: '<span class="text-error font-bold">Pin 1: +5V (Anode)</span> • <span class="text-on-surface font-bold">Pin 2: GND (Cathode)</span> • <span class="text-primary font-bold">Pin 3: Pull-up +3.3V</span> • <span class="text-[#10b981] font-bold">Pin 4: Signal OUT (GPIO 04)</span><div class="text-secondary mt-1">Configured on ESP32 external hardware interrupt channel on RISING edge.</div>',
+        nonlin: '< 0.01% jitter across continuous rotation',
+        repeat: 'Optical slot aperture width: 0.5mm with Schmitt trigger debounce',
+        temp: '-25°C to +85°C',
+        calib: 'Linear ratio: 1 pulse = 12.56mm belt displacement (Pulley Ø = 80mm)',
+        mount: 'Direct slotted disc pressed onto Ø8mm precision idler shaft; photodiode U-bracket bolted with slotted M3 alignment plate.'
+      }
+    },
+    'mot-01': {
+      title: 'COMPONENT: 12V DC MOTOR (MOT-01)',
+      badge: 'PRIME MOVER / POWERTRAIN',
+      tag: 'MOT-01 • PLANETARY GEARED DRIVE',
+      icon: 'bolt',
+      ringId: 'mot01-ring',
+      specs: {
+        type: 'Brushed DC Motor with High-Efficiency All-Metal Planetary Reduction Gearbox',
+        model: 'PG-3650500 Planetary Reduction Motor (12V DC)',
+        capacity: 'Rated Torque: 35 kg·cm (3.43 N·m) / Stall Torque: 120 kg·cm',
+        voltage: '12.0V DC Nominal (Operates from 6.0V to 15.0V PWM duty control)',
+        sens: 'No-Load Speed: 250 RPM / Full Load Speed: 195 RPM',
+        location: 'Drive Roller Axle End Station (X=1260mm, cantilevered drive faceplate)',
+        purpose: 'Provides prime mechanical motive power for conveyor belt loop; modulated via PWM driver to simulate ramp start, emergency stop, and varied tonnages.',
+        wiring: '<span class="text-error font-bold">Terminal +: 12V High-Current</span> • <span class="text-on-surface font-bold">Terminal -: Ground via H-Bridge</span><div class="text-secondary mt-1">Driven by L298N Dual Full-Bridge Driver Module (GPIO 25 PWM, GPIO 26 Direction A, GPIO 27 Direction B).</div>',
+        nonlin: 'Linear torque-current relationship (Kt = 0.082 N·m/A)',
+        repeat: 'Speed regulation error: ±1.5% with closed-loop PID',
+        temp: '-10°C to +60°C (Passive heatsink ventilated)',
+        calib: 'PWM Frequency: 20 kHz ultrasonic frequency; 0-255 step resolution',
+        mount: 'Four M4 metric machine screws on standard 36mm planetary face mounting pitch to steel motor bracket.'
+      }
+    },
+    'rol-drv': {
+      title: 'COMPONENT: DRIVE ROLLER (ROL-01)',
+      badge: 'MECHANICAL HEAD PULLEY',
+      tag: 'ROL-01 • DRIVE TRANSMISSION',
+      icon: 'cached',
+      ringId: null,
+      specs: {
+        type: 'Cylindrical Crowned Steel Drive Pulley with Vulcanized Polyurethane Lagging',
+        model: 'Custom Machined Pulley Ø80mm x 140mm Face',
+        capacity: 'Maximum Radial Shaft Load: 1,800 N (Belt Tension + Payload)',
+        voltage: 'Passive Mechanical Component',
+        sens: 'Static Friction Coefficient: µ = 0.42 (PU to PVC belt)',
+        location: 'Conveyor Head Station (X=1200mm, main discharge end)',
+        purpose: 'Transmits motive torque from geared electric motor to continuous conveyor belt via high-friction rubberized cylindrical face.',
+        wiring: 'None (Mechanical shaft assembly keyed with 3mm DIN 6885A parallel drive key)',
+        nonlin: 'Crowning Taper: 0.8mm total radial taper from center to edge to induce self-tracking',
+        repeat: 'Radial Runout < 0.03mm TIR',
+        temp: '-20°C to +80°C',
+        calib: 'Circumference: 251.32mm per single full rotation',
+        mount: 'Supported by twin UCF204 flanged ball bearing units bolted with M10 grade 8.8 structural bolts.'
+      }
+    },
+    'rol-tail': {
+      title: 'COMPONENT: TAIL ROLLER (ROL-02)',
+      badge: 'MECHANICAL RETURN PULLEY',
+      tag: 'ROL-02 • TAKE-UP & IDLER',
+      icon: 'refresh',
+      ringId: null,
+      specs: {
+        type: 'Cold-Rolled Machined Steel Return Pulley with Integrated Ball Bearings',
+        model: 'Custom Machined Pulley Ø80mm x 140mm Straight Face',
+        capacity: 'Maximum Static Load: 1,200 N',
+        voltage: 'Passive Mechanical Component',
+        sens: 'Friction Coefficient: Low-drag sealed 608ZZ bearings (Rolling friction < 0.005)',
+        location: 'Conveyor Tail End Station (X=0mm, material receiving zone datum)',
+        purpose: 'Redirects lower belt strand into upper carrying strand; integrates manual dual lead-screw take-up mechanism for belt tensioning.',
+        wiring: 'Mechanical assembly only; tail shaft includes slotted disc coupling for optical speed sensor ENC-01',
+        nonlin: 'Total Indicated Runout (TIR): 0.025mm',
+        repeat: 'Axial float tolerance: < 0.1mm',
+        temp: '-30°C to +90°C',
+        calib: 'Free-wheeling passive idler (Ratio: 1.000 with belt forward velocity)',
+        mount: 'Sliding pillow block housings mounted in 40mm extruded guide channels with dual M8 lead screw tensioners.'
+      }
+    },
+    'belt-01': {
+      title: 'COMPONENT: CONVEYOR BELT (BLT-01)',
+      badge: 'CONTINUOUS MATERIAL CARRIER',
+      tag: 'BLT-01 • PVC COMPOSITE BELTING',
+      icon: 'conveyor_belt',
+      ringId: null,
+      specs: {
+        type: 'Continuous 2-Ply Polyester/PVC Industrial Low-Noise Flat Conveyor Belting',
+        model: 'Habasit / CEMA Standard PVC-120 Flat Carrier Belt',
+        capacity: 'Tensile Strength at 1% Elongation (k1%): 4.8 N/mm width',
+        voltage: 'Anti-static formulation (Surface resistivity < 3x10^8 Ω)',
+        sens: 'Belt Thickness: 2.1mm total (Top cover 0.7mm smooth PVC, bottom polyester slider weave)',
+        location: 'Full conveyor span (Station X=0mm to X=1200mm, continuous 2,640mm endless loop)',
+        purpose: 'Supports and transports dynamic material payloads across weighing zones to discharge hopper; engineered for low noise and minimum slide resistance.',
+        wiring: 'Electrostatic discharge earth contact grounding strip attached to chassis rail',
+        nonlin: 'Elongation at allowable working tension: < 0.7%',
+        repeat: 'Endless finger-spliced thermowelded joint efficiency: 95% tensile rating',
+        temp: '-10°C to +70°C continuous duty',
+        calib: 'Linear Weight: 0.28 kg per linear meter',
+        mount: 'Fitted over Ø80mm head/tail pulleys with 1.2% initial installation pre-stretch tension.'
+      }
+    }
+  };
+
+  function selectComponent(compKey) {
+    const data = COMPONENT_DATA[compKey];
+    if (!data) return;
+
+    // 1. Update Inspection Panel
+    document.getElementById('spec-title').textContent = data.title;
+    document.getElementById('spec-badge').textContent = data.badge;
+    document.getElementById('spec-tag').textContent = data.tag;
+    document.getElementById('spec-icon').textContent = data.icon;
+
+    document.getElementById('val-type').textContent = data.specs.type;
+    document.getElementById('val-model').textContent = data.specs.model;
+    document.getElementById('val-capacity').textContent = data.specs.capacity;
+    document.getElementById('val-voltage').textContent = data.specs.voltage;
+    document.getElementById('val-sens').textContent = data.specs.sens;
+    document.getElementById('val-location').textContent = data.specs.location;
+    document.getElementById('val-purpose').textContent = data.specs.purpose;
+    document.getElementById('val-wiring').innerHTML = data.specs.wiring;
+    document.getElementById('val-nonlin').textContent = data.specs.nonlin;
+    document.getElementById('val-repeat').textContent = data.specs.repeat;
+    document.getElementById('val-temp').textContent = data.specs.temp;
+    document.getElementById('val-calib').textContent = data.specs.calib;
+    document.getElementById('val-mount').textContent = data.specs.mount;
+
+    // 2. Update Quick Selection Bar Buttons
+    document.querySelectorAll('#component-quick-bar button').forEach(btn => {
+      const isTarget = btn.getAttribute('data-target') === compKey;
+      if (isTarget) {
+        btn.className = 'quick-nav-btn px-2.5 py-1.5 bg-primary text-on-primary font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 shadow-sm transition-colors';
+        if (!btn.innerHTML.includes('Selected')) {
+          btn.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-surface-bright animate-ping"></span><span>${btn.innerText} (Selected)</span>`;
+        }
+      } else {
+        btn.className = 'quick-nav-btn px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold rounded flex items-center gap-1.5 shrink-0 transition-colors';
+        btn.innerHTML = `<span>${btn.innerText.replace(' (Selected)', '')}</span>`;
+      }
+    });
+
+    // 3. Highlight Matching CAD Blueprint Node Rings
+    const allRings = ['lc01-ring', 'lc02-ring', 'mpu01-ring', 'enc01-ring', 'mot01-ring'];
+    allRings.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        if (data.ringId === id) {
+          el.setAttribute('stroke', '#38bdf8');
+          el.setAttribute('class', 'animate-pulse');
+          el.setAttribute('filter', 'url(#activeGlow)');
+        } else {
+          el.setAttribute('stroke', 'transparent');
+          el.removeAttribute('class');
+          el.removeAttribute('filter');
+        }
+      }
+    });
+
+    // 4. Update Registry Table Active Row
+    const rows = document.querySelectorAll('#component-table-body tr');
+    rows.forEach(r => {
+      const rowId = r.id;
+      const targetRowId = 'row-' + compKey;
+      if (rowId === targetRowId) {
+        r.className = 'cursor-pointer bg-surface-container-high transition-colors';
+        const actionCell = r.querySelector('td:last-child');
+        if (actionCell) {
+          actionCell.innerHTML = '<span class="px-2 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm font-bold rounded">INSPECTING</span>';
+        }
+      } else {
+        r.className = 'cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low transition-colors';
+        const actionCell = r.querySelector('td:last-child');
+        if (actionCell) {
+          actionCell.innerHTML = '<button class="px-2 py-0.5 bg-surface-container-low text-primary font-label-sm text-label-sm font-bold rounded hover:bg-surface-container">SELECT</button>';
+        }
+      }
+    });
+  }
+
+  function downloadCadSheet() {
+    alert('Exporting Component Engineering Specification Sheet (STEP & PDF)...\\nAsset: ' + document.getElementById('spec-title').textContent);
+  }
+</script></main></div></body></html>

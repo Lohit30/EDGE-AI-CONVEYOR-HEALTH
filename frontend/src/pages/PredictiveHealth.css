@@ -1,0 +1,253 @@
+/* Predictive Health Page — SCADA styling matching reference */
+
+.predictive-health-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.predictive-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 14px;
+  align-items: stretch;
+}
+
+/* Left: Requirements Checklist */
+.predictive-reqs-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.reqs-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.req-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  background: #090e15;
+  border: 1px solid #162232;
+}
+
+.req-marker {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 13px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.req-item--done .req-marker {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+.req-item--pending .req-marker {
+  background: rgba(148, 163, 184, 0.1);
+  color: #64748b;
+  border: 1px solid #334155;
+}
+
+.req-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.req-title {
+  font-size: 12px;
+  color: #f1f5f9;
+  font-weight: 500;
+}
+
+.req-desc {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.req-status-badge {
+  font-size: 9px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.req-status-badge.done {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.req-status-badge.pending {
+  background: rgba(148, 163, 184, 0.1);
+  color: #64748b;
+  border: 1px solid #1e293b;
+}
+
+/* Center: Hero Card */
+.predictive-center-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.predictive-center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+  width: 100%;
+}
+
+.predictive-gear-wrap {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.predictive-gear-svg {
+  width: 100%;
+  height: 100%;
+  animation: slow-rotate 24s infinite linear;
+}
+
+@keyframes slow-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.predictive-hero-title {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #f8fafc;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+.predictive-badge-pill {
+  background: #111a26;
+  border: 1px solid #24354c;
+  color: #38bdf8;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 4px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.predictive-lead-text {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0 0 20px 0;
+}
+
+.predictive-progress-box {
+  width: 100%;
+  background: #090e15;
+  border: 1px solid #172436;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+}
+
+.predictive-prog-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.predictive-prog-bar {
+  width: 100%;
+  height: 6px;
+  background: #151f2e;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.predictive-prog-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+  border-radius: 3px;
+}
+
+.predictive-footnote {
+  font-size: 11px;
+  font-style: italic;
+  color: #64748b;
+}
+
+/* Right: Planned Features */
+.predictive-features-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 6px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px;
+  background: #090e15;
+  border: 1px solid #162232;
+  border-radius: 4px;
+}
+
+.feature-icon {
+  font-size: 16px;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.feature-body {
+  flex: 1;
+}
+
+.feature-name {
+  margin: 0 0 2px 0;
+  font-size: 12px;
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+.feature-desc {
+  margin: 0;
+  font-size: 10px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+@media (max-width: 1100px) {
+  .predictive-grid {
+    grid-template-columns: 1fr;
+  }
+}

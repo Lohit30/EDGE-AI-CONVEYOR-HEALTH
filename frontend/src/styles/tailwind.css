@@ -1,0 +1,175 @@
+/* =============================================================================
+   Tailwind CSS v4 — Industrial Conveyor SCADA HMI Design System
+   Tokens extracted from Stitch export (Material Design 3 palette)
+   ============================================================================= */
+
+@import "tailwindcss";
+
+/* ── M3 Color Tokens (from Stitch Tailwind config) ────────────────────────── */
+@theme {
+  /* Primary */
+  --color-primary: #00288e;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1e40af;
+  --color-on-primary-container: #a8b8ff;
+  --color-primary-fixed: #dde1ff;
+  --color-primary-fixed-dim: #b8c4ff;
+  --color-on-primary-fixed: #001453;
+  --color-on-primary-fixed-variant: #173bab;
+  --color-inverse-primary: #b8c4ff;
+
+  /* Secondary */
+  --color-secondary: #565e74;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #dae2fd;
+  --color-on-secondary-container: #5c647a;
+  --color-secondary-fixed: #dae2fd;
+  --color-secondary-fixed-dim: #bec6e0;
+  --color-on-secondary-fixed: #131b2e;
+  --color-on-secondary-fixed-variant: #3f465c;
+
+  /* Tertiary */
+  --color-tertiary: #003757;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #004f7a;
+  --color-on-tertiary-container: #77c2ff;
+  --color-tertiary-fixed: #cce5ff;
+  --color-tertiary-fixed-dim: #93ccff;
+  --color-on-tertiary-fixed: #001d31;
+  --color-on-tertiary-fixed-variant: #004b73;
+
+  /* Error */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  /* Surface */
+  --color-surface: #f8f9ff;
+  --color-on-surface: #0b1c30;
+  --color-surface-variant: #d3e4fe;
+  --color-on-surface-variant: #444653;
+  --color-surface-tint: #3755c3;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+
+  /* Outline */
+  --color-outline: #757684;
+  --color-outline-variant: #c4c5d5;
+
+  /* Background */
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+
+  /* Spacing */
+  --spacing-margin: 1rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.375rem;
+  --spacing-space-md: 0.75rem;
+  --spacing-space-lg: 1rem;
+  --spacing-space-xl: 1.5rem;
+  --spacing-gutter: 0.75rem;
+
+  /* Border Radius */
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* Font Families */
+  --font-headline-lg: "IBM Plex Mono", monospace;
+  --font-headline-md: "IBM Plex Mono", monospace;
+  --font-headline-sm: "IBM Plex Mono", monospace;
+  --font-label-lg: "IBM Plex Mono", monospace;
+  --font-label-md: "IBM Plex Mono", monospace;
+  --font-label-sm: "IBM Plex Mono", monospace;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-metric-display: "IBM Plex Mono", monospace;
+
+  /* Font Sizes (name: [size, { lineHeight, letterSpacing, fontWeight }]) */
+  --text-headline-lg: 28px;
+  --text-headline-lg--line-height: 34px;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 600;
+
+  --text-headline-md: 20px;
+  --text-headline-md--line-height: 26px;
+  --text-headline-md--letter-spacing: -0.01em;
+  --text-headline-md--font-weight: 600;
+
+  --text-headline-sm: 16px;
+  --text-headline-sm--line-height: 22px;
+  --text-headline-sm--letter-spacing: 0em;
+  --text-headline-sm--font-weight: 600;
+
+  --text-body-lg: 15px;
+  --text-body-lg--line-height: 22px;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 13px;
+  --text-body-md--line-height: 18px;
+  --text-body-md--font-weight: 400;
+
+  --text-body-sm: 11px;
+  --text-body-sm--line-height: 16px;
+  --text-body-sm--font-weight: 400;
+
+  --text-label-lg: 13px;
+  --text-label-lg--line-height: 16px;
+  --text-label-lg--letter-spacing: 0.02em;
+  --text-label-lg--font-weight: 500;
+
+  --text-label-md: 11px;
+  --text-label-md--line-height: 14px;
+  --text-label-md--letter-spacing: 0.04em;
+  --text-label-md--font-weight: 500;
+
+  --text-label-sm: 9px;
+  --text-label-sm--line-height: 12px;
+  --text-label-sm--letter-spacing: 0.06em;
+  --text-label-sm--font-weight: 600;
+
+  --text-metric-display: 24px;
+  --text-metric-display--line-height: 28px;
+  --text-metric-display--letter-spacing: -0.03em;
+  --text-metric-display--font-weight: 700;
+}
+
+/* ── Base Layer ───────────────────────────────────────────────────────────── */
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--color-on-surface);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    min-height: 100vh;
+  }
+}
+
+/* ── Scrollbar hide (match Stitch) ────────────────────────────────────────── */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Material Symbols baseline ────────────────────────────────────────────── */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}

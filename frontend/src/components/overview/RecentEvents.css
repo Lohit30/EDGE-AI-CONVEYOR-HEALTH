@@ -1,0 +1,88 @@
+.scada-events-panel {
+  display: flex;
+  flex-direction: column;
+  background: #0d1219;
+  border: 1px solid #182230;
+  border-radius: 4px;
+  padding: 10px 14px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.scada-events-header {
+  margin-bottom: 6px;
+}
+
+.scada-events-title {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #e2e8f0;
+}
+
+.scada-events-table-wrap {
+  flex: 1;
+  overflow: hidden;
+}
+
+.scada-events-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-align: left;
+}
+
+.scada-events-table th {
+  color: #64748b;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-bottom: 1px solid #1c2635;
+  font-size: 10px;
+}
+
+.scada-events-table td {
+  padding: 4.5px 6px;
+  border-bottom: 1px solid #141c28;
+}
+
+.scada-events-time {
+  color: #8da0b5;
+}
+
+.scada-events-name {
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.scada-events-details {
+  color: #718298;
+}
+
+.scada-events-pill {
+  display: inline-block;
+  padding: 1px 6px;
+  font-size: 8.5px;
+  font-weight: 700;
+  border-radius: 2px;
+  letter-spacing: 0.05em;
+}
+
+.scada-events-pill--info {
+  background: #0e2a4a;
+  border: 1px solid #1e40af;
+  color: #60a5fa;
+}
+
+.scada-events-pill--warn {
+  background: #332008;
+  border: 1px solid #b45309;
+  color: #fbbf24;
+}
+
+.scada-events-pill--crit {
+  background: #380d0d;
+  border: 1px solid #b91c1c;
+  color: #f87171;
+}

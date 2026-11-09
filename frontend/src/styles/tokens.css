@@ -1,0 +1,102 @@
+/* =============================================================================
+   INDUSTRIAL HMI DESIGN TOKENS — Updated to match reference palette
+   Conveyor Belt Monitoring System
+   ============================================================================= */
+
+:root {
+  /* ── Background hierarchy — dark navy-black ────────────────────────────── */
+  --bg-base:       #080c14;   /* body — deep navy-black */
+  --bg-panel:      #0e1219;   /* panel background */
+  --bg-surface:    #131a24;   /* elevated surface */
+  --bg-surface-2:  #1a2230;   /* secondary surface */
+  --bg-overlay:    #1f2a38;   /* hover / active */
+  --bg-gauge:      #0a0f1a;   /* gauge face background */
+
+  /* ── Border ────────────────────────────────────────────────────────────── */
+  --border:        #1e2a3a;
+  --border-strong: #2a3a50;
+  --border-focus:  #3a5070;
+
+  /* ── Text ───────────────────────────────────────────────────────────────── */
+  --text-primary:   #e2e8f0;
+  --text-secondary: #7a8fa8;
+  --text-muted:     #4a5a6a;
+  --text-inverse:   #080c14;
+
+  /* ── Engineering state colors ───────────────────────────────────────────── */
+  --state-normal:         #22c55e;
+  --state-normal-bg:      #052e0f;
+  --state-normal-border:  #166534;
+  --state-normal-dim:     #166534;
+  --state-normal-solid:   #16a34a;
+
+  --state-info:           #3b82f6;
+  --state-info-bg:        #0c1a35;
+  --state-info-border:    #1e40af;
+
+  --state-warning:        #f59e0b;
+  --state-warning-bg:     #2a1a04;
+  --state-warning-border: #92400e;
+  --state-warning-dim:    #92400e;
+  --state-warning-solid:  #d97706;
+
+  --state-critical:       #ef4444;
+  --state-critical-bg:    #2a0808;
+  --state-critical-border:#991b1b;
+  --state-critical-dim:   #991b1b;
+  --state-critical-solid: #dc2626;
+
+  --state-offline:        #64748b;
+  --state-offline-bg:     #0f1620;
+
+  /* ── Gauge ──────────────────────────────────────────────────────────────── */
+  --gauge-track:    #1a2230;
+  --gauge-normal:   #16a34a;
+  --gauge-warning:  #d97706;
+  --gauge-critical: #dc2626;
+  --gauge-needle:   #f1f5f9;
+  --gauge-center:   #2a3a50;
+
+  /* ── Chart ──────────────────────────────────────────────────────────────── */
+  --chart-line-1:   #3b82f6;
+  --chart-line-2:   #22c55e;
+  --chart-line-3:   #f59e0b;
+  --chart-line-4:   #ef4444;
+  --chart-grid:     #111827;
+  --chart-axis:     #4a5a6a;
+
+  /* ── Typography ─────────────────────────────────────────────────────────── */
+  --font-sans:  'Inter', system-ui, sans-serif;
+  --font-mono:  'JetBrains Mono', 'Courier New', monospace;
+
+  --text-xs:    0.6875rem;
+  --text-sm:    0.75rem;
+  --text-base:  0.8125rem;
+  --text-md:    0.875rem;
+  --text-lg:    1rem;
+  --text-xl:    1.125rem;
+  --text-2xl:   1.375rem;
+  --text-3xl:   1.75rem;
+
+  /* ── Spacing ─────────────────────────────────────────────────────────────── */
+  --sp-1: 4px;
+  --sp-2: 6px;
+  --sp-3: 8px;
+  --sp-4: 12px;
+  --sp-5: 16px;
+  --sp-6: 20px;
+  --sp-7: 24px;
+  --sp-8: 32px;
+
+  /* ── Geometry ────────────────────────────────────────────────────────────── */
+  --radius-sm:  2px;
+  --radius:     3px;
+  --radius-md:  4px;
+
+  /* ── Layout ──────────────────────────────────────────────────────────────── */
+  --sidebar-w:  188px;
+  --topbar-h:   44px;
+
+  /* ── Transitions ─────────────────────────────────────────────────────────── */
+  --transition: 120ms ease;
+}

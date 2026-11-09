@@ -1,0 +1,621 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-tint":"#3755c3","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","surface-container":"#e5eeff","inverse-primary":"#b8c4ff","surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#444653","on-tertiary":"#ffffff","on-primary-container":"#a8b8ff","on-error":"#ffffff","surface-dim":"#cbdbf5","error":"#ba1a1a","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#77c2ff","outline-variant":"#c4c5d5","secondary":"#565e74","secondary-container":"#dae2fd","on-primary-fixed":"#001453","on-primary":"#ffffff","primary":"#00288e","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-tertiary-fixed":"#001d31","on-background":"#0b1c30","on-secondary-fixed":"#131b2e","outline":"#757684","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","primary-fixed":"#dde1ff","tertiary-container":"#004f7a","background":"#f8f9ff","surface":"#f8f9ff","primary-container":"#1e40af","surface-bright":"#f8f9ff","on-surface":"#0b1c30","surface-container-lowest":"#ffffff","tertiary":"#003757","inverse-surface":"#213145","on-secondary":"#ffffff","primary-fixed-dim":"#b8c4ff","on-tertiary-fixed-variant":"#004b73","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#173bab"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","space-lg":"1rem","space-xl":"1.5rem","space-xs":"0.25rem","space-sm":"0.375rem","space-md":"0.75rem",gutter:"0.75rem"},fontFamily:{"headline-lg":["IBM Plex Mono"],"label-lg":["IBM Plex Mono"],"label-sm":["IBM Plex Mono"],"headline-md":["IBM Plex Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"label-md":["IBM Plex Mono"],"headline-sm":["IBM Plex Mono"],"metric-display":["IBM Plex Mono"]},fontSize:{"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["13px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-sm":["9px",{lineHeight:"12px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["11px",{lineHeight:"16px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"metric-display":["24px",{lineHeight:"28px",letterSpacing:"-0.03em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-50 px-margin flex items-center justify-between shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><div class="flex items-center gap-space-md"><img alt="Conveyor SCADA Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZBtUjcHjGVR0BdoBAzb9o9_lGqUtxZbkcPOimLv7Ftd8Y33Y4iU7YUYqWaskntqerEsyzIhxtvus3z_3oCimNJnNIjzGSXulm1lKBejFskEjKrvtXU6kJOXAwLv7L5L3ZmLqb05qfFSAb5IPc73DqIB4DdZORgRCgkeQdU2YSqm2tHWSp-T3BZprGzeyzUqzm5lwt3AZlczB7syGMJLSW-W4GqQFeHIVUf7U_ZcL9b7b1utGcGYYyET0"><div class="h-8 w-[1px] bg-outline-variant"></div><div><div class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs leading-none tracking-tight">CONVEYOR MONITORING SYSTEM</div><div class="font-label-sm text-label-sm text-secondary tracking-widest leading-none mt-1">PROTOTYPE CV-01 • SMART • SAFE • RELIABLE</div></div><div class="ml-space-xs flex items-center gap-1.5 px-2 py-0.5 bg-surface-container-low border border-outline-variant rounded"><span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span><span class="font-label-sm text-label-sm font-bold text-on-surface tracking-wider">RUNNING</span></div></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container-low px-space-md py-1 border border-outline-variant rounded"><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">BACKEND</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">OK</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">MQTT</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">CONN</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">ESP32</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">ONLINE</span></div><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-secondary">RPI4 EDGE</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">42°C</span></div></div><div class="flex items-center gap-space-md"><div class="text-right"><div class="font-label-md text-label-md text-on-surface font-semibold tracking-wider">14:23:56 UTC</div><div class="font-label-sm text-label-sm text-tertiary-container font-bold uppercase tracking-wider">[SIMULATION / DEV]</div></div><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block text-left"><div class="font-label-sm text-label-sm text-on-surface font-bold leading-tight">ENG. K. VANCE</div><div class="font-label-sm text-label-sm text-secondary leading-tight">ROLE: [ADMIN]</div></div><button class="p-1 text-secondary hover:text-error hover:bg-error-container/20 rounded transition-colors ml-1" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-sm"><div class="px-space-sm py-1.5 text-secondary font-label-sm text-label-sm font-bold tracking-widest uppercase border-b border-outline-variant mb-1">MAIN NAVIGATION</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-bold border border-primary"><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">view_quilt</span><span class="font-label-md text-label-md">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vibration" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">vibration</span><span class="font-label-md text-label-md">Vibration</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="load" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">weight</span><span class="font-label-md text-label-md">Load</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="belt-speed" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">speed</span><span class="font-label-md text-label-md">Belt Speed</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="electrical-voltage" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">bolt</span><span class="font-label-md text-label-md">Electrical / Voltage</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera-inspection" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">videocam</span><span class="font-label-md text-label-md">Camera Inspection</span></div><span class="px-1 py-0.2 bg-[#ef4444] text-white font-label-sm text-label-sm font-bold rounded">LIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-twin" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">deployed_code</span><span class="font-label-md text-label-md">Digital Twin</span></div><span class="px-1 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">CAD</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors bg-primary-container text-on-primary font-bold border border-primary" data-path="predictive-health" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-label-md text-label-md">Predictive Health</span></div><span class="px-1 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold rounded">ML</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-label-md text-label-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">build</span><span class="font-label-md text-label-md">Maintenance</span></div><span class="px-1.5 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">1 OPEN</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alerts" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">warning</span><span class="font-label-md text-label-md">Alerts</span></div><span class="px-1.5 py-0.2 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">3 ACTIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-label-md text-label-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-low font-label-sm text-label-sm flex flex-col gap-1 text-secondary"><div class="flex items-center justify-between"><span class="font-mono">FIRMWARE</span><span class="font-mono font-bold text-on-surface">v2.4.1-rc3</span></div><div class="flex items-center justify-between"><span class="font-mono">PLC LINK</span><span class="font-mono font-bold text-on-surface">ISO/CEMA STD</span></div><div class="flex items-center justify-between"><span class="font-mono">SAFETY</span><span class="font-mono font-bold text-[#10b981]">E-STOP READY</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-surface-container-lowest min-h-screen p-space-md border-l border-outline-variant"><div class="flex flex-col w-full">
+<!-- Active Sidebar Synchronization Script -->
+<script>
+    (function() {
+      const activeClasses = 'bg-primary-container text-on-primary font-bold shadow-sm';
+      const inactiveClasses = 'text-on-surface-variant hover:bg-surface-container hover:text-on-surface';
+      document.querySelectorAll('aside nav a').forEach(a => {
+        const path = a.getAttribute('data-path');
+        if (path === 'vibration') {
+          a.className = `flex items-center justify-between px-space-sm py-1.5 rounded transition-colors ${activeClasses}`;
+        } else {
+          a.className = `flex items-center justify-between px-space-sm py-1.5 rounded transition-colors ${inactiveClasses}`;
+        }
+      });
+    })();
+  </script>
+<!-- 1. Top Section / Status Banner -->
+<header class="w-full bg-surface-container-lowest shadow-sm rounded-lg p-space-md mb-space-md">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<!-- Equipment & Bus Specs -->
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="bg-primary px-3 py-1.5 rounded text-on-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">precision_manufacturing</span>
+<span class="font-headline-sm text-headline-sm tracking-wider">CV-IRON-01</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">DRIVE-END BEARING VIBRATION DIAGNOSTICS</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-semibold uppercase">POS: X=1180mm</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary flex items-center gap-3 mt-0.5">
+<span>TRANSDUCER: MPU-6050 (6-AXIS IMU @ I2C 0x68)</span>
+<span>•</span>
+<span>NODE: ESP32-WROOM-32D (100Hz MQTT)</span>
+<span>•</span>
+<span>FIFO: 1024-PT RECORD / HANNING WINDOW</span>
+</div>
+</div>
+</div>
+<!-- Live Condition Telemetry & Standard Rating -->
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="bg-surface-container-low px-3 py-1.5 rounded flex items-center gap-3">
+<div>
+<div class="font-label-sm text-label-sm text-secondary uppercase">OVERALL RMS (v-rms)</div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-display text-metric-display text-primary font-bold">3.42</span>
+<span class="font-label-md text-label-md text-secondary">mm/s</span>
+</div>
+</div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-pulse"></div>
+</div>
+<div class="bg-surface-container-low px-3 py-1.5 rounded flex flex-col justify-center">
+<div class="font-label-sm text-label-sm text-secondary uppercase">ISO 10816-3 CL. I/II</div>
+<div class="font-label-md text-label-md font-bold text-[#0284c7] flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+            ACCEPTABLE (&lt;4.50 mm/s)
+          </div>
+</div>
+<div class="bg-surface-container-low px-3 py-1.5 rounded flex flex-col justify-center">
+<div class="font-label-sm text-label-sm text-secondary uppercase">SYS OPERATING STATE</div>
+<div class="font-label-md text-label-md font-bold text-[#10b981] flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
+            NOMINAL UNRESTRICTED
+          </div>
+</div>
+</div>
+</div>
+</header>
+<!-- 2. Primary Gauges & Metrics Panel -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-md">
+<!-- Physical Analog Meter Dial (4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low px-3 py-1.5 rounded mb-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">ISO V-RMS DIAL MONITOR</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary tracking-widest">DIN 43700 / 0-15 mm/s</span>
+</div>
+<!-- Analog Dial Gauge Canvas (Scalable Industrial Indicator) -->
+<div class="relative flex flex-col items-center justify-center my-auto py-2">
+<svg class="w-full max-w-[270px] drop-shadow-sm select-none" viewBox="0 0 280 200">
+<defs>
+<radialGradient cx="30%" cy="30%" id="hubShine" r="70%">
+<stop offset="0%" stop-color="#ffffff"></stop>
+<stop offset="60%" stop-color="#94a3b8"></stop>
+<stop offset="100%" stop-color="#334155"></stop>
+</radialGradient>
+<filter height="120%" id="recessedPlate" width="120%" x="-10%" y="-10%">
+<feDropShadow dx="0" dy="1" flood-opacity="0.12" stdDeviation="2"></feDropShadow>
+</filter>
+</defs>
+<!-- Dial Bezel Plate -->
+<circle cx="140" cy="140" fill="#f8fafc" filter="url(#recessedPlate)" r="118" stroke="#cbd5e1" stroke-width="2"></circle>
+<circle cx="140" cy="140" fill="#ffffff" r="110"></circle>
+<!-- Arc Zones (Total sweep 220 deg, -200 deg to 20 deg) -->
+<!-- Green Zone: 0 to 4.5 mm/s (0 to 66 deg) -->
+<path d="M 37.3 140 A 102.7 102.7 0 0 1 78.4 57.8" fill="none" stroke="#10b981" stroke-linecap="round" stroke-width="7"></path>
+<!-- Yellow Warning Zone: 4.5 to 7.1 mm/s (66 to 104 deg) -->
+<path d="M 80.2 55.7 A 102.7 102.7 0 0 1 140 37.3" fill="none" stroke="#f59e0b" stroke-width="7"></path>
+<!-- Red Trip Zone: 7.1 to 15.0 mm/s (104 to 220 deg) -->
+<path d="M 142 37.3 A 102.7 102.7 0 0 1 236.5 104.9" fill="none" stroke="#ef4444" stroke-linecap="round" stroke-width="7"></path>
+<!-- Calibration Graduation Ticks -->
+<!-- 0 -->
+<line stroke="#475569" stroke-width="2" x1="42" x2="52" y1="140" y2="140"></line>
+<text fill="#475569" font-family="IBM Plex Mono" font-size="9" font-weight="600" x="56" y="143">0</text>
+<!-- 1.8 Good -->
+<line stroke="#475569" stroke-width="1.5" x1="53.5" x2="61.5" y1="102.5" y2="105.5"></line>
+<text fill="#64748b" font-family="IBM Plex Mono" font-size="8" x="66" y="112">1.8</text>
+<!-- 3.0 -->
+<line stroke="#475569" stroke-width="1.5" x1="77" x2="83.5" y1="73" y2="79"></line>
+<!-- 4.5 Alarm Limit -->
+<line stroke="#d97706" stroke-width="2.5" x1="108" x2="112.5" y1="52" y2="60"></line>
+<text fill="#d97706" font-family="IBM Plex Mono" font-size="9" font-weight="700" x="100" y="70">4.5</text>
+<!-- 7.1 Trip Limit -->
+<line stroke="#dc2626" stroke-width="2.5" x1="140" x2="140" y1="44" y2="54"></line>
+<text fill="#dc2626" font-family="IBM Plex Mono" font-size="9" font-weight="700" x="135" y="65">7.1</text>
+<!-- 10.0 -->
+<line stroke="#475569" stroke-width="1.5" x1="185" x2="179" y1="58" y2="65"></line>
+<text fill="#64748b" font-family="IBM Plex Mono" font-size="8" x="168" y="76">10</text>
+<!-- 15.0 Max Scale -->
+<line stroke="#475569" stroke-width="2" x1="228" x2="218" y1="105" y2="108"></line>
+<text fill="#475569" font-family="IBM Plex Mono" font-size="9" font-weight="600" x="202" y="115">15</text>
+<!-- Mechanical Hub Face & Needle for 3.42 mm/s (~50.1 degree angle) -->
+<!-- Needle at 3.42: ~ -150 deg + (3.42/15)*180 approx = angle from origin -->
+<g transform="rotate(52 140 140)">
+<!-- Needle Blade -->
+<polygon fill="#1e293b" points="138,140 142,140 140.8,48 139.2,48"></polygon>
+<!-- Counterbalance Weight -->
+<polygon fill="#64748b" points="137,140 143,140 142,160 138,160"></polygon>
+</g>
+<!-- Machined Metallic Center Cap -->
+<circle cx="140" cy="140" fill="url(#hubShine)" r="14" stroke="#475569" stroke-width="1.5"></circle>
+<circle cx="140" cy="140" fill="#0f172a" r="4"></circle>
+<!-- Units Legend on Dial Face -->
+<text fill="#64748b" font-family="IBM Plex Mono" font-size="8" font-weight="600" letter-spacing="1" text-anchor="middle" x="140" y="115">VELOCITY RMS mm/s</text>
+<text fill="#0b1c30" font-family="IBM Plex Mono" font-size="16" font-weight="700" text-anchor="middle" x="140" y="172">3.42</text>
+</svg>
+</div>
+<!-- Linear Safety Envelope Bar -->
+<div class="bg-surface-container-low p-space-sm rounded">
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm mb-1">
+<span>OPERATING DYNAMIC RANGE</span>
+<span class="font-bold text-on-surface">22.8% OF FULL SCALE</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-sm overflow-hidden flex">
+<div class="h-full bg-[#10b981]" style="width: 30%;"></div>
+<div class="h-full bg-[#f59e0b]" style="width: 17%;"></div>
+<div class="h-full bg-[#ef4444]" style="width: 53%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-secondary mt-1">
+<span>0 (REST)</span>
+<span class="text-[#f59e0b] font-semibold">4.5 (WARN)</span>
+<span class="text-[#ef4444] font-semibold">7.1 (TRIP)</span>
+<span>15.0</span>
+</div>
+</div>
+</div>
+<!-- Tri-Axial Decomposition Cards (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col justify-between gap-space-sm">
+<!-- Transverse X-Axis Card -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded bg-primary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">X-AXIS (TRANSVERSE / RADIAL)</span>
+</div>
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm font-bold bg-[#10b981]/15 text-[#047857]">GOOD</span>
+</div>
+<div class="grid grid-cols-3 gap-2 my-1">
+<div class="bg-surface-container-low p-1.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary">RMS VELOCITY</div>
+<div class="font-metric-display text-[19px] text-on-surface font-bold">1.15 <span class="font-label-sm text-label-sm text-secondary font-normal">mm/s</span></div>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary">CREST FACTOR</div>
+<div class="font-metric-display text-[19px] text-on-surface font-bold">2.10</div>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary">PEAK DISPL.</div>
+<div class="font-metric-display text-[19px] text-on-surface font-bold">18.4 <span class="font-label-sm text-label-sm text-secondary font-normal">µm</span></div>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-sm overflow-hidden">
+<div class="bg-primary h-full rounded-sm" style="width: 25.5%;"></div>
+</div>
+</div>
+<!-- Axial Y-Axis Card -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded bg-[#0284c7]"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Y-AXIS (AXIAL / THRUST)</span>
+</div>
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm font-bold bg-[#10b981]/15 text-[#047857]">MINIMAL</span>
+</div>
+<div class="grid grid-cols-3 gap-2 my-1">
+<div class="bg-surface-container-low p-1.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary">RMS VELOCITY</div>
+<div class="font-metric-display text-[19px] text-on-surface font-bold">0.88 <span class="font-label-sm text-label-sm text-secondary font-normal">mm/s</span></div>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary">CREST FACTOR</div>
+<div class="font-metric-display text-[19px] text-on-surface font-bold">1.90</div>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary">PEAK DISPL.</div>
+<div class="font-metric-display text-[19px] text-on-surface font-bold">12.1 <span class="font-label-sm text-label-sm text-secondary font-normal">µm</span></div>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-sm overflow-hidden">
+<div class="bg-[#0284c7] h-full rounded-sm" style="width: 19.5%;"></div>
+</div>
+</div>
+<!-- Vertical Z-Axis Card (Primary Loading Vector) -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded bg-[#4338ca]"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Z-AXIS (VERTICAL / RADIAL LOAD)</span>
+</div>
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm font-bold bg-[#0284c7]/15 text-[#0369a1]">DOMINANT</span>
+</div>
+<div class="grid grid-cols-3 gap-2 my-1">
+<div class="bg-surface-container-low p-1.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary">RMS VELOCITY</div>
+<div class="font-metric-display text-[19px] text-primary font-bold">3.02 <span class="font-label-sm text-label-sm text-secondary font-normal">mm/s</span></div>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary">TRUE PEAK</div>
+<div class="font-metric-display text-[19px] text-on-surface font-bold">4.85 <span class="font-label-sm text-label-sm text-secondary font-normal">mm/s</span></div>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary">KURTOSIS</div>
+<div class="font-metric-display text-[19px] text-on-surface font-bold">3.12</div>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-sm overflow-hidden">
+<div class="bg-[#4338ca] h-full rounded-sm" style="width: 67%;"></div>
+</div>
+</div>
+</div>
+<!-- Statistical Indices Rack (4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low px-3 py-1.5 rounded">
+<span class="font-headline-sm text-headline-sm text-on-surface">STATISTICAL BEARING MATRIX</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">1024 PTS</span>
+</div>
+<div class="grid grid-cols-2 gap-2 my-2">
+<div class="bg-surface-container-low p-2 rounded">
+<div class="font-label-sm text-label-sm text-secondary">PEAK-TO-PEAK (Pk-Pk)</div>
+<div class="font-metric-display text-metric-display text-on-surface font-bold">7.24 <span class="font-label-sm text-label-sm text-secondary font-normal">mm/s</span></div>
+<div class="font-label-sm text-label-sm text-secondary mt-1">Full-cycle amplitude excursion</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<div class="font-label-sm text-label-sm text-secondary">CREST FACTOR (CF)</div>
+<div class="font-metric-display text-metric-display text-on-surface font-bold">2.41</div>
+<div class="font-label-sm text-label-sm text-[#10b981] font-semibold mt-1">Nominal &lt; 3.00 (No spikes)</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<div class="font-label-sm text-label-sm text-secondary">SIGNAL KURTOSIS (β2)</div>
+<div class="font-metric-display text-metric-display text-on-surface font-bold">3.12</div>
+<div class="font-label-sm text-label-sm text-secondary mt-1">Gaussian Reference (~3.0)</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<div class="font-label-sm text-label-sm text-secondary">DISTRIBUTION SKEWNESS</div>
+<div class="font-metric-display text-metric-display text-on-surface font-bold">+0.08</div>
+<div class="font-label-sm text-label-sm text-secondary mt-1">Symmetric loading cycle</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded">
+<div class="font-label-sm text-label-sm text-secondary font-bold mb-1">IMU HEALTH &amp; REGISTRATION</div>
+<div class="grid grid-cols-2 gap-y-1 font-label-sm text-label-sm text-on-surface">
+<div class="flex justify-between pr-2"><span>CHIP TEMP:</span><span class="font-bold">38.6 °C</span></div>
+<div class="flex justify-between pl-2"><span>I2C ACK:</span><span class="font-bold text-[#10b981]">0x68 VALID</span></div>
+<div class="flex justify-between pr-2"><span>ACCEL RNG:</span><span class="font-bold">±2g (16384 LSB/g)</span></div>
+<div class="flex justify-between pl-2"><span>DLPF FILTER:</span><span class="font-bold">44 Hz BW</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Central Engineering Charts & Spectral Analysis -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-md">
+<!-- Real-time Vibration Time-Domain Waveform (6 Cols) -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2 pb-1.5 bg-surface-container-low px-3 py-1.5 rounded">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">TIME-DOMAIN ACCELERATION WAVEFORM</span>
+<div class="font-label-sm text-label-sm text-secondary">Z-Axis vs X-Axis Velocity Trajectory (Window: 10.0s @ 100Hz)</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1 font-label-sm text-label-sm font-bold text-[#4338ca]"><span class="w-2 h-0.5 bg-[#4338ca]"></span>Z-Axis</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm font-bold text-[#0284c7]"><span class="w-2 h-0.5 bg-[#0284c7]"></span>X-Axis</span>
+</div>
+</div>
+<!-- Waveform SVG Visualization -->
+<div class="relative w-full h-[240px] bg-surface-container-low rounded p-2 overflow-hidden select-none">
+<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 540 220">
+<!-- Grid Lines -->
+<line stroke="#cbd5e1" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="540" y1="20" y2="20"></line>
+<line stroke="#cbd5e1" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="540" y1="55" y2="55"></line>
+<line stroke="#94a3b8" stroke-width="1" x1="0" x2="540" y1="110" y2="110"></line>
+<line stroke="#cbd5e1" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="540" y1="165" y2="165"></line>
+<line stroke="#cbd5e1" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="540" y1="200" y2="200"></line>
+<!-- Vertical Grid -->
+<line stroke="#e2e8f0" stroke-width="1" x1="54" x2="54" y1="0" y2="220"></line>
+<line stroke="#e2e8f0" stroke-width="1" x1="162" x2="162" y1="0" y2="220"></line>
+<line stroke="#e2e8f0" stroke-width="1" x1="270" x2="270" y1="0" y2="220"></line>
+<line stroke="#e2e8f0" stroke-width="1" x1="378" x2="378" y1="0" y2="220"></line>
+<line stroke="#e2e8f0" stroke-width="1" x1="486" x2="486" y1="0" y2="220"></line>
+<!-- Safety Envelope Threshold Overlays -->
+<line stroke="#ef4444" stroke-dasharray="4 3" stroke-width="1.5" x1="0" x2="540" y1="36" y2="36"></line>
+<text fill="#dc2626" font-family="IBM Plex Mono" font-size="8" font-weight="700" x="5" y="32">TRIP LIMIT +7.10 mm/s</text>
+<line stroke="#f59e0b" stroke-dasharray="4 3" stroke-width="1.5" x1="0" x2="540" y1="62" y2="62"></line>
+<text fill="#d97706" font-family="IBM Plex Mono" font-size="8" font-weight="700" x="5" y="58">WARN LIMIT +4.50 mm/s</text>
+<line opacity="0.6" stroke="#f59e0b" stroke-dasharray="4 3" stroke-width="1" x1="0" x2="540" y1="158" y2="158"></line>
+<line opacity="0.6" stroke="#ef4444" stroke-dasharray="4 3" stroke-width="1" x1="0" x2="540" y1="184" y2="184"></line>
+<!-- X-Axis Synthetic Oscillatory Stream (Lower Amplitude) -->
+<path d="M 0 110 Q 15 102 30 110 T 60 110 T 90 110 T 120 110 T 150 110 T 180 110 T 210 110 T 240 110 T 270 110 T 300 110 T 330 110 T 360 110 T 390 110 T 420 110 T 450 110 T 480 110 T 510 110 T 540 110" fill="none" opacity="0.65" stroke="#0284c7" stroke-width="1.5"></path>
+<!-- Z-Axis Real-Time Vibration Trajectory with transient chute rock load impulses -->
+<path d="M 0 110 
+                   C 10 95, 20 125, 30 110 
+                   C 40 85, 50 135, 60 110 
+                   C 70 102, 80 118, 90 110 
+                   C 100 80, 108 140, 115 110 
+                   C 120 72, 125 150, 130 110 
+                   C 140 100, 150 120, 160 110 
+                   C 170 92, 180 128, 190 110 
+                   C 200 84, 210 138, 220 110 
+                   C 228 68, 235 152, 242 110
+                   C 250 98, 260 122, 270 110 
+                   C 280 90, 290 130, 300 110 
+                   C 310 82, 320 142, 330 110 
+                   C 340 105, 350 115, 360 110 
+                   C 370 70, 380 155, 390 110 
+                   C 400 94, 410 126, 420 110 
+                   C 430 80, 440 140, 450 110 
+                   C 460 104, 470 116, 480 110 
+                   C 490 86, 500 134, 510 110 
+                   C 520 95, 530 125, 540 110" fill="none" stroke="#4338ca" stroke-width="2"></path>
+</svg>
+</div>
+<!-- Footer Scales -->
+<div class="flex justify-between items-center text-secondary font-label-sm text-label-sm mt-1">
+<span>T -10.0 SEC</span>
+<span>T -7.5 SEC</span>
+<span>T -5.0 SEC</span>
+<span>T -2.5 SEC</span>
+<span class="text-on-surface font-bold">T 0.0 (NOW)</span>
+</div>
+</div>
+<!-- Fast Fourier Transform (FFT) Frequency Spectrum (6 Cols) -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2 pb-1.5 bg-surface-container-low px-3 py-1.5 rounded">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">SPECTRAL ANALYSIS (FFT SPECTRUM)</span>
+<div class="font-label-sm text-label-sm text-secondary">Discrete Hanning Window • F-Span: 0 Hz to 500 Hz • 0.488 Hz Bin</div>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container px-2 py-0.5 rounded">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">1X / 2X / GMF PEAKS</span>
+</div>
+</div>
+<!-- FFT Plot SVG -->
+<div class="relative w-full h-[240px] bg-surface-container-low rounded p-2 overflow-hidden select-none">
+<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 540 220">
+<!-- Background Gridlines -->
+<line stroke="#cbd5e1" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="540" y1="40" y2="40"></line>
+<line stroke="#cbd5e1" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="540" y1="90" y2="90"></line>
+<line stroke="#cbd5e1" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="540" y1="140" y2="140"></line>
+<line stroke="#94a3b8" stroke-width="1" x1="0" x2="540" y1="190" y2="190"></line>
+<!-- Noise Floor Base Envelope (Broadband low vibration) -->
+<path d="M 0 188 L 10 186 L 25 187 L 50 185 L 80 188 L 120 187 L 160 188 L 220 186 L 300 189 L 400 188 L 540 189 L 540 190 L 0 190 Z" fill="#dbeafe" opacity="0.4"></path>
+<!-- Spectral Lines & Harmonic Bins -->
+<!-- 1X Motor Running Frequency (250 RPM = ~4.17 Hz) -> Pos ~ 12px -->
+<line stroke="#1e40af" stroke-width="3" x1="22" x2="22" y1="190" y2="65"></line>
+<circle cx="22" cy="65" fill="#1e40af" r="3.5"></circle>
+<line stroke="#1e40af" stroke-dasharray="2 2" stroke-width="1" x1="22" x2="48" y1="65" y2="45"></line>
+<text fill="#1e40af" font-family="IBM Plex Mono" font-size="8.5" font-weight="700" x="52" y="47">1X MOTOR (4.17 Hz / 2.35 mm/s)</text>
+<!-- 2X Harmonic Frequency (~8.34 Hz) -> Pos ~ 32px -->
+<line stroke="#3755c3" stroke-width="2.5" x1="38" x2="38" y1="190" y2="120"></line>
+<circle cx="38" cy="120" fill="#3755c3" r="3"></circle>
+<text fill="#3755c3" font-family="IBM Plex Mono" font-size="8" font-weight="600" x="44" y="118">2X (8.3 Hz)</text>
+<!-- 3X Harmonic Frequency (~12.5 Hz) -> Pos ~ 48px -->
+<line stroke="#3755c3" stroke-width="2" x1="52" x2="52" y1="190" y2="148"></line>
+<circle cx="52" cy="148" fill="#3755c3" r="2.5"></circle>
+<!-- Gearmesh Frequency (GMF = ~42 Hz) -> Pos ~ 138px -->
+<line stroke="#0284c7" stroke-width="3" x1="140" x2="140" y1="190" y2="90"></line>
+<circle cx="140" cy="90" fill="#0284c7" r="3.5"></circle>
+<line stroke="#0284c7" stroke-dasharray="2 2" stroke-width="1" x1="140" x2="165" y1="90" y2="70"></line>
+<text fill="#0284c7" font-family="IBM Plex Mono" font-size="8.5" font-weight="700" x="170" y="73">GMF GEARMESH (42.0 Hz / 1.70 mm/s)</text>
+<!-- Sidebands of GMF (GMF - 1X = 37.8 Hz, GMF + 1X = 46.2 Hz) -->
+<line stroke="#94a3b8" stroke-width="1.5" x1="126" x2="126" y1="190" y2="145"></line>
+<line stroke="#94a3b8" stroke-width="1.5" x1="154" x2="154" y1="190" y2="148"></line>
+<text fill="#64748b" font-family="IBM Plex Mono" font-size="7.5" text-anchor="middle" x="140" y="162">MODULATION SIDEBANDS</text>
+<!-- 2x GMF Harmonic (~84 Hz) -> Pos ~ 230px -->
+<line stroke="#0284c7" stroke-width="2" x1="230" x2="230" y1="190" y2="155"></line>
+<circle cx="230" cy="155" fill="#0284c7" r="2.5"></circle>
+<text fill="#0284c7" font-family="IBM Plex Mono" font-size="8" font-weight="600" x="235" y="152">2X GMF (84 Hz)</text>
+<!-- High-frequency Idler Impact Hash / Chute Rub (280 - 320 Hz) -->
+<path d="M 330 190 L 335 170 L 340 188 L 345 165 L 350 185 L 355 174 L 360 190" fill="none" stroke="#f59e0b" stroke-width="1.5"></path>
+<text fill="#d97706" font-family="IBM Plex Mono" font-size="8" font-weight="600" x="330" y="158">CHUTE RUB / SKIRT (320Hz)</text>
+</svg>
+</div>
+<!-- Frequency Scales -->
+<div class="flex justify-between items-center text-secondary font-label-sm text-label-sm mt-1">
+<span>0 Hz (DC)</span>
+<span>100 Hz</span>
+<span>200 Hz</span>
+<span>300 Hz</span>
+<span>400 Hz</span>
+<span class="text-on-surface font-bold">500 Hz (NYQUIST)</span>
+</div>
+</div>
+</section>
+<!-- 4. Alarm Thresholds & Limit Configuration -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-md">
+<div class="lg:col-span-12 bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-space-sm bg-surface-container-low px-3 py-1.5 rounded mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">gavel</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">ISO 10816-3 MECHANICAL RIGIDITY LIMIT ENVELOPE (GROUP 1 &amp; 2)</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary font-mono">
+          E-STOP INTERLOCK LOGIC: ARMED • DEBOUNCE: 5 CONSECUTIVE CYCLES
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<!-- Tier 1: Good -->
+<div class="bg-surface-container-low p-2.5 rounded">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-[#059669]">ZONE A: GOOD / NEW</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-[#10b981]/20 text-[#047857] font-bold">&lt; 1.80 mm/s</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+            Unrestricted continuous operation. Baseline condition for freshly commissioned bearings.
+          </p>
+<div class="mt-2 text-[10px] font-mono text-secondary">CURRENT STATUS: CLEAR</div>
+</div>
+<!-- Tier 2: Acceptable (Active Zone) -->
+<div class="bg-surface-container p-2.5 rounded ring-1 ring-primary/30">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-primary">ZONE B: ACCEPTABLE</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary text-on-primary font-bold">1.80 - 4.50 mm/s</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Standard operating conditions for bulk mining conveyors under fluctuating raw ore tonnage.
+          </p>
+<div class="mt-2 text-[10px] font-mono font-bold text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            ACTIVE: RUNNING AT 3.42 mm/s
+          </div>
+</div>
+<!-- Tier 3: Alert / Warning -->
+<div class="bg-surface-container-low p-2.5 rounded">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-[#d97706]">ZONE C: ALERT / ACTION</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-[#f59e0b]/20 text-[#b45309] font-bold">&gt; 4.50 mm/s</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+            Permissible for short intervals. Requires lubrication replenishment or belt idler realign.
+          </p>
+<div class="mt-2 text-[10px] font-mono text-secondary">TRIGGER: 5 CONSECUTIVE READINGS</div>
+</div>
+<!-- Tier 4: Critical Trip -->
+<div class="bg-surface-container-low p-2.5 rounded">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-bold text-[#dc2626]">ZONE D: CRITICAL TRIP</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-[#ef4444]/20 text-[#b91c1c] font-bold">&gt; 7.10 mm/s</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+            Damage imminent. Trips drive PLC interlock to prevent catastrophic cage failure.
+          </p>
+<div class="mt-2 text-[10px] font-mono text-[#dc2626] font-bold">AUTOMATIC VFD SHUTDOWN</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Recent Vibration Events & Diagnostic Log Strip -->
+<section class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm bg-surface-container-low px-3 py-1.5 rounded mb-2">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">VIBRATION EVENT BUFFER &amp; TELEMETRY AUDIT</span>
+<div class="font-label-sm text-label-sm text-secondary">Dynamic transient anomalies and automated IMU threshold notifications</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-1.5">
+<button class="px-2.5 py-1 bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" id="btn-recal">
+<span class="material-symbols-outlined text-[15px]">compass_calibration</span>
+<span>RECALIBRATE MPU6050 ZERO-OFFSET</span>
+</button>
+<button class="px-2.5 py-1 bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" id="btn-capture">
+<span class="material-symbols-outlined text-[15px]">download_for_offline</span>
+<span>CAPTURE RAW 1024-PT</span>
+</button>
+<button class="px-2.5 py-1 bg-primary text-on-primary hover:bg-primary-container rounded font-label-sm text-label-sm font-bold flex items-center gap-1.5 transition-colors shadow-sm" id="btn-export">
+<span class="material-symbols-outlined text-[15px]">file_download</span>
+<span>EXPORT SPECTRAL CSV</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-mono border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-sm text-label-sm text-secondary uppercase">
+<th class="py-1.5 px-2.5">TIMESTAMP (UTC)</th>
+<th class="py-1.5 px-2.5">VECTOR AXIS</th>
+<th class="py-1.5 px-2.5">EVENT CLASSIFICATION / DIAGNOSIS</th>
+<th class="py-1.5 px-2.5 text-right">PEAK AMPLITUDE</th>
+<th class="py-1.5 px-2.5 text-right">KURTOSIS</th>
+<th class="py-1.5 px-2.5 text-right">DURATION</th>
+<th class="py-1.5 px-2.5 text-center">SAFETY STATUS</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y-0">
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/70 transition-colors">
+<td class="py-1.5 px-2.5 text-secondary">14:22:18.04</td>
+<td class="py-1.5 px-2.5 font-bold text-[#4338ca]">Z-AXIS (RADIAL)</td>
+<td class="py-1.5 px-2.5 text-on-surface">Transient Chute Impact shockwave absorbed (Bulk Ore Surge)</td>
+<td class="py-1.5 px-2.5 text-right font-bold text-on-surface">4.85 mm/s</td>
+<td class="py-1.5 px-2.5 text-right text-secondary">3.44</td>
+<td class="py-1.5 px-2.5 text-right text-secondary">240 ms</td>
+<td class="py-1.5 px-2.5 text-center">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm font-bold bg-[#10b981]/20 text-[#047857]">DAMPED</span>
+</td>
+</tr>
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+<td class="py-1.5 px-2.5 text-secondary">14:19:42.88</td>
+<td class="py-1.5 px-2.5 font-bold text-[#1e40af]">MULTI-AXIS</td>
+<td class="py-1.5 px-2.5 text-on-surface">Harmonic 2X minor oscillation within envelope limits</td>
+<td class="py-1.5 px-2.5 text-right font-bold text-on-surface">3.88 mm/s</td>
+<td class="py-1.5 px-2.5 text-right text-secondary">2.98</td>
+<td class="py-1.5 px-2.5 text-right text-secondary">1.42 s</td>
+<td class="py-1.5 px-2.5 text-center">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm font-bold bg-[#0284c7]/20 text-[#0369a1]">RESOLVED</span>
+</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/70 transition-colors">
+<td class="py-1.5 px-2.5 text-secondary">14:14:05.12</td>
+<td class="py-1.5 px-2.5 font-bold text-[#0284c7]">X-AXIS (TRANSVERSE)</td>
+<td class="py-1.5 px-2.5 text-on-surface">Belt tracking lateral shift oscillation detected at tail transition</td>
+<td class="py-1.5 px-2.5 text-right font-bold text-on-surface">2.12 mm/s</td>
+<td class="py-1.5 px-2.5 text-right text-secondary">3.05</td>
+<td class="py-1.5 px-2.5 text-right text-secondary">850 ms</td>
+<td class="py-1.5 px-2.5 text-center">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm font-bold bg-[#10b981]/20 text-[#047857]">NOMINAL</span>
+</td>
+</tr>
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+<td class="py-1.5 px-2.5 text-secondary">14:02:51.30</td>
+<td class="py-1.5 px-2.5 font-bold text-secondary">Y-AXIS (AXIAL)</td>
+<td class="py-1.5 px-2.5 text-on-surface">Motor soft-start ramp stabilization baseline lock</td>
+<td class="py-1.5 px-2.5 text-right font-bold text-on-surface">1.45 mm/s</td>
+<td class="py-1.5 px-2.5 text-right text-secondary">2.82</td>
+<td class="py-1.5 px-2.5 text-right text-secondary">4.20 s</td>
+<td class="py-1.5 px-2.5 text-center">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm font-bold bg-[#10b981]/20 text-[#047857]">CALIBRATED</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Log Footer & Hardware Diagnostics Status -->
+<div class="flex flex-wrap items-center justify-between text-secondary font-label-sm text-label-sm mt-space-sm pt-2 bg-surface-container-low px-3 py-1.5 rounded">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
+<span>FIFO HARDWARE INTERRUPT: PIN GPIO19 ACTIVE (LOW LATENCY STREAM)</span>
+</div>
+<div class="font-mono">
+        DISPLAY REFRESH: 1000ms • PACKET LOSS: 0.00% • ESP32 I2C CLK: 400kHz FAST-MODE
+      </div>
+</div>
+</section>
+<!-- Industrial Notification Toast Simulator -->
+<div class="fixed bottom-4 right-4 bg-surface-container-lowest shadow-xl rounded p-3 hidden items-center gap-3 ring-1 ring-primary/20 z-50" id="toast-notify">
+<span class="material-symbols-outlined text-primary text-[20px]">task_alt</span>
+<div>
+<div class="font-label-sm text-label-sm font-bold text-on-surface" id="toast-title">ACTION EXECUTED</div>
+<div class="font-body-sm text-body-sm text-secondary" id="toast-desc">Data successfully buffered.</div>
+</div>
+</div>
+<script>
+    (function() {
+      const toast = document.getElementById('toast-notify');
+      const toastTitle = document.getElementById('toast-title');
+      const toastDesc = document.getElementById('toast-desc');
+
+      function showToast(title, desc) {
+        if (!toast) return;
+        toastTitle.textContent = title;
+        toastDesc.textContent = desc;
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        }, 3200);
+      }
+
+      const btnRecal = document.getElementById('btn-recal');
+      if (btnRecal) {
+        btnRecal.addEventListener('click', () => {
+          showToast('MPU6050 ZERO-CALIBRATION', 'Axes zero offsets recalibrated. Bias registers updated in ESP32 NVS.');
+        });
+      }
+
+      const btnCapture = document.getElementById('btn-capture');
+      if (btnCapture) {
+        btnCapture.addEventListener('click', () => {
+          showToast('RAW 1024-PT BUFFER CAPTURED', '10.24 seconds of raw accelerometer data stored to flash memory.');
+        });
+      }
+
+      const btnExport = document.getElementById('btn-export');
+      if (btnExport) {
+        btnExport.addEventListener('click', () => {
+          showToast('SPECTRAL EXPORT GENERATED', 'VIB_FFT_CV01_DRIVE_END.csv downloaded (512 bins, 0-500Hz).');
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

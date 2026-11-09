@@ -1,0 +1,184 @@
+/* Analytics Page — SCADA styling matching reference */
+
+.analytics-page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.analytics-trend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.analytics-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #090e15;
+  padding: 3px;
+  border-radius: 4px;
+  border: 1px solid #1a2738;
+}
+
+.analytics-tab-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.analytics-tab-btn.active {
+  background: #1e2e42;
+  color: #38bdf8;
+  border: 1px solid #2e435e;
+}
+
+.analytics-chart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-legend {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-top: 8px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: #94a3b8;
+}
+
+.analytics-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Bottom Grid: Stats Table (left) + Export Actions (right) */
+.analytics-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 14px;
+}
+
+.analytics-stats-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-sub-tag {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: #64748b;
+}
+
+.analytics-export-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-export-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 12px;
+}
+
+.export-desc {
+  font-size: 11px;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.export-notice-pill {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.export-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.export-btn--primary {
+  background: #0f233a;
+  border: 1px solid #1e4573;
+  color: #38bdf8;
+}
+
+.export-btn--primary:hover {
+  background: #17375c;
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+.export-btn--secondary {
+  background: #0f1622;
+  border: 1px solid #1f2e42;
+  color: #94a3b8;
+}
+
+.export-btn--secondary:hover {
+  background: #172233;
+  border-color: #38bdf8;
+  color: #f8fafc;
+}
+
+.report-summary-box {
+  background: #090e15;
+  border: 1px solid #192738;
+  border-radius: 4px;
+  padding: 14px;
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.report-summary-box ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+}
+
+.report-summary-box li {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1100px) {
+  .analytics-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}

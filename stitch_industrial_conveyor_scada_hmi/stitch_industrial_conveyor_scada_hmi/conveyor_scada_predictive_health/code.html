@@ -1,0 +1,520 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-tint":"#3755c3","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","surface-container":"#e5eeff","inverse-primary":"#b8c4ff","surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#444653","on-tertiary":"#ffffff","on-primary-container":"#a8b8ff","on-error":"#ffffff","surface-dim":"#cbdbf5","error":"#ba1a1a","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#77c2ff","outline-variant":"#c4c5d5","secondary":"#565e74","secondary-container":"#dae2fd","on-primary-fixed":"#001453","on-primary":"#ffffff","primary":"#00288e","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-tertiary-fixed":"#001d31","on-background":"#0b1c30","on-secondary-fixed":"#131b2e","outline":"#757684","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","primary-fixed":"#dde1ff","tertiary-container":"#004f7a","background":"#f8f9ff","surface":"#f8f9ff","primary-container":"#1e40af","surface-bright":"#f8f9ff","on-surface":"#0b1c30","surface-container-lowest":"#ffffff","tertiary":"#003757","inverse-surface":"#213145","on-secondary":"#ffffff","primary-fixed-dim":"#b8c4ff","on-tertiary-fixed-variant":"#004b73","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#173bab"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","space-lg":"1rem","space-xl":"1.5rem","space-xs":"0.25rem","space-sm":"0.375rem","space-md":"0.75rem",gutter:"0.75rem"},fontFamily:{"headline-lg":["IBM Plex Mono"],"label-lg":["IBM Plex Mono"],"label-sm":["IBM Plex Mono"],"headline-md":["IBM Plex Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"label-md":["IBM Plex Mono"],"headline-sm":["IBM Plex Mono"],"metric-display":["IBM Plex Mono"]},fontSize:{"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["13px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-sm":["9px",{lineHeight:"12px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["11px",{lineHeight:"16px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"metric-display":["24px",{lineHeight:"28px",letterSpacing:"-0.03em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-50 px-margin flex items-center justify-between shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><div class="flex items-center gap-space-md"><img alt="Conveyor SCADA Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZBtUjcHjGVR0BdoBAzb9o9_lGqUtxZbkcPOimLv7Ftd8Y33Y4iU7YUYqWaskntqerEsyzIhxtvus3z_3oCimNJnNIjzGSXulm1lKBejFskEjKrvtXU6kJOXAwLv7L5L3ZmLqb05qfFSAb5IPc73DqIB4DdZORgRCgkeQdU2YSqm2tHWSp-T3BZprGzeyzUqzm5lwt3AZlczB7syGMJLSW-W4GqQFeHIVUf7U_ZcL9b7b1utGcGYYyET0"><div class="h-8 w-[1px] bg-outline-variant"></div><div><div class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs leading-none tracking-tight">CONVEYOR MONITORING SYSTEM</div><div class="font-label-sm text-label-sm text-secondary tracking-widest leading-none mt-1">PROTOTYPE CV-01 • SMART • SAFE • RELIABLE</div></div><div class="ml-space-xs flex items-center gap-1.5 px-2 py-0.5 bg-surface-container-low border border-outline-variant rounded"><span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span><span class="font-label-sm text-label-sm font-bold text-on-surface tracking-wider">RUNNING</span></div></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container-low px-space-md py-1 border border-outline-variant rounded"><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">BACKEND</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">OK</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">MQTT</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">CONN</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">ESP32</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">ONLINE</span></div><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-secondary">RPI4 EDGE</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">42°C</span></div></div><div class="flex items-center gap-space-md"><div class="text-right"><div class="font-label-md text-label-md text-on-surface font-semibold tracking-wider">14:23:56 UTC</div><div class="font-label-sm text-label-sm text-tertiary-container font-bold uppercase tracking-wider">[SIMULATION / DEV]</div></div><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block text-left"><div class="font-label-sm text-label-sm text-on-surface font-bold leading-tight">ENG. K. VANCE</div><div class="font-label-sm text-label-sm text-secondary leading-tight">ROLE: [ADMIN]</div></div><button class="p-1 text-secondary hover:text-error hover:bg-error-container/20 rounded transition-colors ml-1" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-sm"><div class="px-space-sm py-1.5 text-secondary font-label-sm text-label-sm font-bold tracking-widest uppercase border-b border-outline-variant mb-1">MAIN NAVIGATION</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-bold border border-primary"><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">view_quilt</span><span class="font-label-md text-label-md">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vibration" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">vibration</span><span class="font-label-md text-label-md">Vibration</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="load" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">weight</span><span class="font-label-md text-label-md">Load</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="belt-speed" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">speed</span><span class="font-label-md text-label-md">Belt Speed</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="electrical-voltage" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">bolt</span><span class="font-label-md text-label-md">Electrical / Voltage</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera-inspection" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">videocam</span><span class="font-label-md text-label-md">Camera Inspection</span></div><span class="px-1 py-0.2 bg-[#ef4444] text-white font-label-sm text-label-sm font-bold rounded">LIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-twin" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">deployed_code</span><span class="font-label-md text-label-md">Digital Twin</span></div><span class="px-1 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">CAD</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors bg-primary-container text-on-primary font-bold border border-primary" data-path="predictive-health" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-label-md text-label-md">Predictive Health</span></div><span class="px-1 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold rounded">ML</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-label-md text-label-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">build</span><span class="font-label-md text-label-md">Maintenance</span></div><span class="px-1.5 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">1 OPEN</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alerts" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">warning</span><span class="font-label-md text-label-md">Alerts</span></div><span class="px-1.5 py-0.2 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">3 ACTIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-label-md text-label-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-low font-label-sm text-label-sm flex flex-col gap-1 text-secondary"><div class="flex items-center justify-between"><span class="font-mono">FIRMWARE</span><span class="font-mono font-bold text-on-surface">v2.4.1-rc3</span></div><div class="flex items-center justify-between"><span class="font-mono">PLC LINK</span><span class="font-mono font-bold text-on-surface">ISO/CEMA STD</span></div><div class="flex items-center justify-between"><span class="font-mono">SAFETY</span><span class="font-mono font-bold text-[#10b981]">E-STOP READY</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-surface-container-lowest min-h-screen p-space-md border-l border-outline-variant"><div class="flex flex-col w-full gap-space-md">
+<!-- TOP CONTEXT BAR & STATUS BANNER -->
+<div class="bg-surface-container-low p-space-md rounded-lg shadow-sm flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[24px]">model_training</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">PREDICTIVE HEALTH ENGINE</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider rounded">CV-01 / ZONE-D</span>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold rounded flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            PIPELINE: ACCUMULATING DATA
+          </span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary tracking-wide mt-0.5 truncate">
+          ARCHITECTURE: MULTI-VARIATE TIME-SERIES (HYBRID XGBOOST + LSTM) • TARGET: RUN-TO-FAILURE DEGRADATION HORIZON
+        </div>
+</div>
+</div>
+<!-- Quick action/telemetry frequency tag -->
+<div class="flex items-center gap-space-sm shrink-0 self-stretch xl:self-auto justify-end">
+<div class="bg-surface-container-lowest px-space-md py-1.5 rounded flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-secondary">TELEMETRY INGESTION</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">100 Hz MQTT • ESP32 NODE</span>
+</div>
+<div class="bg-surface-container-lowest px-space-md py-1.5 rounded flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-secondary">EDGE BUFFER</span>
+<span class="font-label-md text-label-md text-primary font-semibold">RPi4 / InfluxDB Local</span>
+</div>
+</div>
+</div>
+<!-- NOTICE CALLOUT: TRAINING PIPELINE IN PROGRESS -->
+<div class="bg-secondary-container/40 p-space-md rounded-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5 shrink-0">info</span>
+<div class="flex flex-col gap-0.5">
+<div class="font-label-lg text-label-lg text-primary font-bold tracking-tight">
+          PREDICTIVE ML ENGINE: MODEL TRAINING PIPELINE IN PROGRESS (TRAINING DATASET ACCUMULATION PHASE)
+        </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant max-w-4xl">
+          Synthetic health indices, speculative failure percentages, and arbitrary RUL countdowns are disabled per CEMA &amp; ISO 13374 predictive analytics compliance. Active system operations are strictly verified against raw ISO 10816 thresholds and provisional rule heuristics. YOLOv8n-seg edge vision performs independent continuous surface defect monitoring.
+        </div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-2 bg-surface-container-lowest px-space-md py-2 rounded">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">ISO 13374 COMPLIANT</span>
+</div>
+</div>
+<!-- SECTION 1: MODEL STATUS & DATA ACQUISITION PROGRESS (BENTO TOP) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Progress & Feature Store Metrics Card (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">database</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold uppercase">Sensor Feature Store Pipeline &amp; Accumulation Target</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">CYCLE COUNT ID: #CYC-010492</span>
+</div>
+<!-- Big Progress Strip -->
+<div class="bg-surface-container-low p-space-md rounded-lg mb-space-md">
+<div class="flex items-end justify-between mb-2">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">Accumulated Baseline Cycles</span>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-display text-metric-display text-primary">74,200</span>
+<span class="font-label-md text-label-md text-secondary">/ 100,000 CYCLES</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">Readiness Index</span>
+<span class="font-metric-display text-metric-display text-on-surface">74.2%</span>
+</div>
+</div>
+<!-- Segmented Industrial Meter Bar -->
+<div class="w-full h-3 bg-surface-container rounded-sm overflow-hidden flex gap-[2px] p-[2px]">
+<div class="h-full bg-primary-container rounded-sm" style="width: 74.2%;"></div>
+<div class="h-full bg-outline-variant/30 flex-1 rounded-sm"></div>
+</div>
+<div class="flex justify-between items-center mt-2 font-label-sm text-label-sm text-secondary">
+<span>0 CYCLES (EMPTY FEATURE MATRIX)</span>
+<span class="font-semibold text-primary">EST. CONVERGENCE: ~258 RUN HOURS REMAINING</span>
+<span>100,000 CYCLES (MINIMUM FIT TARGET)</span>
+</div>
+</div>
+<!-- Pipeline Data Flow Breakdown -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-secondary block">EDGE BUS RECEPTION</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold block mt-0.5">ESP32 100Hz MQTT</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">Vibration Triaxial • Load Cells • Hall RPM</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-secondary block">TIME WINDOWING</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold block mt-0.5">500ms Non-Overlap</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">FFT Transform • Kurtosis • Peak Crest</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-secondary block">SERIALIZED PERSISTENCE</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold block mt-0.5">Parquet Data Lake</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">14.8 GB Ingested • Zero Frame Drops</span>
+</div>
+</div>
+</div>
+<!-- Dataset Accumulation Sparkline Matrix -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-1">
+<div class="flex justify-between items-center text-secondary font-label-sm text-label-sm">
+<span>7-DAY TELEMETRY LOG RATE (SAMPLES / HR × 1000)</span>
+<span>AVG 360k SAMPLES/HR</span>
+</div>
+<div class="h-10 w-full flex items-end gap-1.5 pt-2">
+<div class="flex-1 bg-surface-container hover:bg-primary-container h-[70%] rounded-sm transition-all" title="Day -6: 358k"></div>
+<div class="flex-1 bg-surface-container hover:bg-primary-container h-[82%] rounded-sm transition-all" title="Day -5: 362k"></div>
+<div class="flex-1 bg-surface-container hover:bg-primary-container h-[78%] rounded-sm transition-all" title="Day -4: 359k"></div>
+<div class="flex-1 bg-surface-container hover:bg-primary-container h-[90%] rounded-sm transition-all" title="Day -3: 365k"></div>
+<div class="flex-1 bg-surface-container hover:bg-primary-container h-[85%] rounded-sm transition-all" title="Day -2: 361k"></div>
+<div class="flex-1 bg-surface-container hover:bg-primary-container h-[92%] rounded-sm transition-all" title="Day -1: 366k"></div>
+<div class="flex-1 bg-primary-container h-[95%] rounded-sm transition-all" title="Today: 368k (Active)"></div>
+</div>
+</div>
+</div>
+<!-- What Model Will Compute Card (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-space-sm pb-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">psychology</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold uppercase">Pending Inference Outputs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Upon completing 100,000 baseline runtime cycles, the Edge AI pipeline will calibrate weights and activate real-time predictive degradation modeling:
+        </p>
+<div class="space-y-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dynamic Health Index</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-mono">AWAITING CALIBRATION</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+              Multi-sensor degradation vector synthesis without synthetic hardcoding.
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Remaining Useful Life (RUL)</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-mono">OFFLINE</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+              Run-to-failure regression curves mapping bearing fatigue and belt carcass thinning.
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Root Cause Attribution</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-mono">STANDBY</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+              SHAP value tree decomposition ranking primary mechanical stress vectors.
+            </p>
+</div>
+</div>
+</div>
+<!-- Vision vs Sensor Clarification strip -->
+<div class="mt-space-md pt-space-sm bg-surface-container p-space-sm rounded">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm font-bold text-primary mb-1">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>ACTIVE COMPUTER VISION ISOLATION</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          YOLOv8n-seg model runs strictly on high-speed optical feeds (2 flagged surface marks). It operates independently from sensor time-series training.
+        </p>
+</div>
+</div>
+</div>
+<!-- SECTION 2: CURRENT RAW ENGINEERING INDICATORS & ENVELOPES -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Physical Telemetry Envelopes (Direct Sensor Observation)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase">STANDARDS: ISO 10816-1 • CEMA 575</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-gutter">
+<!-- Card 1: Belt Mechanics -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Belt Mechanics</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold rounded">STEADY</span>
+</div>
+<div class="font-metric-display text-metric-display text-on-surface mb-1">42.8 <span class="text-sm font-normal text-secondary">N/mm</span></div>
+<div class="font-body-sm text-body-sm text-secondary">Nominal Band: 38.0 - 46.0 N/mm</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mb-1">
+<div class="bg-primary-container h-full rounded-full" style="width: 60%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block truncate">Tension strain gauge within safe threshold</span>
+</div>
+</div>
+<!-- Card 2: Roller / Drive Bearings -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Drive End Bearings</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold rounded">NOMINAL</span>
+</div>
+<div class="font-metric-display text-metric-display text-on-surface mb-1">0.82 <span class="text-sm font-normal text-secondary">mm/s RMS</span></div>
+<div class="font-body-sm text-body-sm text-secondary">ISO Zone A/B Limit: &lt; 1.80 mm/s</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mb-1">
+<div class="bg-primary-container h-full rounded-full" style="width: 45%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block truncate">Zero high-frequency demodulation spike</span>
+</div>
+</div>
+<!-- Card 3: Load System Imbalance -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Load Ratio (LC1/LC2)</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold rounded">BALANCED</span>
+</div>
+<div class="font-metric-display text-metric-display text-on-surface mb-1">49.6 / 50.4 <span class="text-sm font-normal text-secondary">%</span></div>
+<div class="font-body-sm text-body-sm text-secondary">Differential Tolerance: ± 8.0%</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mb-1">
+<div class="bg-primary-container h-full rounded-full" style="width: 50%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block truncate">Even chute feeding profile recorded</span>
+</div>
+</div>
+<!-- Card 4: Electrical Drive Load -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Motor Draw (12V DC)</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold rounded">NORMAL</span>
+</div>
+<div class="font-metric-display text-metric-display text-on-surface mb-1">2.15 <span class="text-sm font-normal text-secondary">Amps</span></div>
+<div class="font-body-sm text-body-sm text-secondary">Stall Threshold: &gt; 4.80 Amps</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mb-1">
+<div class="bg-primary-container h-full rounded-full" style="width: 44%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block truncate">Steady power factor; low harmonic ripple</span>
+</div>
+</div>
+<!-- Card 5: Optical Vision Defects -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Surface Camera Anomaly</span>
+<span class="px-1.5 py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">2 FLAGGED</span>
+</div>
+<div class="font-metric-display text-metric-display text-on-surface mb-1">2 <span class="text-sm font-normal text-secondary">DEFECTS</span></div>
+<div class="font-body-sm text-body-sm text-secondary">YOLOv8n-seg edge visual tag</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mb-1">
+<div class="bg-primary-container h-full rounded-full" style="width: 25%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block truncate">Awaiting correlation matrix model</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: CONTRIBUTING FACTORS DATA MATRIX (HIGH-DENSITY SCADA GRID) -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">table_chart</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Feature Ingestion Matrix for ML Calibration</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">11 Real-time parameters buffered into RPi feature store • Zero synthetic variance</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-label-sm text-label-sm">
+<span class="px-2 py-1 bg-surface-container-low rounded text-on-surface-variant">LOGGING: ACTIVE</span>
+<span class="px-2 py-1 bg-surface-container-low rounded text-on-surface-variant">BATCH: 128 SAMPLES</span>
+</div>
+</div>
+<!-- Ultra-Dense SCADA Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm border-b border-surface-container">
+<th class="py-2 px-3 font-semibold">FEATURE ID</th>
+<th class="py-2 px-3 font-semibold">PHYSICAL PARAMETER</th>
+<th class="py-2 px-3 font-semibold">SOURCE HARDWARE</th>
+<th class="py-2 px-3 text-right font-semibold">CURRENT VALUE</th>
+<th class="py-2 px-3 text-right font-semibold">BASELINE ENVELOPE</th>
+<th class="py-2 px-3 font-semibold">VARIANCE TREND</th>
+<th class="py-2 px-3 font-semibold">FEATURE WEIGHT</th>
+<th class="py-2 px-3 text-center font-semibold">READINESS</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-1.5 px-3 font-mono font-semibold text-primary">FT_VIB_RMS_Z</td>
+<td class="py-1.5 px-3">Vibration RMS Velocity (Z-Axis)</td>
+<td class="py-1.5 px-3 text-secondary font-mono">MPU-6050 [Drive End]</td>
+<td class="py-1.5 px-3 text-right font-mono font-bold">0.82 mm/s</td>
+<td class="py-1.5 px-3 text-right font-mono text-secondary">&lt; 1.80 mm/s</td>
+<td class="py-1.5 px-3 font-mono text-secondary">±0.04 (Stable)</td>
+<td class="py-1.5 px-3 font-mono">Pending Fit</td>
+<td class="py-1.5 px-3 text-center"><span class="px-1.5 py-0.2 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">LOGGED</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/20">
+<td class="py-1.5 px-3 font-mono font-semibold text-primary">FT_VIB_KURT</td>
+<td class="py-1.5 px-3">Kurtosis Factor (Impact Spikes)</td>
+<td class="py-1.5 px-3 text-secondary font-mono">MPU-6050 [Drive End]</td>
+<td class="py-1.5 px-3 text-right font-mono font-bold">3.12</td>
+<td class="py-1.5 px-3 text-right font-mono text-secondary">2.80 - 3.40 (Gaussian)</td>
+<td class="py-1.5 px-3 font-mono text-secondary">+0.08 (Steady)</td>
+<td class="py-1.5 px-3 font-mono">Pending Fit</td>
+<td class="py-1.5 px-3 text-center"><span class="px-1.5 py-0.2 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">LOGGED</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-1.5 px-3 font-mono font-semibold text-primary">FT_VIB_CREST</td>
+<td class="py-1.5 px-3">Crest Factor (Peak-to-RMS)</td>
+<td class="py-1.5 px-3 text-secondary font-mono">MPU-6050 [Drive End]</td>
+<td class="py-1.5 px-3 text-right font-mono font-bold">2.41</td>
+<td class="py-1.5 px-3 text-right font-mono text-secondary">&lt; 3.50</td>
+<td class="py-1.5 px-3 font-mono text-secondary">-0.02 (Nominal)</td>
+<td class="py-1.5 px-3 font-mono">Pending Fit</td>
+<td class="py-1.5 px-3 text-center"><span class="px-1.5 py-0.2 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">LOGGED</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/20">
+<td class="py-1.5 px-3 font-mono font-semibold text-primary">FT_LOAD_TOTAL</td>
+<td class="py-1.5 px-3">Total Conveyed Mass Dynamic</td>
+<td class="py-1.5 px-3 text-secondary font-mono">HX711 Strain Array</td>
+<td class="py-1.5 px-3 text-right font-mono font-bold">14.60 kg</td>
+<td class="py-1.5 px-3 text-right font-mono text-secondary">0.00 - 30.00 kg</td>
+<td class="py-1.5 px-3 font-mono text-secondary">±1.20 kg</td>
+<td class="py-1.5 px-3 font-mono">Pending Fit</td>
+<td class="py-1.5 px-3 text-center"><span class="px-1.5 py-0.2 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">LOGGED</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-1.5 px-3 font-mono font-semibold text-primary">FT_LOAD_IMBAL</td>
+<td class="py-1.5 px-3">Cross-Belt Imbalance Ratio</td>
+<td class="py-1.5 px-3 text-secondary font-mono">HX711 Left vs Right</td>
+<td class="py-1.5 px-3 text-right font-mono font-bold">0.80% Delta</td>
+<td class="py-1.5 px-3 text-right font-mono text-secondary">&lt; 8.00% Delta</td>
+<td class="py-1.5 px-3 font-mono text-secondary">±0.15%</td>
+<td class="py-1.5 px-3 font-mono">Pending Fit</td>
+<td class="py-1.5 px-3 text-center"><span class="px-1.5 py-0.2 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">LOGGED</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/20">
+<td class="py-1.5 px-3 font-mono font-semibold text-primary">FT_SPEED_DRIFT</td>
+<td class="py-1.5 px-3">Belt Linear Speed Deviation</td>
+<td class="py-1.5 px-3 text-secondary font-mono">Hall Effect Tachometer</td>
+<td class="py-1.5 px-3 text-right font-mono font-bold">0.42 m/s</td>
+<td class="py-1.5 px-3 text-right font-mono text-secondary">0.40 - 0.44 m/s</td>
+<td class="py-1.5 px-3 font-mono text-secondary">±0.01 m/s</td>
+<td class="py-1.5 px-3 font-mono">Pending Fit</td>
+<td class="py-1.5 px-3 text-center"><span class="px-1.5 py-0.2 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">LOGGED</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-1.5 px-3 font-mono font-semibold text-primary">FT_MTR_CURR</td>
+<td class="py-1.5 px-3">Motor Drive Current Draw</td>
+<td class="py-1.5 px-3 text-secondary font-mono">INA219 High-Side Bus</td>
+<td class="py-1.5 px-3 text-right font-mono font-bold">2.15 A</td>
+<td class="py-1.5 px-3 text-right font-mono text-secondary">1.80 - 3.20 A</td>
+<td class="py-1.5 px-3 font-mono text-secondary">+0.12 A</td>
+<td class="py-1.5 px-3 font-mono">Pending Fit</td>
+<td class="py-1.5 px-3 text-center"><span class="px-1.5 py-0.2 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">LOGGED</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/20">
+<td class="py-1.5 px-3 font-mono font-semibold text-primary">FT_VLT_RIPPLE</td>
+<td class="py-1.5 px-3">Supply Bus Voltage Ripple</td>
+<td class="py-1.5 px-3 text-secondary font-mono">INA219 I2C Telemetry</td>
+<td class="py-1.5 px-3 text-right font-mono font-bold">42 mV</td>
+<td class="py-1.5 px-3 text-right font-mono text-secondary">&lt; 150 mV</td>
+<td class="py-1.5 px-3 font-mono text-secondary">±5 mV</td>
+<td class="py-1.5 px-3 font-mono">Pending Fit</td>
+<td class="py-1.5 px-3 text-center"><span class="px-1.5 py-0.2 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">LOGGED</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-1.5 px-3 font-mono font-semibold text-primary">FT_OPT_DEFECTS</td>
+<td class="py-1.5 px-3">Surface Visual Anomalies</td>
+<td class="py-1.5 px-3 text-secondary font-mono">RPi Cam + YOLOv8n-seg</td>
+<td class="py-1.5 px-3 text-right font-mono font-bold">2 Events</td>
+<td class="py-1.5 px-3 text-right font-mono text-secondary">0 Threshold Ideal</td>
+<td class="py-1.5 px-3 font-mono text-secondary">Steady state</td>
+<td class="py-1.5 px-3 font-mono">Pending Fit</td>
+<td class="py-1.5 px-3 text-center"><span class="px-1.5 py-0.2 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">LOGGED</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- SECTION 4: PROVISIONAL MAINTENANCE RECOMMENDATIONS (RULE-BASED) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Rule-Based Advice Panel (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">rule</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Provisional Rule-Based Maintenance Advice</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase">PENDING ML ACTIVATION</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5 shrink-0">build_circle</span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-bold">
+                  Scheduled Roller Shaft Bearing Lubrication Recommended
+                </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Advice generated from deterministic operating run-hours threshold counter (1,840 accumulated runtime hours vs 2,000h service interval).
+                </div>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold rounded shrink-0">
+              PRIORITY: MEDIUM (PREVENTIVE)
+            </span>
+</div>
+<!-- Evidence block -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter pt-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-secondary block">DETERMINISTIC EVIDENCE</span>
+<span class="font-label-md text-label-md text-on-surface font-bold block mt-0.5">1,840 / 2,000 Hrs</span>
+<span class="font-body-sm text-body-sm text-secondary block">OEM Service Window (92%)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-secondary block">VIBRATION ANOMALY</span>
+<span class="font-label-md text-label-md text-on-surface font-bold block mt-0.5">None Detected</span>
+<span class="font-body-sm text-body-sm text-secondary block">Harmonic energy stable</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-secondary block">REQUIRED WORK ORDER</span>
+<span class="font-label-md text-label-md text-primary font-bold block mt-0.5">Manual Grease Check</span>
+<span class="font-body-sm text-body-sm text-secondary block">Lithium Complex NLGI 2</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action triggers -->
+<div class="flex items-center justify-between pt-space-xs flex-wrap gap-2">
+<span class="font-label-sm text-label-sm text-secondary">
+          RULE ID: CEMA-RULE-M04 • TRIGGER SOURCE: RUNTIME REGISTRATION REG_0x22B
+        </span>
+<div class="flex items-center gap-2">
+<button class="px-space-md py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold rounded transition-colors" onclick="alert('Acknowledged: Scheduled Lubrication queued for upcoming maintenance window.')">
+            ACKNOWLEDGE PROVISIONAL ADVICE
+          </button>
+<button class="px-space-md py-1.5 bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold rounded transition-colors" onclick="alert('Work order drafted in CMMS buffer.')">
+            CREATE DRAFT WORK ORDER
+          </button>
+</div>
+</div>
+</div>
+<!-- Machine Diagnostics Checklist (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-space-sm pb-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">checklist</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold uppercase">Pipeline Verification Checklist</span>
+</div>
+<div class="space-y-space-sm font-body-sm text-body-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_box</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">Zero Fabricated Telemetry</span>
+<span class="text-secondary text-body-sm">All values sourced directly from hardware registers.</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_box</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">Isolated ML Pipeline</span>
+<span class="text-secondary text-body-sm">Time-series model offline pending 100k cycles threshold.</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_box</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">Optical Inspection Distinct</span>
+<span class="text-secondary text-body-sm">YOLO visual detection running independently at 30 FPS.</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_box</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">ISO 10816 Verification Active</span>
+<span class="text-secondary text-body-sm">Safe threshold guarding continuously operational.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold block mb-1">DATA GOVERNANCE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">
+          Telemetry stream cryptographic hash: <span class="font-mono text-label-sm text-label-sm text-primary">SHA256:d8a2...3f1c</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interaction to highlight table rows on hover / click
+  document.querySelectorAll('tbody tr').forEach(row => {
+    row.addEventListener('click', () => {
+      document.querySelectorAll('tbody tr').forEach(r => r.classList.remove('bg-surface-container'));
+      row.classList.add('bg-surface-container');
+    });
+  });
+</script></main></div></body></html>

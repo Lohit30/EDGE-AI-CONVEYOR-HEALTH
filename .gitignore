@@ -1,0 +1,44 @@
+# Environment & Secrets
+.env
+backend/.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Large ML Model binaries (>100MB blocked by GitHub)
+ai/models/*.joblib
+*.joblib
+*.pkl
+*.h5
+# Allow custom vision model (<15MB)
+!best.onnx
+!ai/models/*.onnx
+
+# Large raw datasets (>50MB)
+Datasetsih*.json
+*.parquet
+
+# Node / Frontend
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

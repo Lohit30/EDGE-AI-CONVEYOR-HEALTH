@@ -1,0 +1,1216 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-tint":"#3755c3","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","surface-container":"#e5eeff","inverse-primary":"#b8c4ff","surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","on-surface-variant":"#444653","on-tertiary":"#ffffff","on-primary-container":"#a8b8ff","on-error":"#ffffff","surface-dim":"#cbdbf5","error":"#ba1a1a","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#77c2ff","outline-variant":"#c4c5d5","secondary":"#565e74","secondary-container":"#dae2fd","on-primary-fixed":"#001453","on-primary":"#ffffff","primary":"#00288e","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-tertiary-fixed":"#001d31","on-background":"#0b1c30","on-secondary-fixed":"#131b2e","outline":"#757684","on-secondary-container":"#5c647a","surface-container-highest":"#d3e4fe","primary-fixed":"#dde1ff","tertiary-container":"#004f7a","background":"#f8f9ff","surface":"#f8f9ff","primary-container":"#1e40af","surface-bright":"#f8f9ff","on-surface":"#0b1c30","surface-container-lowest":"#ffffff","tertiary":"#003757","inverse-surface":"#213145","on-secondary":"#ffffff","primary-fixed-dim":"#b8c4ff","on-tertiary-fixed-variant":"#004b73","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#173bab"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","space-lg":"1rem","space-xl":"1.5rem","space-xs":"0.25rem","space-sm":"0.375rem","space-md":"0.75rem",gutter:"0.75rem"},fontFamily:{"headline-lg":["IBM Plex Mono"],"label-lg":["IBM Plex Mono"],"label-sm":["IBM Plex Mono"],"headline-md":["IBM Plex Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"label-md":["IBM Plex Mono"],"headline-sm":["IBM Plex Mono"],"metric-display":["IBM Plex Mono"]},fontSize:{"headline-lg":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"label-lg":["13px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-sm":["9px",{lineHeight:"12px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["15px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["11px",{lineHeight:"16px",fontWeight:"400"}],"body-md":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-sm":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"metric-display":["24px",{lineHeight:"28px",letterSpacing:"-0.03em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface select-none antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-50 px-margin flex items-center justify-between shadow-[0_1px_4px_rgba(0,0,0,0.06)]"><div class="flex items-center gap-space-md"><img alt="Conveyor SCADA Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZBtUjcHjGVR0BdoBAzb9o9_lGqUtxZbkcPOimLv7Ftd8Y33Y4iU7YUYqWaskntqerEsyzIhxtvus3z_3oCimNJnNIjzGSXulm1lKBejFskEjKrvtXU6kJOXAwLv7L5L3ZmLqb05qfFSAb5IPc73DqIB4DdZORgRCgkeQdU2YSqm2tHWSp-T3BZprGzeyzUqzm5lwt3AZlczB7syGMJLSW-W4GqQFeHIVUf7U_ZcL9b7b1utGcGYYyET0"><div class="h-8 w-[1px] bg-outline-variant"></div><div><div class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs leading-none tracking-tight">CONVEYOR MONITORING SYSTEM</div><div class="font-label-sm text-label-sm text-secondary tracking-widest leading-none mt-1">PROTOTYPE CV-01 • SMART • SAFE • RELIABLE</div></div><div class="ml-space-xs flex items-center gap-1.5 px-2 py-0.5 bg-surface-container-low border border-outline-variant rounded"><span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span><span class="font-label-sm text-label-sm font-bold text-on-surface tracking-wider">RUNNING</span></div></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container-low px-space-md py-1 border border-outline-variant rounded"><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">BACKEND</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">OK</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">MQTT</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">CONN</span></div><div class="flex items-center gap-1.5 border-r border-outline-variant pr-2.5"><span class="font-label-sm text-label-sm text-secondary">ESP32</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">ONLINE</span></div><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-secondary">RPI4 EDGE</span><span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span class="font-label-sm text-label-sm font-bold text-on-surface">42°C</span></div></div><div class="flex items-center gap-space-md"><div class="text-right"><div class="font-label-md text-label-md text-on-surface font-semibold tracking-wider">14:23:56 UTC</div><div class="font-label-sm text-label-sm text-tertiary-container font-bold uppercase tracking-wider">[SIMULATION / DEV]</div></div><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block text-left"><div class="font-label-sm text-label-sm text-on-surface font-bold leading-tight">ENG. K. VANCE</div><div class="font-label-sm text-label-sm text-secondary leading-tight">ROLE: [ADMIN]</div></div><button class="p-1 text-secondary hover:text-error hover:bg-error-container/20 rounded transition-colors ml-1" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-sm"><div class="px-space-sm py-1.5 text-secondary font-label-sm text-label-sm font-bold tracking-widest uppercase border-b border-outline-variant mb-1">MAIN NAVIGATION</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-bold border border-primary"><a aria-current="page" class="flex items-center justify-between px-space-sm py-1.5 rounded transition-colors bg-primary-container text-on-primary font-bold border border-primary" data-path="overview" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">view_quilt</span><span class="font-label-md text-label-md">Overview</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vibration" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">vibration</span><span class="font-label-md text-label-md">Vibration</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="load" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">weight</span><span class="font-label-md text-label-md">Load</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="belt-speed" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">speed</span><span class="font-label-md text-label-md">Belt Speed</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="electrical-voltage" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">bolt</span><span class="font-label-md text-label-md">Electrical / Voltage</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="camera-inspection" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">videocam</span><span class="font-label-md text-label-md">Camera Inspection</span></div><span class="px-1 py-0.2 bg-[#ef4444] text-white font-label-sm text-label-sm font-bold rounded">LIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="digital-twin" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">deployed_code</span><span class="font-label-md text-label-md">Digital Twin</span></div><span class="px-1 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">CAD</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="predictive-health" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-label-md text-label-md">Predictive Health</span></div><span class="px-1 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold rounded">ML</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-label-md text-label-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="maintenance" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">build</span><span class="font-label-md text-label-md">Maintenance</span></div><span class="px-1.5 py-0.2 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold rounded">1 OPEN</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="alerts" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">warning</span><span class="font-label-md text-label-md">Alerts</span></div><span class="px-1.5 py-0.2 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">3 ACTIVE</span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">tune</span><span class="font-label-md text-label-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-low font-label-sm text-label-sm flex flex-col gap-1 text-secondary"><div class="flex items-center justify-between"><span class="font-mono">FIRMWARE</span><span class="font-mono font-bold text-on-surface">v2.4.1-rc3</span></div><div class="flex items-center justify-between"><span class="font-mono">PLC LINK</span><span class="font-mono font-bold text-on-surface">ISO/CEMA STD</span></div><div class="flex items-center justify-between"><span class="font-mono">SAFETY</span><span class="font-mono font-bold text-[#10b981]">E-STOP READY</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-surface-container-lowest min-h-screen p-space-md border-l border-outline-variant"><div class="flex flex-col w-full gap-space-md">
+<!-- TOP CONTEXT COMMAND STRIP & STATUS OVERVIEW -->
+<div class="bg-surface-container-low rounded p-space-md shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-primary text-on-primary flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight">RIG CONFIGURATION &amp; SYSTEM SETTINGS</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold rounded">REV-2.4.1</span>
+<span class="px-1.5 py-0.5 bg-primary-container text-on-primary font-label-sm text-label-sm rounded uppercase">RAM SYNCHRONIZED</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary mt-0.5">
+          NODE: <span class="text-on-surface font-bold">RPI4-EDGE-GW01</span> • TARGET MCU: <span class="text-on-surface font-bold">ESP32-WROOM-32D (MAC: 34:94:54:2F:1B:0C)</span> • EEPROM STATUS: <span class="text-primary font-semibold">WRITE READY</span>
+</div>
+</div>
+</div>
+<!-- Global Commit / Push Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-lowest rounded shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#10b981]"></span>
+<span class="font-label-sm text-label-sm text-secondary">PARAMS SYNCED</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">0 UNSAVED</span>
+</div>
+<button class="px-space-md py-1.5 rounded bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-variant active:translate-y-px transition-all flex items-center gap-1" id="btn-revert" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Revert Changes</span>
+</button>
+<button class="px-space-md py-1.5 rounded bg-surface-container text-primary font-label-md text-label-md font-bold hover:bg-surface-variant active:translate-y-px transition-all flex items-center gap-1" id="btn-validate" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Validate Integrity</span>
+</button>
+<button class="px-space-md py-1.5 rounded bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow hover:bg-primary active:translate-y-px transition-all flex items-center gap-1.5" id="btn-push" type="button">
+<span class="material-symbols-outlined text-[16px]">publish</span>
+<span>Save &amp; Push to ESP32</span>
+</button>
+</div>
+</div>
+<!-- NAVIGATION SUB-TABS (Modular Rack View Switcher) -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-1.5 flex items-center gap-1 overflow-x-auto">
+<button class="sub-tab-btn px-space-md py-1.5 rounded font-label-md text-label-md font-semibold bg-primary-container text-on-primary shadow-sm flex items-center gap-1.5 shrink-0 transition-colors" data-tab-target="tab-rig">
+<span class="material-symbols-outlined text-[16px]">precision_manufacturing</span>
+<span>Conveyor &amp; Physical Rig</span>
+</button>
+<button class="sub-tab-btn px-space-md py-1.5 rounded font-label-md text-label-md font-semibold text-secondary hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 shrink-0 transition-colors" data-tab-target="tab-sensors">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>Sensors &amp; Calibration</span>
+<span class="px-1 py-0.2 text-[8px] bg-surface-container text-on-surface rounded">4 ICs</span>
+</button>
+<button class="sub-tab-btn px-space-md py-1.5 rounded font-label-md text-label-md font-semibold text-secondary hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 shrink-0 transition-colors" data-tab-target="tab-alarms">
+<span class="material-symbols-outlined text-[16px]">notification_important</span>
+<span>Alarm Thresholds</span>
+<span class="px-1 py-0.2 text-[8px] bg-error-container text-on-error-container font-bold rounded">TRIP LOCK</span>
+</button>
+<button class="sub-tab-btn px-space-md py-1.5 rounded font-label-md text-label-md font-semibold text-secondary hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 shrink-0 transition-colors" data-tab-target="tab-mqtt">
+<span class="material-symbols-outlined text-[16px]">hub</span>
+<span>MQTT &amp; Network</span>
+</button>
+<button class="sub-tab-btn px-space-md py-1.5 rounded font-label-md text-label-md font-semibold text-secondary hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 shrink-0 transition-colors" data-tab-target="tab-services">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span>System Services</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
+</button>
+<button class="sub-tab-btn px-space-md py-1.5 rounded font-label-md text-label-md font-semibold text-secondary hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 shrink-0 transition-colors" data-tab-target="tab-drive">
+<span class="material-symbols-outlined text-[16px]">electric_meter</span>
+<span>Motor &amp; Drive</span>
+</button>
+<button class="sub-tab-btn px-space-md py-1.5 rounded font-label-md text-label-md font-semibold text-secondary hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 shrink-0 transition-colors" data-tab-target="tab-esp32">
+<span class="material-symbols-outlined text-[16px]">memory</span>
+<span>ESP32 &amp; DAQ</span>
+</button>
+<button class="sub-tab-btn px-space-md py-1.5 rounded font-label-md text-label-md font-semibold text-secondary hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 shrink-0 transition-colors" data-tab-target="tab-vision">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>AI &amp; Vision</span>
+</button>
+</div>
+<!-- TAB CONTENT 1: CONVEYOR & PHYSICAL RIG CONFIGURATION -->
+<section class="tab-panel flex flex-col gap-space-md" id="tab-rig">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- LEFT: Rig Identification & Physical Dimensions (8 cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Card: Rig Structural Parameters -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">straighten</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">Rig Topology &amp; Geometric Specification</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-mono">SPEC: CEMA-B200 / PROTOTYPE</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Machine Tag -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider flex items-center justify-between">
+<span>Machine Tag / ISA Asset Code</span>
+<span class="text-primary font-mono">ADDR: 0x01</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:bg-surface-container-lowest focus:outline-none uppercase" type="text" value="CV-IRON-01">
+<span class="absolute right-2 text-secondary font-label-sm text-label-sm">PRIMARY</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Unique network identifier broadcasted across OPC-UA &amp; MQTT topics.</span>
+</div>
+<!-- Machine Description -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
+                Asset Functional Description
+              </label>
+<input class="w-full h-8 px-space-sm bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded focus:bg-surface-container-lowest focus:outline-none" type="text" value="Intelligent Conveyor Belt Health Monitoring Prototype (Scale 1:10)">
+<span class="font-body-sm text-body-sm text-secondary">Human-readable descriptor registered in telemetry metadata headers.</span>
+</div>
+<!-- Center to Center Distance -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Center-to-Center Pulley Distance</span>
+<span class="font-label-sm text-label-sm text-primary font-mono font-bold">L_cc</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<input class="w-full h-8 px-space-sm bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" step="0.1" type="number" value="1200.0">
+<span class="px-2 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-bold rounded">mm</span>
+</div>
+<div class="flex justify-between text-[9px] text-secondary font-mono">
+<span>MIN: 600.0 mm</span>
+<span>NOM: 1,200.0 mm</span>
+<span>MAX: 2,500.0 mm</span>
+</div>
+</div>
+<!-- Belt Width & Type -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Belt Width &amp; Carcass Type</span>
+<span class="font-label-sm text-label-sm text-primary font-mono font-bold">W_b</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<input class="w-28 h-8 px-space-sm bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" step="1.0" type="number" value="150.0">
+<span class="px-2 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-bold rounded">mm</span>
+<input class="w-full h-8 px-space-sm bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded focus:outline-none" type="text" value="EP-200 2-Ply Synthetic Rubber Fabric">
+</div>
+<div class="flex justify-between text-[9px] text-secondary font-mono">
+<span>TENSILE: 200 N/mm</span>
+<span>THICKNESS: 3.8 mm</span>
+</div>
+</div>
+<!-- Roller Diameter -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Pulley Diameter (Drive &amp; Tail)</span>
+<span class="font-label-sm text-label-sm text-primary font-mono font-bold">Ø_pulley</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<input class="w-full h-8 px-space-sm bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" step="0.5" type="number" value="80.0">
+<span class="px-2 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-bold rounded">mm</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Crown profile: Trapezoidal lagging, Circumference = 251.32 mm</span>
+</div>
+<!-- Speed & Throughput Rate -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Rated Speed / Design Throughput</span>
+<span class="font-label-sm text-label-sm text-primary font-mono font-bold">V_nom / Q_max</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="flex items-center gap-1">
+<input class="w-full h-8 px-space-sm bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" step="0.05" type="number" value="1.85">
+<span class="px-1.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary rounded">m/s</span>
+</div>
+<div class="flex items-center gap-1">
+<input class="w-full h-8 px-space-sm bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" step="0.5" type="number" value="15.0">
+<span class="px-1.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary rounded">t/h</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Volumetric fill coefficient: φ = 0.65 (Bulk ore bulk density 2.4 t/m³)</span>
+</div>
+</div>
+</div>
+<!-- Section: Mechanical Schematic CAD Calibration Blueprint -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">architecture</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">Geometric Reference Layout (Scale 1:10 CAD)</span>
+</div>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface font-label-sm text-label-sm font-mono rounded">DATUM: TAIL PULLEY CENTER (0, 0)</span>
+</div>
+<!-- Scaled Vector CAD Representation of the Conveyor Bed -->
+<div class="w-full h-44 bg-surface-container-low rounded p-2 relative flex items-center justify-center overflow-hidden">
+<svg class="w-full h-full text-secondary" fill="none" viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid Backdrop lines -->
+<defs>
+<pattern height="40" id="cadGrid" patternUnits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-opacity="0.12" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#cadGrid)" height="100%" width="100%"></rect>
+<!-- Dimension line L_cc = 1200mm -->
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-width="1.5" x1="120" x2="680" y1="24" y2="24"></line>
+<polyline fill="none" points="125,20 120,24 125,28" stroke="currentColor" stroke-width="1.5"></polyline>
+<polyline fill="none" points="675,20 680,24 675,28" stroke="currentColor" stroke-width="1.5"></polyline>
+<text class="font-label-sm text-label-sm font-mono font-bold" fill="currentColor" text-anchor="middle" x="400" y="20">L_CC = 1,200.0 mm</text>
+<!-- Tail Pulley (Left) -->
+<circle cx="120" cy="85" fill="#dce9ff" r="32" stroke="#00288e" stroke-width="2"></circle>
+<circle cx="120" cy="85" fill="#00288e" r="5"></circle>
+<text class="font-label-sm text-label-sm font-mono" fill="currentColor" text-anchor="middle" x="120" y="132">TAIL Ø80</text>
+<text class="text-[8px] font-mono" fill="currentColor" text-anchor="middle" x="120" y="144">X = 0 mm</text>
+<!-- Drive Pulley (Right) -->
+<circle cx="680" cy="85" fill="#dce9ff" r="32" stroke="#00288e" stroke-width="2"></circle>
+<circle cx="680" cy="85" fill="#00288e" r="5"></circle>
+<text class="font-label-sm text-label-sm font-mono" fill="currentColor" text-anchor="middle" x="680" y="132">DRIVE Ø80</text>
+<text class="text-[8px] font-mono" fill="currentColor" text-anchor="middle" x="680" y="144">X = 1200 mm</text>
+<!-- Conveyor Belt Loop -->
+<path d="M 120,53 L 680,53 A 32,32 0 0,1 680,117 L 120,117 A 32,32 0 0,1 120,53 Z" fill="none" stroke="#213145" stroke-linecap="round" stroke-width="4"></path>
+<!-- Carry Deck Idler Bed -->
+<line stroke="#565e74" stroke-width="3" x1="200" x2="600" y1="56" y2="56"></line>
+<!-- LC-01 Marker -->
+<rect fill="#1e40af" height="12" rx="1" width="16" x="250" y="60"></rect>
+<circle cx="258" cy="78" fill="#10b981" r="3"></circle>
+<text class="font-label-sm text-label-sm font-mono font-bold" fill="#1e40af" text-anchor="middle" x="258" y="98">LC-01</text>
+<text class="text-[8px] font-mono" fill="currentColor" text-anchor="middle" x="258" y="108">X=280</text>
+<!-- LC-02 Marker -->
+<rect fill="#1e40af" height="12" rx="1" width="16" x="460" y="60"></rect>
+<circle cx="468" cy="78" fill="#10b981" r="3"></circle>
+<text class="font-label-sm text-label-sm font-mono font-bold" fill="#1e40af" text-anchor="middle" x="468" y="98">LC-02</text>
+<text class="text-[8px] font-mono" fill="currentColor" text-anchor="middle" x="468" y="108">X=740</text>
+<!-- MPU6050 Vibration Marker -->
+<polygon fill="#ba1a1a" points="670,40 680,26 690,40"></polygon>
+<text class="font-label-sm text-label-sm font-mono font-bold" fill="#ba1a1a" text-anchor="middle" x="680" y="20">MPU-6050 (X=1180)</text>
+<!-- Optical Encoder Marker -->
+<circle cx="120" cy="85" fill="none" r="14" stroke="#ba1a1a" stroke-dasharray="2 2" stroke-width="1.5"></circle>
+<text class="font-label-sm text-label-sm font-mono font-bold" fill="#003757" text-anchor="end" x="80" y="65">ENC-01 [PPR:20]</text>
+</svg>
+</div>
+<div class="grid grid-cols-4 gap-space-xs text-center font-label-sm text-label-sm pt-1">
+<div class="bg-surface-container-low p-1 rounded">
+<span class="text-secondary block">FEED HOPPER</span>
+<span class="text-on-surface font-bold font-mono">X = 150 - 350 mm</span>
+</div>
+<div class="bg-surface-container-low p-1 rounded">
+<span class="text-secondary block">WEIGH BED 1</span>
+<span class="text-on-surface font-bold font-mono">X = 280 mm [LC1]</span>
+</div>
+<div class="bg-surface-container-low p-1 rounded">
+<span class="text-secondary block">WEIGH BED 2</span>
+<span class="text-on-surface font-bold font-mono">X = 740 mm [LC2]</span>
+</div>
+<div class="bg-surface-container-low p-1 rounded">
+<span class="text-secondary block">HEAD CHUTE</span>
+<span class="text-on-surface font-bold font-mono">X = 1250 mm</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: Physical Rig Snapshot & Operating Limits (4 cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Hardware Photo / Inspection Cam Placement Card -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">Physical Bench Installation</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-primary font-label-sm text-label-sm font-bold rounded">BAY-03</span>
+</div>
+<div class="w-full h-48 rounded bg-surface-container-low overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="High quality industrial macro photograph of a laboratory 1:10 scale conveyor belt rig, showing galvanized aluminum extrusion framing, miniature rubber belt, roller bearings with mounted MPU6050 sensor board and dual load cells, crisp neutral lighting, clean industrial engineering bench." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIy3uK-ZN5pOraIZy_FJNtCuxLVXnXAD7MMr_j2uRGDjXIpjy5vnen9soDwtQSCOa6BgKoriM1mcNeq7joLBV_rwfr2PWBoqP_nyBvf_MpRi7SBXpk8-2ci6LURkjsBqGUqcYh9aKtv_Rsz_UJuU7FW-dSFH8yDDhaQmWMt--_Oiy4K01ARuhgjeZ6HNX7YICTngJqgKBmLnLTs76WgBjjSrDHTK9CqbmaPQ046D5T68K8R0Ju5Trigw">
+<div class="absolute bottom-2 left-2 px-2 py-0.5 bg-inverse-surface/80 backdrop-blur text-inverse-on-surface font-label-sm text-label-sm font-mono rounded">
+              CAM-01 FEED: ALIGNED
+            </div>
+</div>
+<div class="flex flex-col gap-1 text-body-sm text-body-sm text-secondary">
+<div class="flex justify-between py-0.5">
+<span>Extrusion Frame:</span>
+<span class="font-mono font-bold text-on-surface">40x40 T-Slot AL-6063</span>
+</div>
+<div class="flex justify-between py-0.5">
+<span>Take-Up Tensioner:</span>
+<span class="font-mono font-bold text-on-surface">M10 Screw Take-Up (Tail)</span>
+</div>
+<div class="flex justify-between py-0.5">
+<span>Drive Transmission:</span>
+<span class="font-mono font-bold text-on-surface">HTD-3M Timing Belt (1:2.5)</span>
+</div>
+<div class="flex justify-between py-0.5">
+<span>Safety Interlock:</span>
+<span class="font-mono font-bold text-[#10b981]">Dual Pull-Cord NC Ready</span>
+</div>
+</div>
+</div>
+<!-- Quick Calibration Check Card -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">Calibration Presets</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">tune</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<button class="w-full text-left p-2 rounded bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">CEMA-B Standard Bulk Ore</div>
+<div class="font-body-sm text-body-sm text-secondary">V=1.85 m/s • Filter BW 98Hz • Tare Reset</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</button>
+<button class="w-full text-left p-2 rounded bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Light Pellet Low-Vibration</div>
+<div class="font-body-sm text-body-sm text-secondary">V=1.20 m/s • High Sensitivity DLPF 42Hz</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">radio_button_unchecked</span>
+</button>
+<button class="w-full text-left p-2 rounded bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">High-Stress Chute Loading</div>
+<div class="font-body-sm text-body-sm text-secondary">V=2.10 m/s • Max Trip 90.0 kg • 80 SPS</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">radio_button_unchecked</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB CONTENT 2: SENSORS & HARDWARE CALIBRATION MATRIX -->
+<section class="tab-panel flex flex-col gap-space-md" id="tab-sensors">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- IC 1: MPU6050 Vibration Sensor -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">vibration</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">MPU6050 IMU</span>
+</div>
+<span class="px-1.5 py-0.2 bg-[#10b981]/15 text-[#10b981] font-label-sm text-label-sm font-bold rounded">ONLINE</span>
+</div>
+<div class="text-body-sm text-body-sm text-secondary">
+          Vibration &amp; Bearing Triaxial Accelerometer on Head Drive Pillow Block.
+        </div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">I2C Address</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold px-2 py-0.5 rounded focus:outline-none">
+<option selected="">0x68 (AD0=GND)</option>
+<option>0x69 (AD0=VCC)</option>
+</select>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">I2C Port &amp; Pins</span>
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">Wire1 (GPIO 21/22)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Full Scale Range</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold px-2 py-0.5 rounded focus:outline-none">
+<option>±2g (16384 LSB/g)</option>
+<option selected="">±4g (8192 LSB/g)</option>
+<option>±8g (4096 LSB/g)</option>
+<option>±16g (2048 LSB/g)</option>
+</select>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">DLPF Bandwidth</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold px-2 py-0.5 rounded focus:outline-none">
+<option>260 Hz</option>
+<option>184 Hz</option>
+<option selected="">98 Hz (Low Noise)</option>
+<option>44 Hz</option>
+<option>10 Hz</option>
+</select>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Sampling Frequency</span>
+<div class="flex items-center gap-1">
+<input class="w-16 h-6 px-1.5 text-right bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold rounded focus:outline-none" type="number" value="100">
+<span class="font-label-sm text-label-sm text-secondary font-mono">Hz</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-secondary block mb-1">Mounting Offset Datum</span>
+<div class="grid grid-cols-2 gap-1 text-[10px] font-mono">
+<span class="text-secondary">X (Longitudinal): <b class="text-on-surface">1180.0 mm</b></span>
+<span class="text-secondary">Z (Elevation): <b class="text-on-surface">+45.0 mm</b></span>
+</div>
+</div>
+</div>
+</div>
+<!-- IC 2: Dual Load Cells & HX711 -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">scale</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">HX711 Load Cells</span>
+</div>
+<span class="px-1.5 py-0.2 bg-[#10b981]/15 text-[#10b981] font-label-sm text-label-sm font-bold rounded">24-BIT ΣΔ</span>
+</div>
+<div class="text-body-sm text-body-sm text-secondary">
+          Dual Bridge Strain-Gauge Amplifiers on Conveyor Deck.
+        </div>
+<div class="flex flex-col gap-2">
+<!-- LC-01 Hopper Bed -->
+<div class="bg-surface-container-low p-2 rounded flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm font-bold text-primary">LC-01 (Hopper Deck, X=280mm)</span>
+<button class="px-1.5 py-0.2 bg-surface-container text-[9px] font-mono rounded hover:bg-surface-container-high">TARE</button>
+</div>
+<div class="grid grid-cols-2 gap-1">
+<div>
+<span class="text-[9px] text-secondary block">CAL FACTOR</span>
+<input class="w-full h-6 px-1 text-right bg-surface-container-lowest font-label-sm text-label-sm font-bold rounded focus:outline-none" step="0.01" type="number" value="412.55">
+</div>
+<div>
+<span class="text-[9px] text-secondary block">ZERO OFFSET</span>
+<input class="w-full h-6 px-1 text-right bg-surface-container-lowest font-label-sm text-label-sm font-bold rounded focus:outline-none" type="number" value="-18420">
+</div>
+</div>
+</div>
+<!-- LC-02 Mid Bed -->
+<div class="bg-surface-container-low p-2 rounded flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm font-bold text-primary">LC-02 (Mid-Span Deck, X=740mm)</span>
+<button class="px-1.5 py-0.2 bg-surface-container text-[9px] font-mono rounded hover:bg-surface-container-high">TARE</button>
+</div>
+<div class="grid grid-cols-2 gap-1">
+<div>
+<span class="text-[9px] text-secondary block">CAL FACTOR</span>
+<input class="w-full h-6 px-1 text-right bg-surface-container-lowest font-label-sm text-label-sm font-bold rounded focus:outline-none" step="0.01" type="number" value="415.10">
+</div>
+<div>
+<span class="text-[9px] text-secondary block">ZERO OFFSET</span>
+<input class="w-full h-6 px-1 text-right bg-surface-container-lowest font-label-sm text-label-sm font-bold rounded focus:outline-none" type="number" value="-19105">
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Excitation Voltage</span>
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">5.0 V DC (Reg.)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Data Output Rate</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold px-2 py-0.5 rounded focus:outline-none">
+<option>10 SPS (Filtered)</option>
+<option selected="">80 SPS (High Speed)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- IC 3: Optical Speed Encoder -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">speed</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Speed Encoder</span>
+</div>
+<span class="px-1.5 py-0.2 bg-[#10b981]/15 text-[#10b981] font-label-sm text-label-sm font-bold rounded">IRQ PIN 04</span>
+</div>
+<div class="text-body-sm text-body-sm text-secondary">
+          Slotted Disc Optocoupler Pulse Counter on Tail Idler Pulley.
+        </div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Pulses / Revolution</span>
+<div class="flex items-center gap-1">
+<input class="w-16 h-6 px-1.5 text-right bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold rounded focus:outline-none" type="number" value="20">
+<span class="font-label-sm text-label-sm text-secondary font-mono">PPR</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Interrupt Pin (ESP32)</span>
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">GPIO 04 (RISING)</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary">Linear Distance / Pulse:</span>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-mono font-bold text-primary">0.01257 m/pulse</span>
+<span class="text-[9px] text-secondary">π×D / PPR</span>
+</div>
+<span class="text-[9px] text-secondary font-mono mt-0.5">80mm × 3.14159 / 20 = 12.566 mm/pulse</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Debounce Window</span>
+<div class="flex items-center gap-1">
+<input class="w-16 h-6 px-1.5 text-right bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold rounded focus:outline-none" type="number" value="250">
+<span class="font-label-sm text-label-sm text-secondary font-mono">μs</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Slip Detection Window</span>
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">±5.0% Slip</span>
+</div>
+</div>
+</div>
+<!-- IC 4: INA219 Power & Voltage Monitor -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">bolt</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">INA219 Power IC</span>
+</div>
+<span class="px-1.5 py-0.2 bg-[#10b981]/15 text-[#10b981] font-label-sm text-label-sm font-bold rounded">I2C 0x40</span>
+</div>
+<div class="text-body-sm text-body-sm text-secondary">
+          High-Side DC Shunt Current &amp; Bus Voltage Monitor for 24V Drive Motor.
+        </div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Shunt Resistance</span>
+<div class="flex items-center gap-1">
+<input class="w-16 h-6 px-1.5 text-right bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold rounded focus:outline-none" step="0.001" type="number" value="0.010">
+<span class="font-label-sm text-label-sm text-secondary font-mono">Ω</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Bus Voltage Range</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold px-2 py-0.5 rounded focus:outline-none">
+<option>0 - 16 V (Low Range)</option>
+<option selected="">0 - 32 V (Nominal 24V)</option>
+</select>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Max Continuous Current</span>
+<div class="flex items-center gap-1">
+<input class="w-16 h-6 px-1.5 text-right bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold rounded focus:outline-none" step="0.1" type="number" value="3.2">
+<span class="font-label-sm text-label-sm text-secondary font-mono">A</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">Peak Peak Current</span>
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">5.0 A (100ms)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded">
+<span class="font-label-sm text-label-sm text-secondary">PGA Gain Setting</span>
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">/8 (±320mV Range)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB CONTENT 3: ALARM LIMIT & TRIP THRESHOLD CONFIGURATION -->
+<section class="tab-panel flex flex-col gap-space-md" id="tab-alarms">
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-xs pb-space-xs bg-surface-container-low px-space-sm py-1.5 rounded">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[20px]">warning</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">Mission Critical Setpoints &amp; Trip Matrix</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">HARDWARE INTERLOCK • VALUES EXCEEDING TRIP INITIATE EMERGENCY VFD SHUTDOWN</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary font-mono">ISO 10816-3 CLASS II VIB LIMITS</span>
+<span class="px-2 py-0.5 bg-error text-on-error font-label-sm text-label-sm font-bold rounded">E-STOP LINKED</span>
+</div>
+</div>
+<!-- High-Density Telemetry Alarm Matrix Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-label-md text-label-md border-collapse">
+<thead>
+<tr class="bg-surface-container text-secondary font-label-sm text-label-sm uppercase border-b border-surface">
+<th class="py-2 px-3 font-bold">Parameter / Channel</th>
+<th class="py-2 px-3 font-bold">Physical Unit</th>
+<th class="py-2 px-3 font-bold">Nominal Value</th>
+<th class="py-2 px-3 font-bold text-amber-700">Warning Limit (Amber)</th>
+<th class="py-2 px-3 font-bold text-error">Trip Limit (Red - E-Stop)</th>
+<th class="py-2 px-3 font-bold">Hysteresis</th>
+<th class="py-2 px-3 font-bold">Trip Action</th>
+<th class="py-2 px-3 text-right font-bold">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low">
+<!-- Vibration RMS -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2 px-3">
+<div class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Vibration RMS (Triaxial Head Bearings)</span>
+</div>
+<span class="text-[9px] text-secondary font-mono">MPU6050_ACCEL_RMS_Z</span>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">mm/s</td>
+<td class="py-2 px-3 font-mono font-bold text-on-surface">1.45</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-amber-900 rounded focus:bg-surface-container-lowest focus:outline-none" step="0.1" type="number" value="4.50">
+</div>
+</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-error rounded focus:bg-surface-container-lowest focus:outline-none" step="0.1" type="number" value="7.10">
+</div>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">0.30 mm/s</td>
+<td class="py-2 px-3">
+<span class="px-1.5 py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">VFD LOCKOUT</span>
+</td>
+<td class="py-2 px-3 text-right font-mono font-bold text-[#10b981]">NORMAL</td>
+</tr>
+<!-- Total Bulk Load -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2 px-3">
+<div class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Total Bulk Bed Load</span>
+</div>
+<span class="text-[9px] text-secondary font-mono">HX711_SUM_LC1_LC2</span>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">kg</td>
+<td class="py-2 px-3 font-mono font-bold text-on-surface">32.8</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-amber-900 rounded focus:bg-surface-container-lowest focus:outline-none" step="1.0" type="number" value="65.0">
+</div>
+</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-error rounded focus:bg-surface-container-lowest focus:outline-none" step="1.0" type="number" value="85.0">
+</div>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">2.50 kg</td>
+<td class="py-2 px-3">
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface font-label-sm text-label-sm font-bold rounded">FEED CHUTE STOP</span>
+</td>
+<td class="py-2 px-3 text-right font-mono font-bold text-[#10b981]">NORMAL</td>
+</tr>
+<!-- Belt Speed Under-Speed -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2 px-3">
+<div class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Belt Speed Under-Speed (Belt Slip)</span>
+</div>
+<span class="text-[9px] text-secondary font-mono">ENC_OPTICAL_SPEED_MIN</span>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">m/s</td>
+<td class="py-2 px-3 font-mono font-bold text-on-surface">1.85</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-amber-900 rounded focus:bg-surface-container-lowest focus:outline-none" step="0.05" type="number" value="1.40">
+</div>
+</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-error rounded focus:bg-surface-container-lowest focus:outline-none" step="0.05" type="number" value="0.80">
+</div>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">0.10 m/s</td>
+<td class="py-2 px-3">
+<span class="px-1.5 py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">MOTOR SHUTDOWN</span>
+</td>
+<td class="py-2 px-3 text-right font-mono font-bold text-[#10b981]">NORMAL</td>
+</tr>
+<!-- Belt Speed Over-Speed -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2 px-3">
+<div class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Belt Speed Over-Speed (Runaway)</span>
+</div>
+<span class="text-[9px] text-secondary font-mono">ENC_OPTICAL_SPEED_MAX</span>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">m/s</td>
+<td class="py-2 px-3 font-mono font-bold text-on-surface">1.85</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-amber-900 rounded focus:bg-surface-container-lowest focus:outline-none" step="0.05" type="number" value="2.20">
+</div>
+</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-error rounded focus:bg-surface-container-lowest focus:outline-none" step="0.05" type="number" value="2.60">
+</div>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">0.10 m/s</td>
+<td class="py-2 px-3">
+<span class="px-1.5 py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">BRAKE ENGAGE</span>
+</td>
+<td class="py-2 px-3 text-right font-mono font-bold text-[#10b981]">NORMAL</td>
+</tr>
+<!-- Motor Current -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2 px-3">
+<div class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Motor Armature Current</span>
+</div>
+<span class="text-[9px] text-secondary font-mono">INA219_CURRENT_AMP</span>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">A</td>
+<td class="py-2 px-3 font-mono font-bold text-on-surface">1.82</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-amber-900 rounded focus:bg-surface-container-lowest focus:outline-none" step="0.1" type="number" value="2.50">
+</div>
+</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<input class="w-20 h-7 px-2 bg-surface-container-low font-mono font-bold text-error rounded focus:bg-surface-container-lowest focus:outline-none" step="0.1" type="number" value="4.80">
+</div>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">0.25 A</td>
+<td class="py-2 px-3">
+<span class="px-1.5 py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm font-bold rounded">THERMAL TRIP</span>
+</td>
+<td class="py-2 px-3 text-right font-mono font-bold text-[#10b981]">NORMAL</td>
+</tr>
+<!-- Bus Voltage -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-2 px-3">
+<div class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>24V DC Bus Voltage (Under / Over)</span>
+</div>
+<span class="text-[9px] text-secondary font-mono">INA219_BUS_VOLT</span>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">V DC</td>
+<td class="py-2 px-3 font-mono font-bold text-on-surface">12.15</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<span class="text-[9px] font-mono text-secondary">U:</span>
+<input class="w-16 h-7 px-1.5 bg-surface-container-low font-mono font-bold text-amber-900 rounded focus:bg-surface-container-lowest focus:outline-none" step="0.1" type="number" value="10.50">
+</div>
+</td>
+<td class="py-2 px-3">
+<div class="flex items-center gap-1">
+<span class="text-[9px] font-mono text-secondary">O:</span>
+<input class="w-16 h-7 px-1.5 bg-surface-container-low font-mono font-bold text-error rounded focus:bg-surface-container-lowest focus:outline-none" step="0.1" type="number" value="13.80">
+</div>
+</td>
+<td class="py-2 px-3 font-mono text-secondary">0.50 V</td>
+<td class="py-2 px-3">
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface font-label-sm text-label-sm font-bold rounded">ALARM ONLY</span>
+</td>
+<td class="py-2 px-3 text-right font-mono font-bold text-[#10b981]">NOMINAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Linear Safety Envelope Visualizer Bar -->
+<div class="bg-surface-container-low rounded p-space-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[10px] font-mono font-bold">
+<span class="text-secondary">RMS VIBRATION SAFETY GRADUATION SPECTRUM</span>
+<span class="text-primary">ISO-10816 CLASS II</span>
+</div>
+<div class="w-full h-4 bg-surface-container-lowest rounded overflow-hidden flex relative">
+<!-- Zone 0 - 2.8 mm/s Good -->
+<div class="bg-[#10b981]/70 h-full flex items-center justify-center text-[9px] font-mono font-bold text-white" style="width: 39%;">
+            NOMINAL (0 - 2.8 mm/s)
+          </div>
+<!-- Zone 2.8 - 4.5 Satisfactory -->
+<div class="bg-primary-container h-full flex items-center justify-center text-[9px] font-mono font-bold text-white" style="width: 24%;">
+            ACCEPTABLE
+          </div>
+<!-- Zone 4.5 - 7.1 Warning -->
+<div class="bg-amber-500 h-full flex items-center justify-center text-[9px] font-mono font-bold text-white" style="width: 24%;">
+            WARNING (&gt;4.5)
+          </div>
+<!-- Zone >7.1 Trip -->
+<div class="bg-error h-full flex items-center justify-center text-[9px] font-mono font-bold text-white" style="width: 13%;">
+            TRIP
+          </div>
+<!-- Current marker 1.45 mm/s -->
+<div class="absolute top-0 bottom-0 w-1 bg-black shadow" style="left: 20%;"></div>
+</div>
+<div class="flex justify-between text-[9px] font-mono text-secondary">
+<span>0.0 mm/s</span>
+<span>1.45 mm/s [CURRENT LOAD]</span>
+<span>4.50 mm/s [WARN]</span>
+<span>7.10 mm/s [TRIP]</span>
+<span>10.0 mm/s</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB CONTENT 4: MQTT & NETWORK CONNECTIVITY -->
+<section class="tab-panel flex flex-col gap-space-md" id="tab-mqtt">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Left Column: Broker Topology (7 cols) -->
+<div class="xl:col-span-7 bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">wifi_tethering</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">MQTT Broker Configuration</span>
+</div>
+<span class="px-2 py-0.5 bg-[#10b981]/15 text-[#10b981] font-label-sm text-label-sm font-bold rounded">SOCKET CONNECTED</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Broker Hostname / IPv4</label>
+<input class="h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" type="text" value="192.168.1.150">
+<span class="text-[9px] text-secondary">Raspberry Pi 4 Local Mosquitto Instance</span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">TCP Port</label>
+<input class="h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" type="number" value="1883">
+<span class="text-[9px] text-secondary">Standard unencrypted local industrial port</span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Keepalive Interval</label>
+<div class="flex items-center gap-1">
+<input class="w-full h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" type="number" value="60">
+<span class="px-2 py-1.5 bg-surface-container font-label-sm text-label-sm text-secondary rounded">sec</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Default Quality of Service (QoS)</label>
+<select class="h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none">
+<option>QoS 0 (At most once / Fire &amp; forget)</option>
+<option selected="">QoS 1 (At least once / Acknowledged)</option>
+<option>QoS 2 (Exactly once / Assured)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1 md:col-span-2">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Root Base Topic Namespace</label>
+<input class="h-8 px-space-sm bg-surface-container-low text-primary font-mono font-bold rounded focus:outline-none" type="text" value="scada/conveyor/cv_iron_01/">
+<span class="text-[9px] text-secondary">All sub-channels inherit this prefix automatically.</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded md:col-span-2">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">TLS / SSL Encryption (Port 8883)</span>
+<span class="text-[9px] text-secondary">Bypassed for local isolated RS485/WiFi gateway subnet</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-mono text-secondary">DISABLED</span>
+<button class="w-10 h-5 bg-secondary/30 rounded-full p-0.5 flex items-center justify-start cursor-pointer">
+<span class="w-4 h-4 bg-surface-container-lowest rounded-full shadow"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sub-Topic Routing & Ingestion Rate (5 cols) -->
+<div class="xl:col-span-5 bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">alt_route</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Sub-Topic Tree &amp; Telemetry</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">PUB/SUB</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-2 bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<span class="font-mono text-xs font-bold text-primary block">.../telemetry/raw</span>
+<span class="text-[9px] text-secondary">MPU6050 &amp; Load Cell raw ADC ticks (100 Hz)</span>
+</div>
+<span class="font-mono text-xs font-bold text-on-surface">100 msg/s</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<span class="font-mono text-xs font-bold text-primary block">.../telemetry/filtered</span>
+<span class="text-[9px] text-secondary">Engineering units (mm/s, kg, m/s, A) @ 10 Hz</span>
+</div>
+<span class="font-mono text-xs font-bold text-on-surface">10 msg/s</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<span class="font-mono text-xs font-bold text-error block">.../alerts/events</span>
+<span class="text-[9px] text-secondary">Trip interlocks, over-temperature, slip alarms</span>
+</div>
+<span class="px-1.5 py-0.2 bg-error-container text-on-error-container text-[9px] font-mono font-bold rounded">QoS 2 RETAIN</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<span class="font-mono text-xs font-bold text-on-surface block">.../commands/vfd</span>
+<span class="text-[9px] text-secondary">Start, Stop, Speed Stepper, Inversion commands</span>
+</div>
+<span class="px-1.5 py-0.2 bg-surface-container text-on-surface text-[9px] font-mono font-bold rounded">BIDIRECTIONAL</span>
+</div>
+</div>
+<!-- Mini Network Packet Traffic -->
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-1">
+<div class="flex justify-between text-label-sm text-label-sm font-mono">
+<span class="text-secondary">BANDWIDTH CONSUMPTION</span>
+<span class="text-on-surface font-bold">142.4 KB/s</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded overflow-hidden">
+<div class="w-1/4 h-full bg-primary rounded"></div>
+</div>
+<span class="text-[8px] font-mono text-secondary">0 PACKETS DROPPED • LATENCY: 2.1 ms JITTER: 0.4 ms</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB CONTENT 5: SYSTEM SERVICES & DAQ STATUS PANEL -->
+<section class="tab-panel flex flex-col gap-space-md" id="tab-services">
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Systemd Service Daemons (8 cols) -->
+<div class="xl:col-span-8 bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">dns</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Linux Edge Daemons (Raspberry Pi 4)</span>
+</div>
+<button class="px-2 py-0.5 bg-surface-container text-on-surface font-label-sm text-label-sm font-bold rounded hover:bg-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span>Reload Daemons</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Daemon 1: scada-daq.service -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10b981] mt-1.5 shrink-0"></span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface font-mono">scada-daq.service</span>
+<span class="px-1.5 py-0.2 bg-[#10b981]/15 text-[#10b981] font-label-sm text-label-sm font-bold rounded uppercase">Active (Running)</span>
+<span class="text-[9px] text-secondary font-mono">PID 1042</span>
+</div>
+<div class="font-body-sm text-body-sm text-secondary">
+                  High-speed ESP32 serial bridge, packet parser and ring-buffer collector.
+                </div>
+</div>
+</div>
+<div class="flex items-center gap-1 self-end md:self-center">
+<button class="px-2 py-1 bg-surface-container-lowest font-label-sm text-label-sm font-mono font-semibold rounded hover:bg-surface-container">RESTART</button>
+<button class="px-2 py-1 bg-surface-container-lowest font-label-sm text-label-sm font-mono font-semibold text-secondary rounded hover:bg-surface-container">LOGS</button>
+</div>
+</div>
+<!-- Daemon 2: mqtt-broker.service -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10b981] mt-1.5 shrink-0"></span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface font-mono">mqtt-broker.service</span>
+<span class="px-1.5 py-0.2 bg-[#10b981]/15 text-[#10b981] font-label-sm text-label-sm font-bold rounded uppercase">Active (Running)</span>
+<span class="text-[9px] text-secondary font-mono">PID 920</span>
+</div>
+<div class="font-body-sm text-body-sm text-secondary">
+                  Eclipse Mosquitto v2.0.18 Edge Broker daemon servicing port 1883.
+                </div>
+</div>
+</div>
+<div class="flex items-center gap-1 self-end md:self-center">
+<button class="px-2 py-1 bg-surface-container-lowest font-label-sm text-label-sm font-mono font-semibold rounded hover:bg-surface-container">RESTART</button>
+<button class="px-2 py-1 bg-surface-container-lowest font-label-sm text-label-sm font-mono font-semibold text-secondary rounded hover:bg-surface-container">LOGS</button>
+</div>
+</div>
+<!-- Daemon 3: yolo-inference.service -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10b981] mt-1.5 shrink-0"></span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface font-mono">yolo-inference.service</span>
+<span class="px-1.5 py-0.2 bg-[#10b981]/15 text-[#10b981] font-label-sm text-label-sm font-bold rounded uppercase">Active (Running)</span>
+<span class="text-[9px] text-secondary font-mono">PID 1184</span>
+</div>
+<div class="font-body-sm text-body-sm text-secondary">
+                  YOLOv8 Nano TensorRT Edge Engine inspecting carry deck ore granulometry &amp; belt tears.
+                </div>
+</div>
+</div>
+<div class="flex items-center gap-1 self-end md:self-center">
+<button class="px-2 py-1 bg-surface-container-lowest font-label-sm text-label-sm font-mono font-semibold rounded hover:bg-surface-container">RESTART</button>
+<button class="px-2 py-1 bg-surface-container-lowest font-label-sm text-label-sm font-mono font-semibold text-secondary rounded hover:bg-surface-container">LOGS</button>
+</div>
+</div>
+<!-- Daemon 4: timescale-db.service -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10b981] mt-1.5 shrink-0"></span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface font-mono">timescale-db.service</span>
+<span class="px-1.5 py-0.2 bg-[#10b981]/15 text-[#10b981] font-label-sm text-label-sm font-bold rounded uppercase">Active (Running)</span>
+<span class="text-[9px] text-secondary font-mono">PID 788</span>
+</div>
+<div class="font-body-sm text-body-sm text-secondary">
+                  PostgreSQL 15 + TimescaleDB Hypertables for raw telemetry storage (Retention: 30 days).
+                </div>
+</div>
+</div>
+<div class="flex items-center gap-1 self-end md:self-center">
+<button class="px-2 py-1 bg-surface-container-lowest font-label-sm text-label-sm font-mono font-semibold rounded hover:bg-surface-container">RESTART</button>
+<button class="px-2 py-1 bg-surface-container-lowest font-label-sm text-label-sm font-mono font-semibold text-secondary rounded hover:bg-surface-container">LOGS</button>
+</div>
+</div>
+</div>
+</div>
+<!-- System Telemetry & Firmware Flashing Panel (4 cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Host System Metrics -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">RPI4 Edge Host Telemetry</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">memory</span>
+</div>
+<div class="flex flex-col gap-2 font-mono text-label-sm text-label-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-secondary">
+<span>CPU UTILIZATION (4-CORE BCM2711)</span>
+<span class="text-on-surface font-bold">28.4%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded overflow-hidden">
+<div class="w-[28%] h-full bg-primary rounded"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-secondary">
+<span>RAM ALLOCATION (4GB LPDDR4)</span>
+<span class="text-on-surface font-bold">1.42 GB / 3.85 GB</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded overflow-hidden">
+<div class="w-[36%] h-full bg-primary rounded"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-secondary">
+<span>SoC TEMPERATURE</span>
+<span class="text-on-surface font-bold">42.8 °C (Fan: 35%)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded overflow-hidden">
+<div class="w-[42%] h-full bg-[#10b981] rounded"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-secondary">
+<span>STORAGE (NVMe SSD M.2)</span>
+<span class="text-on-surface font-bold">24.1 GB / 128 GB</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded overflow-hidden">
+<div class="w-[19%] h-full bg-primary rounded"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Firmware OTA Update Card -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">ESP32 Over-The-Air Flashing</span>
+<span class="material-symbols-outlined text-primary text-[18px]">system_update_alt</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded flex flex-col gap-1 font-mono text-[10px]">
+<div class="flex justify-between">
+<span class="text-secondary">CURRENT BUILD:</span>
+<span class="font-bold text-on-surface">cv-esp32-v2.4.1.bin</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">COMPILED:</span>
+<span class="text-on-surface">2025-02-18 09:12 UTC</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">PARTITION:</span>
+<span class="text-[#10b981] font-bold">OTA_0 (RUNNING)</span>
+</div>
+</div>
+<button class="w-full py-1.5 rounded bg-surface-container hover:bg-surface-variant text-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+<span>Upload Binary &amp; Flash OTA</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB CONTENT 6: MOTOR & DRIVE (Auxiliary Sub-Tab) -->
+<section class="tab-panel hidden flex flex-col gap-space-md" id="tab-drive">
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">electric_meter</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">VFD &amp; Geared BLDC Drive Motor Settings</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">MODBUS-RTU ID: 02</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Motor Type &amp; Model</label>
+<input class="h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" type="text" value="24V 120W Planetary Geared BLDC (15:1 Ratio)">
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Acceleration Ramp Rate</label>
+<div class="flex items-center gap-1">
+<input class="w-full h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" step="0.1" type="number" value="2.5">
+<span class="px-2 py-1.5 bg-surface-container font-label-sm text-label-sm text-secondary rounded">s</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Deceleration / E-Stop Ramp</label>
+<div class="flex items-center gap-1">
+<input class="w-full h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" step="0.1" type="number" value="0.4">
+<span class="px-2 py-1.5 bg-surface-container font-label-sm text-label-sm text-secondary rounded">s</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB CONTENT 7: ESP32 & DAQ (Auxiliary Sub-Tab) -->
+<section class="tab-panel hidden flex flex-col gap-space-md" id="tab-esp32">
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">memory</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">ESP32 Peripheral Pinout &amp; RTOS Configuration</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">FreeRTOS v10.4.3</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm font-mono text-label-sm text-label-sm">
+<div class="bg-surface-container-low p-2 rounded">
+<span class="text-secondary block">I2C SDA / SCL:</span>
+<span class="font-bold text-on-surface">GPIO 21 / GPIO 22</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="text-secondary block">HX711 DOUT / SCK:</span>
+<span class="font-bold text-on-surface">GPIO 18 / GPIO 19</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="text-secondary block">OPTICAL SPEED IRQ:</span>
+<span class="font-bold text-on-surface">GPIO 04 (Ext Interrupt)</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="text-secondary block">VFD PWM OUTPUT:</span>
+<span class="font-bold text-on-surface">GPIO 25 (25 kHz, 8-Bit)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB CONTENT 8: AI & VISION (Auxiliary Sub-Tab) -->
+<section class="tab-panel hidden flex flex-col gap-space-md" id="tab-vision">
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">visibility</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">YOLOv8 Edge Vision &amp; Camera Parameters</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">CSI PORT 0</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Inference Resolution</label>
+<input class="h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" type="text" value="640x480 @ 30 FPS">
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Confidence Trip Threshold</label>
+<input class="h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" step="0.05" type="number" value="0.75">
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-bold uppercase">Tear Detection Alert Sensitivity</label>
+<input class="h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md font-bold rounded focus:outline-none" type="text" value="High (Surface Rupture &gt; 3mm)">
+</div>
+</div>
+</div>
+</section>
+<!-- POPUP NOTIFICATION MODAL SIMULATION / VALIDATION SNACKBAR -->
+<div class="hidden fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-space-md py- space-sm rounded shadow-xl flex items-center gap-space-sm z-50 animate-bounce" id="status-toast">
+<span class="material-symbols-outlined text-[#10b981] text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md font-mono" id="toast-text">Configuration validated. 0 checksum errors.</span>
+</div>
+</div>
+<!-- Interactive Tab Switcher & Micro-Interaction Script -->
+<script>
+  (function initSettingsDashboard() {
+    const tabButtons = document.querySelectorAll('.sub-tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    function switchTab(targetId) {
+      tabPanels.forEach(panel => {
+        if (panel.id === targetId) {
+          panel.classList.remove('hidden');
+        } else {
+          panel.classList.add('hidden');
+        }
+      });
+
+      tabButtons.forEach(btn => {
+        if (btn.getAttribute('data-tab-target') === targetId) {
+          btn.classList.remove('text-secondary', 'hover:bg-surface-container', 'hover:text-on-surface');
+          btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        } else {
+          btn.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          btn.classList.add('text-secondary', 'hover:bg-surface-container', 'hover:text-on-surface');
+        }
+      });
+    }
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = btn.getAttribute('data-tab-target');
+        if (target) switchTab(target);
+      });
+    });
+
+    // Action Toasts
+    const toast = document.getElementById('status-toast');
+    const toastText = document.getElementById('toast-text');
+    let toastTimeout;
+
+    function showToast(msg, isSuccess = true) {
+      clearTimeout(toastTimeout);
+      if (toast && toastText) {
+        toastText.textContent = msg;
+        toast.classList.remove('hidden');
+        toastTimeout = setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 3200);
+      }
+    }
+
+    const btnValidate = document.getElementById('btn-validate');
+    if (btnValidate) {
+      btnValidate.addEventListener('click', () => {
+        showToast('Validating calibration formulas & I2C addresses... OK! (CRC-32: 0x9B14E802)');
+      });
+    }
+
+    const btnPush = document.getElementById('btn-push');
+    if (btnPush) {
+      btnPush.addEventListener('click', () => {
+        showToast('Writing 128 bytes to ESP32 EEPROM @ 0x1000... ACK RECEIVED. Sync OK!');
+      });
+    }
+
+    const btnRevert = document.getElementById('btn-revert');
+    if (btnRevert) {
+      btnRevert.addEventListener('click', () => {
+        showToast('Settings reverted to active flash memory defaults.');
+      });
+    }
+  })();
+</script></main></div></body></html>

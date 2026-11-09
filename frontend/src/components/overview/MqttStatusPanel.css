@@ -1,0 +1,107 @@
+.scada-mqtt-panel {
+  display: flex;
+  flex-direction: column;
+  background: #0d1219;
+  border: 1px solid #182230;
+  border-radius: 4px;
+  padding: 10px 12px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.scada-mqtt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.scada-mqtt-title {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #e2e8f0;
+}
+
+.scada-mqtt-status-pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.scada-mqtt-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.scada-mqtt-dot--on {
+  background: #22c55e;
+  box-shadow: 0 0 6px #22c55e;
+}
+.scada-mqtt-dot--off {
+  background: #ef4444;
+}
+
+.scada-mqtt-text {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+}
+.scada-mqtt-text--on { color: #22c55e; }
+.scada-mqtt-text--off { color: #ef4444; }
+
+.scada-mqtt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.scada-mqtt-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  padding: 2px 0;
+}
+
+.scada-mqtt-label {
+  color: #718298;
+}
+
+.scada-mqtt-val {
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.scada-mqtt-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 5px 0;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: auto;
+  transition: opacity 0.15s ease;
+}
+
+.scada-mqtt-btn--disconnect {
+  background: #210a0a;
+  border: 1px solid #7f1d1d;
+  color: #f87171;
+}
+
+.scada-mqtt-btn--disconnect:hover {
+  background: #341212;
+}
+
+.scada-mqtt-btn-icon {
+  font-size: 10px;
+}

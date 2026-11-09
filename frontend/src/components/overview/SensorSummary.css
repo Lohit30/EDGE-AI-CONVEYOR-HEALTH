@@ -1,0 +1,11 @@
+.ss {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+}
+
+@media (max-width: 900px) {
+  .ss {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
